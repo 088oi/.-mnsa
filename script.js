@@ -11122,7 +11122,7 @@ ${linkedContents}
 
       const membersList = chat.members.map(m => `- **${m.groupNickname}** (本名: ${m.originalName}): ${m.persona}`).join('\n');
       const stickerContext = getGroupStickerContextForPrompt(chat);
-      const systemPrompt = `
+      let systemPrompt = `
 # 核心任务：群聊剧本作家
 你是一个剧本作家，负责创作一个名为“${chat.name}”的群聊中的对话。这个群聊里【没有用户】，所有成员都是你扮演的角色。你的任务是让他们之间进行一场生动、自然的对话。
 

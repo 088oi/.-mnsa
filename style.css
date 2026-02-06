@@ -236,7 +236,7 @@
             margin-bottom: 5px;  
             flex-shrink: 0;      
         }
-        .message-bubble.selected::after { content: 'OK'; position: absolute; left: -10px; top: 50%; transform: translateY(-50%); background-color: var(--accent-color); color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+        .message-bubble.selected::after { content: '�?; position: absolute; left: -10px; top: 50%; transform: translateY(-50%); background-color: var(--accent-color); color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
         .message-bubble.user.selected::after { left: auto; right: -10px; }
         .message-bubble.user { flex-direction: row-reverse; }
         #typing-indicator { align-self: flex-start; display: none; margin: 0 10px 10px; color: var(--text-secondary); }
@@ -407,7 +407,7 @@
     right: 0;
     max-height: 150px;
     overflow-y: auto;
-    background-color: var(--secondary-bg); /* <-- 修改�?*/
+    background-color: var(--secondary-bg); /* <-- 修改�?*/
     border: 1px solid var(--border-color);
     border-radius: 8px;
     z-index: 101;
@@ -430,7 +430,7 @@
         .ai-generated-image { max-width: 180px; border-radius: 12px; display: block; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
         .ai-generated-image:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         
-        /* RealImag/NovelAI图片在私�?群聊消息气泡里的样式 */
+        /* RealImag/NovelAI图片在私�?群聊消息气泡里的样式 */
         .realimag-image {
             max-width: 250px;
             max-height: 250px;
@@ -511,7 +511,7 @@
         #chat-messages[data-theme="gray_white"] .message-bubble.user .content { background-color: #e9ecef; color: #495057; }
         #chat-messages[data-theme="gray_white"] .message-bubble.ai .content { background-color: #f8f9fa; color: #383d41; }
         
-        /* 记忆库样�?*/
+        /* 记忆库样�?*/
         .memory-archive-item {
             background-color: var(--secondary-bg);
             border: 1px solid var(--border-color);
@@ -649,7 +649,7 @@
             border-color: var(--accent-color);
         }
         .persona-preset-item.selected::after {
-            content: 'OK';
+            content: '�?;
             position: absolute;
             top: 5px;
             left: 5px;
@@ -679,7 +679,8 @@
         #battery-alert-text { font-size: 16px; font-weight: 500; color: #333; margin: 0; line-height: 1.4; }
         #font-preview {
             transition: font-family 0.3s ease;}
-        
+        #chat-list-screen {
+        }
         .chat-list-view {
             position: absolute;
             top: 0;
@@ -1147,7 +1148,8 @@
             color: rgba(255, 255, 255, 0.2);
             cursor: default;
         }
-        
+        .post-main-content {
+        }
         .post-feedback-icons {
             display: flex;
             justify-content: flex-end; 
@@ -1473,7 +1475,7 @@
         #favorites-view.selection-mode .favorite-item-card.selected::before {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
-            content: 'OK';
+            content: '�?;
             color: white;
             font-size: 14px;
             text-align: center;
@@ -1746,7 +1748,7 @@
         .contact-picker-item.selected .checkbox {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
-            content: 'OK';
+            content: '�?;
             color: white;
             font-size: 14px;
             text-align: center;
@@ -1913,7 +1915,7 @@
             border: 2px solid #28a745; 
         }
         .message-bubble.status-paid .waimai-main .request-title::before {
-            content: 'OK';
+            content: '�? ';
         }
         .message-bubble.status-paid .waimai-main .request-title {
             color: #155724;
@@ -1937,7 +1939,7 @@
             background-color: #e9ecef;
         }
         .message-bubble.status-rejected .waimai-main .request-title::before {
-            content: '�?';
+            content: '�?';
         }
         .message-bubble.status-rejected .waimai-main .request-title {
             color: #721c24;
@@ -2454,7 +2456,7 @@
             flex-shrink: 0;
         }
         .countdown-card::before {
-            content: 'OK';
+            content: '�?;
             position: absolute;
             top: -10px;
             left: -10px;
@@ -5292,8 +5294,8 @@
      overflow: visible; 
     padding-top: 40px; 
 }
-.profile-history-icon-btn { /* <--- 核心修改1：从 ID (#) 改为�?(.) */
-    /* 核心修改2：移除了 position, top, right, z-index 这些绝对定位属�?*/
+.profile-history-icon-btn { /* <--- 核心修改1：从 ID (#) 改为�?(.) */
+    /* 核心修改2：移除了 position, top, right, z-index 这些绝对定位属�?*/
     width: 36px;
     height: 36px;
     background: none;
@@ -5447,7 +5449,7 @@
     border-color: var(--accent-color);
 }
 .clear-posts-item.selected .checkbox::after {
-    content: 'OK';
+    content: '�?;
     font-size: 14px;
     font-weight: bold;
 }
@@ -6422,7 +6424,9 @@
 #char-music-player-modal .char-player-controls .control-btn.mode {
     font-size: 14px; font-weight: 500; width: 50px;
 }
-
+#char-music-player-modal #char-music-lyrics {
+    /* display: none; */
+}
 @keyframes spin-vinyl {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -7781,7 +7785,7 @@ input, textarea, select {
         #shopping-screen.management-mode .product-item.selected::before {
             background-color: var(--accent-color);
             border-color: var(--accent-color);
-            content: 'OK';
+            content: '�?;
             color: white;
             font-size: 14px;
             text-align: center;
@@ -8095,11 +8099,11 @@ input, textarea, select {
     color: var(--text-primary);
 }
 
-/* ▼▼�?RealImag多图布局样式 ▼▼�?*/
+/* ▼▼�?RealImag多图布局样式 ▼▼�?*/
 /* 多图容器 */
 .post-images-grid {
     display: grid;
-    gap: 8px;  /* 图片之间的固定间�?*/
+    gap: 8px;  /* 图片之间的固定间�?*/
     margin-top: 10px;
 }
 
@@ -8116,7 +8120,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 2张图�?- 横向并排，等比例缩放 */
+/* 2张图�?- 横向并排，等比例缩放 */
 .post-images-grid.grid-2 {
     grid-template-columns: auto auto;
     gap: 5px;
@@ -8130,7 +8134,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 3张图�?- 横向排列，等比例缩放 */
+/* 3张图�?- 横向排列，等比例缩放 */
 .post-images-grid.grid-3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
@@ -8142,7 +8146,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 4张图�?- 2x2方格，等比例缩放 */
+/* 4张图�?- 2x2方格，等比例缩放 */
 .post-images-grid.grid-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
@@ -8154,7 +8158,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 5张图�?- �?�?，等比例缩放 */
+/* 5张图�?- �?�?，等比例缩放 */
 .post-images-grid.grid-5 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -8176,7 +8180,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 6张图�?- 3x2网格，等比例缩放 */
+/* 6张图�?- 3x2网格，等比例缩放 */
 .post-images-grid.grid-6 {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
@@ -8188,7 +8192,7 @@ input, textarea, select {
     height: auto;
 }
 
-/* 7-9张图�?- 3x3九宫格，等比例缩�?*/
+/* 7-9张图�?- 3x3九宫格，等比例缩�?*/
 .post-images-grid.grid-7,
 .post-images-grid.grid-8,
 .post-images-grid.grid-9 {
@@ -8216,13 +8220,13 @@ input, textarea, select {
 .post-images-grid .naiimag-image:hover {
     transform: scale(1.05);
 }
-/* ▲▲�?RealImag多图布局样式结束 ▲▲�?*/
+/* ▲▲�?RealImag多图布局样式结束 ▲▲�?*/
 /* 【修复】解决夜间模式下浏览器和足迹页面文字颜色不正确的问题 */
 #phone-screen.dark-mode #browser-content {
-    color: #dcdcdc; /* 浏览器文章正文颜�?*/
+    color: #dcdcdc; /* 浏览器文章正文颜�?*/
 }
 #phone-screen.dark-mode #browser-content .article-title {
-    color: #ffffff; /* 浏览器文章标题颜�?*/
+    color: #ffffff; /* 浏览器文章标题颜�?*/
 }
 #phone-screen.dark-mode #browser-content .article-meta {
     color: #8d8d92; /* 浏览器文章元数据（来源）颜色 */
@@ -8234,12 +8238,12 @@ input, textarea, select {
 #phone-screen.dark-mode .amap-item-comment {
     color: #dcdcdc; /* 足迹 - 评论内容颜色 */
 }
-/* 【修复】CPhone 浏览器详情页在夜间模式下的文字颜�?*/
+/* 【修复】CPhone 浏览器详情页在夜间模式下的文字颜�?*/
 #phone-screen.dark-mode #char-article-content {
-    color: #dcdcdc; /* 设置为浅灰色，使其在深色背景上可�?*/
+    color: #dcdcdc; /* 设置为浅灰色，使其在深色背景上可�?*/
 }
 #char-article-content {
-    color: #333; /* CPhone 浏览器文章正�?- 白天模式默认颜色 */
+    color: #333; /* CPhone 浏览器文章正�?- 白天模式默认颜色 */
 }
 
 #open-nai-gallery-btn svg path {
@@ -8305,20 +8309,20 @@ input, textarea, select {
     align-items: center;    
     gap: 6px;               
     cursor: pointer;
-    /* 移除了背景、阴影等属性，因为它们将移到子元素�?*/
+    /* 移除了背景、阴影等属性，因为它们将移到子元素�?*/
 }
 /* 新增：NAI的图片容器，样式模仿 .sticker-image-container */
 .nai-image-container {
-    position: relative; /* 用于定位内部�?controls */
+    position: relative; /* 用于定位内部�?controls */
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: white;
     border-radius: 10px;
-    background-size: contain; /* 核心修改：保持图片完�?*/
+    background-size: contain; /* 核心修改：保持图片完�?*/
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden; /* 隐藏溢出�?controls */
+    overflow: hidden; /* 隐藏溢出�?controls */
 }
 
 /* 新增：NAI的文字标签，样式模仿 .sticker-name */
@@ -8338,7 +8342,7 @@ input, textarea, select {
     width: 100%;
     padding: 4px;
     background: rgba(0,0,0,0.4);
-    display: none; /* 仅在管理模式下显�?*/
+    display: none; /* 仅在管理模式下显�?*/
     justify-content: space-around;
     align-items: center;
 }
@@ -8388,20 +8392,20 @@ input, textarea, select {
     border-top: 1px solid var(--border-color);
     justify-content: space-between; 
     align-items: center;
-    gap: 10px; /* <-- 新增了间�?*/
+    gap: 10px; /* <-- 新增了间�?*/
 }
 
 #nai-gallery-action-bar .select-all-label {
     font-size: 16px;
     color: var(--text-primary);
     cursor: pointer;
-    flex-grow: 1; /* <-- 新增，让“全选”占据剩余空�?*/
+    flex-grow: 1; /* <-- 新增，让“全选”占据剩余空�?*/
 }
 #nai-gallery-action-bar .action-bar-btn {
     padding: 10px 15px; /* <-- 修改了内边距 */
     border-radius: 20px;
     border: none;
-    font-size: 14px; /* <-- 修改了字�?*/
+    font-size: 14px; /* <-- 修改了字�?*/
     font-weight: 600;
     cursor: pointer;
     background-color: #ff3b30;
@@ -8427,7 +8431,7 @@ input, textarea, select {
 #phone-screen.dark-mode #nai-gallery-action-bar .select-all-label {
     color: #f0f0f0;
 }
-/* --- NAI 图片重新生成按钮 (V3 - 悬停显示修复�? --- */
+/* --- NAI 图片重新生成按钮 (V3 - 悬停显示修复�? --- */
 .nai-image-wrapper {
     position: relative; /* 关键：必须有这行，用于按钮定位！ */
     display: inline-block;
@@ -8436,8 +8440,8 @@ input, textarea, select {
 
 .nai-regenerate-btn {
     position: absolute;
-    bottom: 10px; /* 从底部偏�?10px */
-    right: 10px;  /* 从右侧偏�?10px */
+    bottom: 10px; /* 从底部偏�?10px */
+    right: 10px;  /* 从右侧偏�?10px */
     width: 32px;
     height: 32px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -8459,14 +8463,14 @@ input, textarea, select {
     z-index: 5;
 }
 
-/* 核心修复：当鼠标悬停�?*图片包裹�? 上时，才显示按钮 */
+/* 核心修复：当鼠标悬停�?*图片包裹�? 上时，才显示按钮 */
 .nai-image-wrapper:hover .nai-regenerate-btn {
-    opacity: 0.85; /* 悬停时显�?*/
+    opacity: 0.85; /* 悬停时显�?*/
 }
 
-/* 按钮本身的悬停效果（变亮�?*/
+/* 按钮本身的悬停效果（变亮�?*/
 .nai-regenerate-btn:hover {
-    opacity: 1 !important; /* 确保悬停在按钮上时更�?*/
+    opacity: 1 !important; /* 确保悬停在按钮上时更�?*/
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -8475,10 +8479,10 @@ input, textarea, select {
     height: 16px;
 }
 
-/* 加载中状�?*/
+/* 加载中状�?*/
 .nai-regenerate-btn.loading {
     pointer-events: none;
-    opacity: 1; /* 加载时强制显�?*/
+    opacity: 1; /* 加载时强制显�?*/
 }
 .nai-regenerate-btn.loading svg {
     animation: spin 1s linear infinite;
@@ -8490,9 +8494,9 @@ input, textarea, select {
     border-color: rgba(255, 255, 255, 0.2);
 }
 /* --- NAI 图片重新生成按钮 结束 --- */
-/* ▼▼�?【新功能】手机外框样�?(374x674px 精确�? ▼▼�?*/
+/* ▼▼�?【新功能】手机外框样�?(374x674px 精确�? ▼▼�?*/
 
-/* 1. 手机外框的背�?(你想要的白色) */
+/* 1. 手机外框的背�?(你想要的白色) */
 body.frame-mode-active {
     background-color: #f0f2f5; /* 保持白色背景 */
     display: flex;
@@ -8510,20 +8514,20 @@ body.dark-mode.frame-mode-active {
 
 /* 2. 手机外框本身 (使用你计算的精确尺寸) */
 body.frame-mode-active #phone-screen {
-    /* 总宽�? 374px
-      总高�? 674px
+    /* 总宽�? 374px
+      总高�? 674px
       (这会使内部内容区域精确为 350x650px)
     */
     width: 374px;
     height: 700px;
     
-    /* 12px 的黑色边�?*/
+    /* 12px 的黑色边�?*/
     border: 12px solid #ffffff;
     
-    /* 适配的圆�?*/
+    /* 适配的圆�?*/
     border-radius: 54px; 
     
-    /* 移除内边�?(padding) 来匹配你的计�?*/
+    /* 移除内边�?(padding) 来匹配你的计�?*/
     /* padding: 0; (移除) */
 
     /* 覆盖全屏样式 */
@@ -8536,7 +8540,7 @@ body.frame-mode-active #phone-screen {
     overflow: hidden; 
 }
 
-/* 3. 屏幕内部的圆角遮�?*/
+/* 3. 屏幕内部的圆角遮�?*/
 body.frame-mode-active #phone-screen::before {
     content: '';
     position: absolute;
@@ -8545,35 +8549,35 @@ body.frame-mode-active #phone-screen::before {
     right: 0;
     bottom: 0;
     
-    /* 内部圆角 (�?54px �?12px) */
+    /* 内部圆角 (�?54px �?12px) */
     border-radius: 42px; 
     
-    /* 移除内边框，因为它不再需�?*/
+    /* 移除内边框，因为它不再需�?*/
     /* border: 0; (移除) */
     
     pointer-events: none;
     z-index: 1000; 
     
-    /* 添加一个非常细微的内阴影，模拟屏幕玻璃�?*/
+    /* 添加一个非常细微的内阴影，模拟屏幕玻璃�?*/
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 4. 模拟灵动�?(Dynamic Island) */
+/* 4. 模拟灵动�?(Dynamic Island) */
 body.frame-mode-active #phone-screen::after {
     content: '';
     position: absolute;
     top: 22px; 
     left: 50%;
     transform: translateX(-50%);
-    /* 调整为更协调的灵动岛尺寸 (已缩�? */
+    /* 调整为更协调的灵动岛尺寸 (已缩�? */
     width: 100px;  /* <-- 已从 120px 减小 */
     height: 25px;  /* <-- 已从 28px 减小 */
     background-color: #000; 
-    border-radius: 12.5px; /* <-- 调整圆角以保持形�?*/
+    border-radius: 12.5px; /* <-- 调整圆角以保持形�?*/
     z-index: 1002; 
 }
 
-/* [新增] 当手机外框激活时，等比缩小主屏幕和CPhone内容以适应屏幕 (V3 - 最终布局修复�? */
+/* [新增] 当手机外框激活时，等比缩小主屏幕和CPhone内容以适应屏幕 (V3 - 最终布局修复�? */
 body.frame-mode-active #home-screen-pages-container,
 body.frame-mode-active #char-clock-container,
 body.frame-mode-active #char-app-grid {
@@ -8594,26 +8598,26 @@ body.frame-mode-active #desktop-dock {
     margin-bottom: -5px;
 }
 
-/* ▼▼�?CPhone 布局的核心修�?▼▼�?*/
+/* ▼▼�?CPhone 布局的核心修�?▼▼�?*/
 body.frame-mode-active #char-clock-container {
     /* 替换默认的大间距，给一个适合框内视图的上边距 */
     margin-top: 60px;
-    /* 大幅减小下边距，把下面的App图标拉上�?*/
+    /* 大幅减小下边距，把下面的App图标拉上�?*/
     margin-bottom: 50px;
 }
 
 body.frame-mode-active #char-app-grid {
-    /* 移除之前过于激进的负边距，让它自然排列在时钟下�?*/
+    /* 移除之前过于激进的负边距，让它自然排列在时钟下�?*/
     margin-top: 0;
 }
-/* ▲▲�?修正结束 ▲▲�?*/
+/* ▲▲�?修正结束 ▲▲�?*/
 #dynamic-island-content {
     position: absolute;
-    top: 22px; /* 与手机外框的刘海伪元素位置完全重�?*/
+    top: 22px; /* 与手机外框的刘海伪元素位置完全重�?*/
     left: 50%;
     transform: translateX(-50%);
-    width: 120px; /* 默认宽度，与刘海一�?*/
-    height: 28px; /* 默认高度，与刘海一�?*/
+    width: 120px; /* 默认宽度，与刘海一�?*/
+    height: 28px; /* 默认高度，与刘海一�?*/
     background-color: #000;
     border-radius: 14px;
     z-index: 1003; /* 确保在刘海伪元素之上 */
@@ -8630,10 +8634,10 @@ body.frame-mode-active #char-app-grid {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    overflow: hidden; /* 隐藏内部溢出的内�?*/
+    overflow: hidden; /* 隐藏内部溢出的内�?*/
 }
 
-/* 2. 当音乐播放时，灵动岛“展开�?*/
+/* 2. 当音乐播放时，灵动岛“展开�?*/
 /* 规则 1: 在有框模式下，调整回刘海的位置并展开 */
 body.frame-mode-active #phone-screen.dynamic-island-active #dynamic-island-content {
     opacity: 1;
@@ -8649,28 +8653,28 @@ body:not(.frame-mode-active) #phone-screen.dynamic-island-active #dynamic-island
     visibility: visible;
     pointer-events: auto;
     width: 190px;
-    /* (这里会使用我们在�?303行设置的新top�? */
+    /* (这里会使用我们在�?303行设置的新top�? */
 }
 
-/* 3. 同时，隐藏掉原来的刘海伪元素，防止重�?*/
+/* 3. 同时，隐藏掉原来的刘海伪元素，防止重�?*/
 body.frame-mode-active #phone-screen.dynamic-island-active::after {
     opacity: 0;
 }
 
-/* 4. 岛内的专辑封�?*/
+/* 4. 岛内的专辑封�?*/
 #island-album-art {
-    width: 22px; /* 高度28px - 上下�?px内边�?= 22px */
+    width: 22px; /* 高度28px - 上下�?px内边�?= 22px */
     height: 22px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 8px;
-    flex-shrink: 0; /* 防止被压�?*/
+    flex-shrink: 0; /* 防止被压�?*/
 }
 
 /* 5. 歌词的容器，用于裁剪滚动文字 */
 #island-lyric-container {
-    flex-grow: 1; /* 占据剩余所有空�?*/
-    overflow: hidden; /* 【关键】裁剪掉超出部分的歌�?*/
+    flex-grow: 1; /* 占据剩余所有空�?*/
+    overflow: hidden; /* 【关键】裁剪掉超出部分的歌�?*/
     white-space: nowrap; /* 【关键】强制歌词不换行 */
 }
 #island-lyric-container.center-content {
@@ -8679,39 +8683,39 @@ body.frame-mode-active #phone-screen.dynamic-island-active::after {
 }
 /* 6. 歌词文字本身 */
 #island-lyric-text {
-    color: #aeaeae; /* 柔和的灰�?*/
+    color: #aeaeae; /* 柔和的灰�?*/
     font-size: 13px;
     font-weight: 500;
-    display: inline-block; /* 动画需�?*/
+    display: inline-block; /* 动画需�?*/
     transition: opacity 0.2s ease-in-out;
 }
-/* 您可以在 L2910 附近找到 .frame-mode-active 的相关样�?   然后在这附近添加下面的新规则
+/* 您可以在 L2910 附近找到 .frame-mode-active 的相关样�?   然后在这附近添加下面的新规则
 */
 
 body.frame-mode-active #main-content-area {
-    /* * 在这里修改您想要的距离�?     * 原本�?30px，您可以改成 40px �?50px 来增大间距�?     * * 请注意：在有框模式下，整个主页被 transform: scale(0.9) 缩小了，
-     * 所以您设置 50px，视觉上看起来会�?45px�?     */
+    /* * 在这里修改您想要的距离�?     * 原本�?30px，您可以改成 40px �?50px 来增大间距�?     * * 请注意：在有框模式下，整个主页被 transform: scale(0.9) 缩小了，
+     * 所以您设置 50px，视觉上看起来会�?45px�?     */
     gap:10px; 
 }
-/* 仅在有框模式下，修改组件距离顶部的间�?*/
+/* 仅在有框模式下，修改组件距离顶部的间�?*/
 body.frame-mode-active #main-content-area {
-    /* * 原本�?20px�?     * 您可以改�?0px 来让它更靠上�?     * 或者改�?40px 来让它更靠下�?     */
+    /* * 原本�?20px�?     * 您可以改�?0px 来让它更靠上�?     * 或者改�?40px 来让它更靠下�?     */
     margin-top: 0px; 
 }
 /* 仅在有框模式下，调整【第二页】的间距 */
 body.frame-mode-active .home-screen-page:nth-child(2) .polaroid-widget-container {
     
-    /* 1. 修改这个来调�?[拍立得] �?[屏幕顶部] 的距�?(原为 20px) */
-    /* 您可以改�?0px �?10px 来让它更靠上 */
+    /* 1. 修改这个来调�?[拍立得] �?[屏幕顶部] 的距�?(原为 20px) */
+    /* 您可以改�?0px �?10px 来让它更靠上 */
     margin-top: 0px;
 
-    /* 2. 修改这个来调�?[拍立得] �?[下方应用/小组件] 的距�?(原为 30px) */
-    /* 您可以改�?40px �?50px 来增大它们之间的间距 */
+    /* 2. 修改这个来调�?[拍立得] �?[下方应用/小组件] 的距�?(原为 30px) */
+    /* 您可以改�?40px �?50px 来增大它们之间的间距 */
     margin-bottom: 10px;
 }
-/* 【修复】在有框模式下，增加聊天页面头部的顶部内边距，以避开灵动�?*/
+/* 【修复】在有框模式下，增加聊天页面头部的顶部内边距，以避开灵动�?*/
 body.frame-mode-active #chat-interface-screen > .header {
-    /* * 灵动岛区域大约在 22px + 25px = 47px 结束�?     * 我们可以设置 55px �?60px 来给它留出一些呼吸空间�?     */
+    /* * 灵动岛区域大约在 22px + 25px = 47px 结束�?     * 我们可以设置 55px �?60px 来给它留出一些呼吸空间�?     */
     padding-top: 48px !important; 
 }
 body:not(.frame-mode-active) #phone-screen.dynamic-island-active #chat-interface-screen > .header {
@@ -8719,30 +8723,30 @@ body:not(.frame-mode-active) #phone-screen.dynamic-island-active #chat-interface
 }
 /* --- 歌词循环滚动 (Marquee) 动画 --- */
 
-/* 1. 默认状态：居中 (用于短歌�? */
+/* 1. 默认状态：居中 (用于短歌�? */
 #island-lyric-container.center-content {
     display: flex;
     justify-content: center;
 }
 #island-lyric-container.center-content #island-lyric-text.scrolling {
-    animation: none; /* 短歌词不需要滚�?*/
+    animation: none; /* 短歌词不需要滚�?*/
 }
 #island-lyric-container.center-content #island-lyric-text span + span {
-    display: none; /* 短歌词只显示一�?*/
+    display: none; /* 短歌词只显示一�?*/
 }
 
 /* 2. 滚动容器：内部有两个span */
 #island-lyric-text.scrolling {
     /* 使用 --marquee-duration 变量作为动画时长，从JS传入 */
     animation: marquee var(--marquee-duration, 10s) linear infinite;
-    display: block; /* 必须�?block 才能应用 transform */
+    display: block; /* 必须�?block 才能应用 transform */
     width: fit-content; /* 确保宽度由内容撑开 */
 }
 
 /* 3. 两个span并排 */
 #island-lyric-text.scrolling span {
     display: inline-block;
-    padding-right: 50px; /* 两个歌词之间的间�?*/
+    padding-right: 50px; /* 两个歌词之间的间�?*/
     white-space: nowrap;
 }
 
@@ -8752,15 +8756,15 @@ body:not(.frame-mode-active) #phone-screen.dynamic-island-active #chat-interface
         transform: translateX(0%);
     }
     100% {
-        /* * 滚动 50% 的宽度�?         * 因为我们的总宽度是两个 <span>，所以滚�?50% 
-         * 意味着第一�?<span> 刚好完全移出，第二个 <span> 完美接上�?         */
+        /* * 滚动 50% 的宽度�?         * 因为我们的总宽度是两个 <span>，所以滚�?50% 
+         * 意味着第一�?<span> 刚好完全移出，第二个 <span> 完美接上�?         */
         transform: translateX(-50%); 
     }
 }
 
-/* 【新功能】分离状态栏 / 真·全屏模�?v2.0 */
+/* 【新功能】分离状态栏 / 真·全屏模�?v2.0 */
 
-/* �?body 标签拥有 detach-mode-active 类时，应用以下样�?*/
+/* �?body 标签拥有 detach-mode-active 类时，应用以下样�?*/
 body.detach-mode-active #phone-screen {
     /* 核心修改1：保持固定定位，但只定义三边 */
     position: fixed;
@@ -8769,49 +8773,49 @@ body.detach-mode-active #phone-screen {
     bottom: 0;
 
     /* 核心修改2：这是最关键的一步！
-       让元素的顶部从“安全区域的底部”开始，而不是屏幕的绝对顶部�?       env(safe-area-inset-top) 会自动获取刘海或状态栏的高度�?/
+       让元素的顶部从“安全区域的底部”开始，而不是屏幕的绝对顶部�?       env(safe-area-inset-top) 会自动获取刘海或状态栏的高度�?/
     top: env(safe-area-inset-top);
 
-    /* 核心修改3：移除固定的 height 属性，�?top �?bottom 自动决定高度 */
+    /* 核心修改3：移除固定的 height 属性，�?top �?bottom 自动决定高度 */
     height: auto;
-    width: auto; /* 同样移除固定�?width */
+    width: auto; /* 同样移除固定�?width */
 
-    /* 移除手机外框样式，实现真正的全屏�?*/
+    /* 移除手机外框样式，实现真正的全屏�?*/
     border-radius: 0;
     border: none;
     box-shadow: none;
 
-    /* 其他布局属性保持不�?*/
+    /* 其他布局属性保持不�?*/
     overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-bg);
 }
 
-/* 在此模式下，隐藏模拟的刘海和屏幕圆角遮罩，因为我们要显示物理�?*/
+/* 在此模式下，隐藏模拟的刘海和屏幕圆角遮罩，因为我们要显示物理�?*/
 body.detach-mode-active #phone-screen::after,
 body.detach-mode-active #phone-screen::before {
     display: none;
 }
 /* 【全局修复】将Dock栏和分页点的位置固定在更低的位置，忽略底部安全区 */
 #home-screen-pagination {
-    /* 移除 calc �?env() */
+    /* 移除 calc �?env() */
     padding-bottom: 10px;
 }
 
 #desktop-dock {
-    /* 移除 calc �?env() */
+    /* 移除 calc �?env() */
     margin-bottom: 20px;
 }
 /* ======================================= */
-/* ▼▼�?【新功能】简洁聊天界�?(Minimal Chat UI) ▼▼�?*/
+/* ▼▼�?【新功能】简洁聊天界�?(Minimal Chat UI) ▼▼�?*/
 /* ======================================= */
 
-/* 1. 默认隐藏�?”号展开按钮 */
+/* 1. 默认隐藏�?”号展开按钮 */
 #chat-expand-btn {
     display: none;
     flex-shrink: 0;
-    width: 40px; /* 与发送按钮同�?*/
+    width: 40px; /* 与发送按钮同�?*/
     height: 40px;
     font-size: 28px;
     font-weight: 300;
@@ -8825,31 +8829,31 @@ body.detach-mode-active #phone-screen::before {
 
 /* 2. 当简洁模式开启时 (body上会有这个class) */
 body.minimal-chat-ui-active #chat-input-actions-top {
-    /* 默认隐藏工具�?*/
+    /* 默认隐藏工具�?*/
     display: none;
 }
 body.minimal-chat-ui-active #chat-input-main-row {
-    /* 确保�?”按钮和输入框底对齐 */
+    /* 确保�?”按钮和输入框底对齐 */
     align-items: flex-end;
 }
 body.minimal-chat-ui-active #chat-expand-btn {
-    /* 显示�?”按�?*/
+    /* 显示�?”按�?*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 body.minimal-chat-ui-active #chat-input {
-    /* 修复�?”按钮出现后，输入框没有自动适应宽度的问�?*/
+    /* 修复�?”按钮出现后，输入框没有自动适应宽度的问�?*/
     flex-grow: 1;
 }
 
-/* 3. 当用户点击�?”号，工具栏展开�?(body上会临时添加这个class) */
+/* 3. 当用户点击�?”号，工具栏展开�?(body上会临时添加这个class) */
 body.minimal-chat-ui-active.chat-actions-expanded #chat-input-actions-top {
-    /* 重新显示工具�?*/
+    /* 重新显示工具�?*/
     display: flex;
 }
 body.minimal-chat-ui-active.chat-actions-expanded #chat-expand-btn {
-    /* �?”号旋转45度变成“x”号 */
+    /* �?”号旋转45度变成“x”号 */
     transform: rotate(45deg);
     background-color: #f0f2f5;
     color: #8a8a8a;
@@ -8859,24 +8863,24 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-expand-btn {
     color: #8d8d92;
 }
 
-/* 4. 暗黑模式下的�?”按�?*/
+/* 4. 暗黑模式下的�?”按�?*/
 #phone-screen.dark-mode #chat-expand-btn {
     background-color: #3e3e42;
     color: #f0f0f0;
     border: 1px solid #38383a;
 }
-/* ▲▲�?简洁聊天界面样式结�?▲▲�?*/
+/* ▲▲�?简洁聊天界面样式结�?▲▲�?*/
 
 
-/* 1. 当简洁模式开�?(且工具栏折叠�?，减小聊天列表的底部内边�?*/
+/* 1. 当简洁模式开�?(且工具栏折叠�?，减小聊天列表的底部内边�?*/
 body.minimal-chat-ui-active #chat-interface-screen #chat-messages {
-    /* 原本�?150px，我们把它缩小到 80px，刚好容纳单行输入框 */
+    /* 原本�?150px，我们把它缩小到 80px，刚好容纳单行输入框 */
     padding-bottom: calc(80px + env(safe-area-inset-bottom)) !important;
     /* 确保过渡平滑 */
     transition: padding-bottom 0.3s ease;
 }
 
-/* 2. 当简洁模式开�?(且工具栏展开�?，恢复原来的内边�?*/
+/* 2. 当简洁模式开�?(且工具栏展开�?，恢复原来的内边�?*/
 body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-messages {
     /* 恢复 150px，为展开的图标行腾出空间 */
     padding-bottom: calc(120px + env(safe-area-inset-bottom)) !important;
@@ -8887,7 +8891,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     padding: 0 !important;
     font-family: inherit !important; /* 恢复默认字体，让卡片自己控制 */
     font-size: inherit !important;
-    line-height: normal !important; /* 恢复正常的行�?*/
+    line-height: normal !important; /* 恢复正常的行�?*/
     color: inherit !important;
     background: none !important;
     white-space: normal !important; /* 允许卡片正常换行和布局 */
@@ -8910,9 +8914,9 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: var(--text-primary);
     cursor: pointer;
     flex-grow: 1; /* 占据主要空间 */
-    padding-right: 15px; /* 和按钮保持距�?*/
-    word-break: break-all; /* 修复长文本溢�?*/
-    white-space: pre-wrap; /* 支持换行符显�?*/
+    padding-right: 15px; /* 和按钮保持距�?*/
+    word-break: break-all; /* 修复长文本溢�?*/
+    white-space: pre-wrap; /* 支持换行符显�?*/
 }
 
 .quick-reply-text:hover {
@@ -8922,7 +8926,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 .quick-reply-actions {
     display: flex;
     gap: 10px;
-    flex-shrink: 0; /* 防止按钮被压�?*/
+    flex-shrink: 0; /* 防止按钮被压�?*/
 }
 
 .quick-reply-edit-btn,
@@ -8967,7 +8971,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     overflow-y: auto;
 }
 #char-music-player-modal #char-music-lyrics {
-    /* display: none;  <-- 删除这一行，或者改为下面这�? */
+    /* display: none;  <-- 删除这一行，或者改为下面这�? */
     display: block; 
     width: 100%;
     height: 60px; /* 给个固定高度 */
@@ -9002,7 +9006,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #333;
 }
 
-/* 3. 添加悬浮恢复球样�?*/
+/* 3. 添加悬浮恢复球样�?*/
 #char-music-restore-btn {
     position: absolute;
     top: 120px;
@@ -9010,7 +9014,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     width: 45px;
     height: 45px;
     background: transparent; /* 1. 改为完全透明 */
-    backdrop-filter: none; /* 2. 移除毛玻�?*/
+    backdrop-filter: none; /* 2. 移除毛玻�?*/
     -webkit-backdrop-filter: none;
     border-radius: 50%;
     display: flex;
@@ -9030,7 +9034,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 .video-call-top-bar #minimize-call-btn {
     position: absolute;
     left: 20px;
-    top: 48px; /* 适配顶部�?padding-top */
+    top: 48px; /* 适配顶部�?padding-top */
     background: none;
     border: none;
     color: white;
@@ -9047,11 +9051,11 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 #video-call-restore-btn {
     position: absolute;
-    top: 120px; /* 默认显示位置，和音乐按钮错开一�?*/
+    top: 120px; /* 默认显示位置，和音乐按钮错开一�?*/
     right: 15px;
     width: 45px;
     height: 45px;
-    background-color: #4cd964; /* 绿色，代表通话�?*/
+    background-color: #4cd964; /* 绿色，代表通话�?*/
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 50%;
@@ -9061,7 +9065,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 900; /* 确保在最上层 */
     cursor: pointer;
-    animation: pulse 1.5s infinite; /* 复用充电/来电的呼吸动�?*/
+    animation: pulse 1.5s infinite; /* 复用充电/来电的呼吸动�?*/
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
 .nai-image-wrapper {
@@ -9080,7 +9084,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     z-index: 5;
 }
 
-/* DING: 找到�?10235 行的 .nai-regenerate-btn 规则并将其修改为�?*/
+/* DING: 找到�?10235 行的 .nai-regenerate-btn 规则并将其修改为�?*/
 .nai-regenerate-btn,
 .nai-upload-imgbb-btn {
     position: static; 
@@ -9104,20 +9108,20 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     transition: opacity 0.2s ease-in-out;
 }
 
-/* DING: 找到�?10260 行的 hover 规则并修改选择器： */
+/* DING: 找到�?10260 行的 hover 规则并修改选择器： */
 .nai-image-wrapper:hover .nai-regenerate-btn,
 .nai-image-wrapper:hover .nai-upload-imgbb-btn {
     opacity: 1; 
 }
 
-/* DING: 找到�?10266 行的 hover 规则并修改选择器： */
+/* DING: 找到�?10266 行的 hover 规则并修改选择器： */
 .nai-regenerate-btn:hover,
 .nai-upload-imgbb-btn:hover {
     opacity: 1 ; 
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* DING: 找到�?10272 行的 loading 规则并修改选择器： */
+/* DING: 找到�?10272 行的 loading 规则并修改选择器： */
 .nai-regenerate-btn.loading,
 .nai-upload-imgbb-btn.loading {
     pointer-events: none;
@@ -9128,20 +9132,20 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 .nai-save-local-btn.loading svg{ /* DING: 同样修改这里 */
     animation: spin 1s linear infinite;
 }
-/* DING: �?.nai-image-wrapper 规则后添�?*/
+/* DING: �?.nai-image-wrapper 规则后添�?*/
 .bubble-image-wrapper {
     position: relative;
     display: inline-block; /* 确保 wrapper 包裹图片 */
     line-height: 0; /* 移除图片下的空隙 */
 }
 
-/* DING: �?.bubble-image-controls 规则 (�?10243 �? 后添�?*/
+/* DING: �?.bubble-image-controls 规则 (�?10243 �? 后添�?*/
 .bubble-image-controls.user-controls {
-    left: 10px; /* DING: 用户按钮在左�?*/
+    left: 10px; /* DING: 用户按钮在左�?*/
     right: auto;
 }
 
-/* DING: �?.nai-regenerate-btn, .nai-upload-imgbb-btn 规则 (�?10250 �? 后添�?*/
+/* DING: �?.nai-regenerate-btn, .nai-upload-imgbb-btn 规则 (�?10250 �? 后添�?*/
 .user-upload-imgbb-btn {
     position: static; 
     width: 32px;
@@ -9161,18 +9165,18 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     transition: opacity 0.2s ease-in-out;
 }
 
-/* DING: �?.nai-image-wrapper:hover ... 规则 (�?10271 �? 后添�?*/
+/* DING: �?.nai-image-wrapper:hover ... 规则 (�?10271 �? 后添�?*/
 .user-image-wrapper:hover .user-upload-imgbb-btn {
     opacity: 1; 
 }
 
-/* DING: �?.nai-regenerate-btn:hover, ... 规则 (�?10277 �? 后添�?*/
+/* DING: �?.nai-regenerate-btn:hover, ... 规则 (�?10277 �? 后添�?*/
 .user-upload-imgbb-btn:hover {
     opacity: 1; 
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* DING: �?.nai-regenerate-btn.loading, ... 规则 (�?10283 �? 后添�?*/
+/* DING: �?.nai-regenerate-btn.loading, ... 规则 (�?10283 �? 后添�?*/
 .user-upload-imgbb-btn.loading {
     pointer-events: none;
     opacity: 1;
@@ -9214,7 +9218,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: #3e3e42;
 }
 
-/* NAI画廊 - 页面和网格容�?*/
+/* NAI画廊 - 页面和网格容�?*/
 #nai-gallery-grid-container {
     flex-grow: 1;
     position: relative;
@@ -9231,10 +9235,10 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     padding: 15px;
     box-sizing: border-box;
     
-    display: grid; /* 两个页面都使�?grid 布局 */
+    display: grid; /* 两个页面都使�?grid 布局 */
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 15px;
-    align-content: flex-start; /* 确保内容从顶部开始排�?*/
+    align-content: flex-start; /* 确保内容从顶部开始排�?*/
     
     /* 默认隐藏 */
     opacity: 0;
@@ -9248,13 +9252,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     z-index: 1;
 }
 
-/* 移除旧的 #nai-gallery-grid 布局，因为它现在�?.nai-gallery-page 替代�?*/
+/* 移除旧的 #nai-gallery-grid 布局，因为它现在�?.nai-gallery-page 替代�?*/
 #nai-gallery-grid {
     padding: 0;
-    display: contents; /* 让旧ID失效，布局由父�?.nai-gallery-page 控制 */
+    display: contents; /* 让旧ID失效，布局由父�?.nai-gallery-page 控制 */
 }
 .nai-gallery-page.management-mode .nai-image-container {
-    position: relative; /* 关键：为伪元素提供定位锚�?*/
+    position: relative; /* 关键：为伪元素提供定位锚�?*/
 }
 
 /* 选中项的蓝色半透明遮罩 */
@@ -9268,13 +9272,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: rgba(0, 122, 255, 0.4); /* 半透明蓝色 */
     border: 3px solid #007aff; /* 蓝色实线边框 */
     box-sizing: border-box; 
-    border-radius: 8px; /* 匹配 .nai-image-container 的圆�?*/
+    border-radius: 8px; /* 匹配 .nai-image-container 的圆�?*/
     z-index: 1;
 }
 
-/* 选中项右上角的“✔”对�?*/
+/* 选中项右上角的“✔”对�?*/
 .nai-gallery-page.management-mode .nai-gallery-item.selected .nai-image-container::before {
-    content: 'OK'; /* 使用 Unicode 对勾 */
+    content: '�?; /* 使用 Unicode 对勾 */
     position: absolute;
     top: 6px;
     right: 6px;
@@ -9288,7 +9292,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
-    z-index: 2; /* 确保在遮罩之�?*/
+    z-index: 2; /* 确保在遮罩之�?*/
     border: 2px solid white; /* 白色描边，更清晰 */
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
@@ -9353,9 +9357,9 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     font-weight: 600;
 }
 
-/* 2. 确保左右两侧的按钮容器不会遮挡标�?*/
+/* 2. 确保左右两侧的按钮容器不会遮挡标�?*/
 .playlist-header > div {
-    z-index: 1; /* 保持按钮在标题的“空间”之�?*/
+    z-index: 1; /* 保持按钮在标题的“空间”之�?*/
 }
 
 /* 3. 定义我们新添加的左侧按钮容器 */
@@ -9366,11 +9370,11 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     z-index: 1;
 }
 
-/* 4. 让“管理�?“完成”按钮看起来更像一个辅助操作，而不是导�?*/
+/* 4. 让“管理�?“完成”按钮看起来更像一个辅助操作，而不是导�?*/
 .playlist-header #manage-playlist-btn {
     font-weight: 400; /* 正常字重 */
-    font-size: 15px;   /* 稍小一�?*/
-    color: var(--accent-color); /* 保持高亮�?*/
+    font-size: 15px;   /* 稍小一�?*/
+    color: var(--accent-color); /* 保持高亮�?*/
 }
 
 /* 5. （可选）修复暗黑模式下的颜色 */
@@ -9383,8 +9387,8 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 #sticker-action-bar button {
     width: auto; /* 修改：不再是100%宽度 */
-    padding: 10px 20px; /* 修改：使用内边距来自动调整宽�?*/
-    border-radius: 20px; /* 修改：改为圆角按钮，更美�?*/
+    padding: 10px 20px; /* 修改：使用内边距来自动调整宽�?*/
+    border-radius: 20px; /* 修改：改为圆角按钮，更美�?*/
     border: none;
     font-size: 16px;
     font-weight: 600;
@@ -9494,7 +9498,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-100%); /* 默认藏在上面或者隐�?*/
+    transform: translateY(-100%); /* 默认藏在上面或者隐�?*/
 }
 
 #lock-screen.active {
@@ -9540,7 +9544,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 #lock-screen.input-mode .lock-time-container {
     transform: scale(0.8) translateY(-20px);
-    opacity: 0; /* 输入密码时隐藏时�?*/
+    opacity: 0; /* 输入密码时隐藏时�?*/
     pointer-events: none;
 }
 
@@ -9650,7 +9654,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     cursor: pointer;
 }
 
-/* 底部滑动�?*/
+/* 底部滑动�?*/
 #lock-swipe-area {
     position: absolute;
     bottom: 25px; /* 调整这个值来控制离底边的距离 */
@@ -9684,9 +9688,9 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 .shake-animation {
     animation: shake 0.4s ease;
-}/* --- 聊天设置�?(Chat Settings) QQ风格重构 --- */
+}/* --- 聊天设置�?(Chat Settings) QQ风格重构 --- */
 
-/* 背景�?*/
+/* 背景�?*/
 #chat-settings-screen {
     background-color: #f2f2f7 !important; /* 浅灰底色 */
 }
@@ -9719,7 +9723,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: #1c1c1e;
 }
 
-/* 手动处理圆角，替�?overflow: hidden */
+/* 手动处理圆角，替�?overflow: hidden */
 .settings-section > .settings-item:first-child,
 .settings-section > .settings-item-block:first-child {
     border-top-left-radius: 12px;
@@ -9732,7 +9736,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     border-bottom: none; /* 去除最后一条线 */
 }
 
-/* 单行设置�?*/
+/* 单行设置�?*/
 .settings-item {
     display: flex;
     justify-content: space-between;
@@ -9757,7 +9761,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: #2c2c2e;
 }
 
-/* 块级设置�?(用于多行内容) */
+/* 块级设置�?(用于多行内容) */
 .settings-item-block {
     padding: 14px 16px;
     background-color: #fff;
@@ -9802,7 +9806,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     min-width: 0; /* 防止溢出 */
 }
 
-/* 输入框样�?(无边框，右对�? */
+/* 输入框样�?(无边框，右对�? */
 .settings-item input[type="text"],
 .settings-item input[type="number"] {
     text-align: right;
@@ -9821,7 +9825,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #ccc;
 }
 
-/* 文本域样�?*/
+/* 文本域样�?*/
 .settings-textarea {
     width: 100%;
     border: 1px solid #f0f0f0;
@@ -9848,7 +9852,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     border: 1px solid #eee;
 }
 
-/* 纯文本按�?(蓝色小字) */
+/* 纯文本按�?(蓝色小字) */
 .settings-text-btn {
     background: none;
     border: none;
@@ -9878,7 +9882,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #fff;
 }
 
-/* 下拉�?*/
+/* 下拉�?*/
 .settings-select {
     padding: 6px 20px 6px 10px;
     border-radius: 6px;
@@ -9895,7 +9899,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #fff;
 }
 
-/* 数字输入�?(�? */
+/* 数字输入�?(�? */
 .settings-num-input {
     width: 60px !important;
     text-align: center !important;
@@ -9918,14 +9922,14 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     font-weight: 500;
 }
 
-/* 头像操作�?*/
+/* 头像操作�?*/
 .avatar-action-wrapper {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-/* 背景预览�?*/
+/* 背景预览�?*/
 .settings-bg-preview {
     width: 30px;
     height: 50px;
@@ -9935,7 +9939,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     display: none; /* JS 控制显示 */
 }
 
-/* 修复多选框在设置页的样�?*/
+/* 修复多选框在设置页的样�?*/
 .settings-item-block .custom-multiselect .select-box {
     background-color: #f5f5f7;
     border: none;
@@ -9958,7 +9962,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     border: 1px solid #38383a;
 }
 
-/* 横向滚动列表 (群成�? */
+/* 横向滚动列表 (群成�? */
 .horizontal-scroll-list {
     display: flex;
     overflow-x: auto;
@@ -9968,7 +9972,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 .horizontal-scroll-list .member-editor {
     flex-shrink: 0;
 }
-/* 气泡主题选择器美�?*/
+/* 气泡主题选择器美�?*/
 .theme-selector label {
     display: inline-flex;
     align-items: center;
@@ -9985,7 +9989,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #fff;
 }
 .theme-selector label:has(input:checked) {
-    background-color: #e7f3ff; /* 选中态高�?*/
+    background-color: #e7f3ff; /* 选中态高�?*/
     color: #007bff;
     font-weight: 500;
 }
@@ -9999,23 +10003,23 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 /* --- 核心修复：强制纠正“注入心声”的布局 --- */
 #inject-thought-group {
-    display: flex !important;       /* 强制左右横向排列，覆�?JS �?block */
+    display: flex !important;       /* 强制左右横向排列，覆�?JS �?block */
     justify-content: space-between; /* 左右撑开 */
     align-items: center;            /* 垂直居中 */
 }
 
 /* 针对该选项下的文字区域，防止被压缩 */
 #inject-thought-group > div:first-child {
-    flex: 1;            /* 占据左侧所有空�?*/
-    padding-right: 10px; /* 和开关保持距�?*/
+    flex: 1;            /* 占据左侧所有空�?*/
+    padding-right: 10px; /* 和开关保持距�?*/
 }
-/* --- 头像设置栏专用样式修�?--- */
+/* --- 头像设置栏专用样式修�?--- */
 
-/* 让右侧容器占满剩余空�?*/
+/* 让右侧容器占满剩余空�?*/
 .settings-right.full-width {
     flex: 1;
     width: 100%;
-    margin-left: 15px; /* 让头像和左边标签保持一点距�?*/
+    margin-left: 15px; /* 让头像和左边标签保持一点距�?*/
 }
 
 /* 头像操作区容器：两端对齐 */
@@ -10026,16 +10030,16 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     width: 100%;
 }
 
-/* 按钮组容�?*/
+/* 按钮组容�?*/
 .avatar-btn-group {
     display: flex;
-    gap: 8px; /* 按钮之间的间�?*/
+    gap: 8px; /* 按钮之间的间�?*/
 }
 
-/* 新的实体小按钮样�?(有框框了�? */
+/* 新的实体小按钮样�?(有框框了�? */
 .settings-mini-btn {
     background-color: #f2f2f7; /* 浅灰背景 */
-    border: 1px solid #e5e5ea; /* 淡淡的边�?*/
+    border: 1px solid #e5e5ea; /* 淡淡的边�?*/
     color: #333;
     padding: 5px 12px;
     border-radius: 6px; /* 圆角 */
@@ -10062,11 +10066,11 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: #48484a;
 }
 
-/* 修复头像大小，确保不会过�?*/
+/* 修复头像大小，确保不会过�?*/
 .settings-avatar {
     width: 44px;
     height: 44px;
-    border-radius: 6px; /* 微信风格的小圆角，或�?0%变成圆形 */
+    border-radius: 6px; /* 微信风格的小圆角，或�?0%变成圆形 */
     object-fit: cover;
     border: 1px solid #eee;
     flex-shrink: 0;
@@ -10074,9 +10078,9 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 #phone-screen.dark-mode .settings-avatar {
     border-color: #333;
 }
-/* --- 1. 修复顶部空白过大的问�?--- */
+/* --- 1. 修复顶部空白过大的问�?--- */
 .settings-container {
-    /* 原来�?80px，改�?10px 即可，因�?header 已经占据了空�?*/
+    /* 原来�?80px，改�?10px 即可，因�?header 已经占据了空�?*/
     padding-top: 10px !important; 
     /* 保持底部 padding */
     padding-bottom: calc(20px + env(safe-area-inset-bottom));
@@ -10084,19 +10088,19 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 
 /* --- 2. 优化头像右侧按钮的间距和样式 --- */
 
-/* 按钮组容器：稍微缩小按钮之间的距�?*/
+/* 按钮组容器：稍微缩小按钮之间的距�?*/
 .avatar-btn-group {
     display: flex;
-    gap: 6px; /* �?8px 减小�?6px，更紧凑 */
+    gap: 6px; /* �?8px 减小�?6px，更紧凑 */
     align-items: center;
 }
 
-/* 按钮样式微调：让按钮更精�?*/
+/* 按钮样式微调：让按钮更精�?*/
 .settings-mini-btn {
-    /* 稍微减小内边距，让按钮不那么“胖�?*/
+    /* 稍微减小内边距，让按钮不那么“胖�?*/
     padding: 4px 10px !important; 
     
-    /* 字体稍微调小一点点，更显精�?*/
+    /* 字体稍微调小一点点，更显精�?*/
     font-size: 12px !important; 
     
     /* 增加一点边框颜色深度，更有质感 */
@@ -10105,7 +10109,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     /* 稍微缩小圆角 */
     border-radius: 4px !important;
     
-    /* 确保背景�?*/
+    /* 确保背景�?*/
     background-color: #fff !important;
     
     /* 确保文字颜色 */
@@ -10122,34 +10126,34 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #fff !important;
 }
 
-/* 头部样式微调：确�?Header �?内容的连接处自然 */
+/* 头部样式微调：确�?Header �?内容的连接处自然 */
 #chat-settings-screen .header {
     /* 确保头部背景色与 body 一致或为白色，去除多余阴影 */
     background-color: #f2f2f7 !important;
     border-bottom: none !important; /* 去掉分割线，看起来更像原生设置页 */
     box-shadow: none !important;
-    padding-bottom: 0 !important; /* 减小头部下方的留�?*/
+    padding-bottom: 0 !important; /* 减小头部下方的留�?*/
 }
 #phone-screen.dark-mode #chat-settings-screen .header {
     background-color: #000 !important;
 }
 .settings-mini-btn {
-    /* 强制去掉旧代码可能残留的外边距，解决间距不一致问�?*/
+    /* 强制去掉旧代码可能残留的外边距，解决间距不一致问�?*/
     margin: 0 !important; 
     
     /* 改为浅灰色背景，让按钮在白色卡片上更显眼，更有“框”的感觉 */
     background-color: #f5f5f7 !important; 
     
-    /* 稍微加深一点边�?*/
+    /* 稍微加深一点边�?*/
     border: 1px solid #e0e0e0 !important; 
     
     /* 稍微增加内边距，不那么挤 */
     padding: 6px 12px !important;
 }
 
-/* 2. 统一调整按钮之间的间�?*/
+/* 2. 统一调整按钮之间的间�?*/
 .avatar-btn-group {
-    /* 增大间距，不再“贴着�?*/
+    /* 增大间距，不再“贴着�?*/
     gap: 12px !important; 
 }
 
@@ -10160,8 +10164,8 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 /* --- 终极修复 V2：完美解决显隐冲突与布局问题 --- */
 
-/* 1. 基础布局：去�?display �?!important */
-/* 这样�?JS 设置 display: none 时，元素就能正常隐藏�?*/
+/* 1. 基础布局：去�?display �?!important */
+/* 这样�?JS 设置 display: none 时，元素就能正常隐藏�?*/
 .settings-item {
     display: flex; 
     align-items: center !important;
@@ -10170,13 +10174,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 
 /* 2. 关键拦截：当 JS 把它设为显示(block)时，强制转为 flex */
-/* 解释：JS 默认会用 display: block 来显示元素，这会导致换行�?   我们用属性选择器捕获这种情况，并强制改�?flex 布局 */
+/* 解释：JS 默认会用 display: block 来显示元素，这会导致换行�?   我们用属性选择器捕获这种情况，并强制改�?flex 布局 */
 .settings-item[style*="display: block"],
 .settings-item[style*="display:block"] {
     display: flex !important;
 }
 
-/* 3. 修复“按钮贴边”问�?(保持不变) */
+/* 3. 修复“按钮贴边”问�?(保持不变) */
 .settings-right.full-width {
     width: auto !important; 
     flex: 1; 
@@ -10195,20 +10199,20 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 /* --- 终极圆角修复方案 --- */
 
 /* 1. 全局强制卡片圆角裁剪 */
-/* 这会让所有卡片（包括时区设置那一组）的头尾自动变成圆角，无论内部是否有隐藏元�?*/
+/* 这会让所有卡片（包括时区设置那一组）的头尾自动变成圆角，无论内部是否有隐藏元�?*/
 .settings-section {
     overflow: hidden !important;
     border-radius: 12px !important;
 }
 
-/* 2. 特例豁免：只有包含“自定义多选下拉框”的卡片才允许内容溢�?*/
-/* 这是为了防止“关联世界书”或“挂载记忆”的下拉菜单被卡片边缘切�?*/
-/* 注意：时区设置使用的是原生下拉框，不�?overflow 影响，所以不需要豁�?*/
+/* 2. 特例豁免：只有包含“自定义多选下拉框”的卡片才允许内容溢�?*/
+/* 这是为了防止“关联世界书”或“挂载记忆”的下拉菜单被卡片边缘切�?*/
+/* 注意：时区设置使用的是原生下拉框，不�?overflow 影响，所以不需要豁�?*/
 .settings-section:has(.custom-multiselect) {
     overflow: visible !important;
 }
 
-/* 3. 针对上述“豁免”的卡片，手动修补首尾圆�?*/
+/* 3. 针对上述“豁免”的卡片，手动修补首尾圆�?*/
 /* 因为允许溢出了，所以必须手动给第一个和最后一个元素加圆角 */
 .settings-section:has(.custom-multiselect) > div:first-child {
     border-top-left-radius: 12px !important;
@@ -10222,38 +10226,38 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 /* --- 核心修复：给嵌套在透明容器里的“注入心声”补圆角 --- */
 
-/* 当卡片允许溢出时，如果第一个孩子是包裹容器�?   那么包裹容器里的第一�?.settings-item 必须有顶部圆�?*/
+/* 当卡片允许溢出时，如果第一个孩子是包裹容器�?   那么包裹容器里的第一�?.settings-item 必须有顶部圆�?*/
 .settings-section:has(.custom-multiselect) > div:first-child > .settings-item:first-child {
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
 }
 
-/* --- 补充修复：群聊模式下的顶部圆�?--- */
+/* --- 补充修复：群聊模式下的顶部圆�?--- */
 /* 如果第一个孩子（单聊设置）隐藏了，那么第二个孩子（群聊设置）就是视觉上的第一个，
-   它也需要圆角。CSS无法直接检�?display:none�?   所以我们直接给“群聊后台活动”也加上条件性的圆角 */
+   它也需要圆角。CSS无法直接检�?display:none�?   所以我们直接给“群聊后台活动”也加上条件性的圆角 */
 #group-background-activity-group {
-    /* 只有当它上面那个兄弟隐藏时才需要圆角，但在纯CSS里很难判断�?       这里做一个权衡：如果它是该组第一个可见元素，赋予它圆�?*/
+    /* 只有当它上面那个兄弟隐藏时才需要圆角，但在纯CSS里很难判断�?       这里做一个权衡：如果它是该组第一个可见元素，赋予它圆�?*/
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
-/* --- 修复群聊模式下“我的人设”直角问�?--- */
+/* --- 修复群聊模式下“我的人设”直角问�?--- */
 
-/* �?AI人设�?JS 设置为隐�?display: none)时，
-   紧随其后�?我的人设 必须变成顶部圆角 */
+/* �?AI人设�?JS 设置为隐�?display: none)时，
+   紧随其后�?我的人设 必须变成顶部圆角 */
 #ai-persona-group[style*="none"] + #my-persona-group {
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
 }
 
 /* --- 修复群成员管理在特殊情况下的圆角 --- */
-/* 如果群聊�?我的人设 也是隐藏的（虽然一般不会），兜底给群成员管理加圆角 */
+/* 如果群聊�?我的人设 也是隐藏的（虽然一般不会），兜底给群成员管理加圆角 */
 #my-persona-group[style*="none"] + #group-members-group {
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
 }
-/* 多选模式下的头部图标样式调�?*/
+/* 多选模式下的头部图标样式调�?*/
 #chat-interface-screen .selection-controls .header-actions {
-    gap: 8px; /* [修改] 减小图标之间的间�?(�?15px) */
+    gap: 8px; /* [修改] 减小图标之间的间�?(�?15px) */
 }
 
 #chat-interface-screen .selection-controls .action-btn {
@@ -10275,12 +10279,12 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 }
 
 #chat-interface-screen .selection-controls .action-btn svg {
-    width: 18px;  /* [修改] 减小图标宽度 (�?24px) */
-    height: 18px; /* [修改] 减小图标高度 (�?24px) */
+    width: 18px;  /* [修改] 减小图标宽度 (�?24px) */
+    height: 18px; /* [修改] 减小图标高度 (�?24px) */
     stroke-width: 2; /* 确保线条粗细适中 */
 }
 
-/* 暗黑模式适配 (保持不变，只是为了完整性列�? */
+/* 暗黑模式适配 (保持不变，只是为了完整性列�? */
 #phone-screen.dark-mode #chat-interface-screen .selection-controls .action-btn:hover {
     background-color: rgba(255,255,255,0.1);
 }
@@ -10292,13 +10296,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     padding: 6px;
     cursor: pointer;
     
-    /* 限制大小�?32px，与右侧保持一�?*/
+    /* 限制大小�?32px，与右侧保持一�?*/
     width: 32px;
     height: 32px;
     border-radius: 50%;
     transition: opacity 0.2s;
     
-    /* 确保没有额外的文字大小干�?*/
+    /* 确保没有额外的文字大小干�?*/
     font-size: 0; 
 }
 
@@ -10306,11 +10310,11 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: rgba(0,0,0,0.05);
 }
 
-/* 缩小内部�?SVG 图标 */
+/* 缩小内部�?SVG 图标 */
 #chat-interface-screen .selection-controls #selection-cancel-btn svg {
     width: 18px;
     height: 18px;
-    stroke-width: 2.5; /* 稍微加粗一点，因为图标变小�?*/
+    stroke-width: 2.5; /* 稍微加粗一点，因为图标变小�?*/
 }
 
 /* 暗黑模式适配 */
@@ -10320,13 +10324,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
 #contact-picker-screen .header #cancel-contact-picker-btn {
     font-size: 16px;       /* 将字体改回正常的 16px */
     width: auto;           /* 取消图标专用的固定宽度，让文字自然撑开 */
-    font-weight: normal;   /* 不需要太�?*/
-    padding: 0 5px;        /* 增加一点点击区�?*/
+    font-weight: normal;   /* 不需要太�?*/
+    padding: 0 5px;        /* 增加一点点击区�?*/
 }/* --- iOS Settings UI Transformation --- */
 
 /* --- iOS Settings UI Transformation --- */
 
-/* 背景�?*/
+/* 背景�?*/
 #api-settings-screen.ios-settings-screen {
     background-color: #f2f2f7 !important;
 }
@@ -10382,7 +10386,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     background-color: #1c1c1e;
 }
 
-/* 列表�?(Settings Item) */
+/* 列表�?(Settings Item) */
 .settings-item {
     display: flex;
     justify-content: space-between;
@@ -10398,13 +10402,13 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     border-bottom-color: #38383a;
 }
 
-/* 去掉每组最后一个元素的下边�?*/
+/* 去掉每组最后一个元素的下边�?*/
 .settings-section > .settings-item:last-child {
     border-bottom: none;
 }
-/* 针对隐藏的详情块 (�?ImgBB, NovelAI) */
+/* 针对隐藏的详情块 (�?ImgBB, NovelAI) */
 #novelai-details, #imgbb-settings-details, #catbox-settings-details, #github-settings-details {
-    background-color: #f9f9f9; /* 稍微深一点区分层�?*/
+    background-color: #f9f9f9; /* 稍微深一点区分层�?*/
 }
 #phone-screen.dark-mode #novelai-details, 
 #phone-screen.dark-mode #imgbb-settings-details, 
@@ -10434,7 +10438,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     min-width: 0;
 }
 
-/* 输入�?& 选择�?(无边框风�? */
+/* 输入�?& 选择�?(无边框风�? */
 .settings-item input[type="text"],
 .settings-item input[type="password"],
 .settings-item input[type="number"],
@@ -10448,20 +10452,20 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     padding: 0;
     outline: none;
 }
-/* 有值时的颜�?*/
+/* 有值时的颜�?*/
 /* --- 修复 1: 将输入框和选择框的文字颜色改为黑色 --- */
 .settings-item input:not(:placeholder-shown),
 .settings-select {
     color: #000000 !important; /* 改为黑色 */
 }
 
-/* 暗黑模式下改为白�?*/
+/* 暗黑模式下改为白�?*/
 #phone-screen.dark-mode .settings-item input:not(:placeholder-shown),
 #phone-screen.dark-mode .settings-select {
     color: #ffffff !important;
 }
 
-/* 占位符颜�?*/
+/* 占位符颜�?*/
 .settings-item input::placeholder {
     color: #c7c7cc;
 }
@@ -10484,14 +10488,14 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     width: 100%;
     background: #fff; /* 确保有背景色 */
     border: none;
-    border-top: 0.5px solid #c6c6c8; /* 分割�?*/
+    border-top: 0.5px solid #c6c6c8; /* 分割�?*/
     padding: 14px;
     font-size: 17px;
     color: #007aff;
     cursor: pointer;
-    font-weight: 400; /* iOS 按钮字体通常不需要加�?*/
-    margin: 0; /* 清除外边�?*/
-    display: block; /* 确保是块级元�?*/
+    font-weight: 400; /* iOS 按钮字体通常不需要加�?*/
+    margin: 0; /* 清除外边�?*/
+    display: block; /* 确保是块级元�?*/
 }
 
 #phone-screen.dark-mode .settings-full-btn {
@@ -10500,7 +10504,7 @@ body.minimal-chat-ui-active.chat-actions-expanded #chat-interface-screen #chat-m
     color: #0a84ff;
 }
 
-/* 如果按钮是分组里的第一个元素，去掉顶部分割�?*/
+/* 如果按钮是分组里的第一个元素，去掉顶部分割�?*/
 .settings-section .settings-full-btn:first-child {
     border-top: none;
 }
@@ -10535,7 +10539,7 @@ input[type=range] {
     align-items: center;
 }
 
-/* 小按�?(Mini Btn) */
+/* 小按�?(Mini Btn) */
 .settings-mini-btn {
     background-color: #f2f2f7;
     color: #007aff;
@@ -10550,7 +10554,7 @@ input[type=range] {
     color: #0a84ff;
 }
 
-/* 数字输入框特殊处�?*/
+/* 数字输入框特殊处�?*/
 .settings-num-input {
     max-width: 80px;
     background-color: #f2f2f7 !important;
@@ -10564,7 +10568,7 @@ input[type=range] {
     color: #fff !important;
 }
 
-/* Block Item (用于图片大小计算�? */
+/* Block Item (用于图片大小计算�? */
 .settings-item-block {
     padding: 11px 16px;
     background-color: #fff;
@@ -10572,29 +10576,29 @@ input[type=range] {
 #phone-screen.dark-mode .settings-item-block {
     background-color: #1c1c1e;
 }
-/* --- 修复 1: 下拉框对齐逻辑 (闭合右对齐，展开左对�? --- */
+/* --- 修复 1: 下拉框对齐逻辑 (闭合右对齐，展开左对�? --- */
 .settings-select {
     text-align: right !important;       /* 闭合状态：文字靠右 */
-    text-align-last: right !important;  /* 强制最后一行靠�?(针对部分浏览�? */
-    direction: ltr !important;          /* 保持从左到右的文字方�?*/
+    text-align-last: right !important;  /* 强制最后一行靠�?(针对部分浏览�? */
+    direction: ltr !important;          /* 保持从左到右的文字方�?*/
     padding-right: 24px;                /* 留出右侧空间给箭头或后面加的按钮 */
-    background-position: right center;  /* 确保原生箭头在右�?*/
+    background-position: right center;  /* 确保原生箭头在右�?*/
 }
 
-/* 展开后的选项强制左对�?*/
+/* 展开后的选项强制左对�?*/
 .settings-select option {
     text-align: left !important;
     direction: ltr !important;
 }
 
-/* --- 修复 2: 按钮改为行内简约风�?(去背�? --- */
-/* 定义一个新的行内按钮样�?*/
+/* --- 修复 2: 按钮改为行内简约风�?(去背�? --- */
+/* 定义一个新的行内按钮样�?*/
 .settings-inline-btn {
     background: none !important;     /* 去掉灰色背景 */
     border: none !important;         /* 去掉边框 */
     font-size: 15px !important;      /* 字体大小 */
     font-weight: 500 !important;
-    padding: 4px 8px !important;     /* 减小内边�?*/
+    padding: 4px 8px !important;     /* 减小内边�?*/
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -10615,27 +10619,27 @@ input[type=range] {
     margin-left: 4px;
 }
 
-/* 按钮点击�?*/
+/* 按钮点击�?*/
 .settings-inline-btn:active {
     opacity: 0.5;
 }
 
-/* 调整右侧容器，让下拉框和按钮排成一�?*/
+/* 调整右侧容器，让下拉框和按钮排成一�?*/
 .settings-right {
     gap: 2px !important; /* 减小元素间距 */
 }
-/* --- 修复 1: 截图同款“更换”按钮样�?--- */
+/* --- 修复 1: 截图同款“更换”按钮样�?--- */
 .settings-mini-btn {
     background-color: #f2f2f7 !important; /* 浅灰背景 */
-    border: 1px solid #e5e5ea !important; /* 极淡的边�?*/
+    border: 1px solid #e5e5ea !important; /* 极淡的边�?*/
     color: #007aff !important;            /* iOS 蓝色文字 */
-    border-radius: 6px !important;        /* 小圆�?*/
-    padding: 5px 12px !important;         /* 内边�?*/
+    border-radius: 6px !important;        /* 小圆�?*/
+    padding: 5px 12px !important;         /* 内边�?*/
     font-size: 13px !important;           /* 字体稍小 */
     font-weight: 500 !important;          /* 适中字重 */
     cursor: pointer;
     white-space: nowrap;                  /* 防止换行 */
-    margin-left: 8px;                     /* 与左边的输入框保持距�?*/
+    margin-left: 8px;                     /* 与左边的输入框保持距�?*/
     transition: opacity 0.2s;
 }
 
@@ -10660,24 +10664,24 @@ input[type=range] {
     background-color: #fff !important;
     border: none;
     border-top: 0.5px solid #c6c6c8 !important; /* 细分割线 */
-    padding: 14px 16px !important; /* 标准内边�?*/
+    padding: 14px 16px !important; /* 标准内边�?*/
     font-size: 17px !important;
     color: #000000 !important; /* 改为黑色 */
     font-weight: 400 !important; /* 正常字重 */
-    text-align: left !important; /* 强制左对�?*/
+    text-align: left !important; /* 强制左对�?*/
     cursor: pointer;
     margin: 0 !important;
     display: block;
     border-radius: 0 !important;
 }
 
-/* 危险按钮保持红色，但依然左对�?*/
+/* 危险按钮保持红色，但依然左对�?*/
 .settings-full-btn[style*="color: #ff3b30"],
 .settings-full-btn[style*="color:#ff3b30"] {
     color: #ff3b30 !important;
 }
 
-/* 按钮点击�?*/
+/* 按钮点击�?*/
 .settings-full-btn:active {
     background-color: #e5e5ea !important;
 }
@@ -10692,10 +10696,10 @@ input[type=range] {
     font-size: 17px;
 }
 
-/* --- 修正 3: 让预设部分的下拉框和按钮布局更紧�?--- */
+/* --- 修正 3: 让预设部分的下拉框和按钮布局更紧�?--- */
 /* 针对预设管理那一行的特殊微调 */
 #api-settings-screen .settings-item .settings-right {
-    gap: 8px !important; /* 增加一点间�?*/
+    gap: 8px !important; /* 增加一点间�?*/
 }
 
 /* 暗黑模式适配 */
@@ -10716,15 +10720,15 @@ input[type=range] {
 
 /* --- 修正 2: 列表按钮颜色统一 (强制黑色) --- */
 .settings-full-btn {
-    color: #000000 !important; /* 统一为黑�?*/
+    color: #000000 !important; /* 统一为黑�?*/
 }
 
-/* 暗黑模式下统一为白�?*/
+/* 暗黑模式下统一为白�?*/
 #phone-screen.dark-mode .settings-full-btn {
     color: #ffffff !important;
 }
-/* --- 修正 1: 按钮颜色统一为黑�?(去蓝去红) --- */
-/* 小按�?(保存、删除、压�? */
+/* --- 修正 1: 按钮颜色统一为黑�?(去蓝去红) --- */
+/* 小按�?(保存、删除、压�? */
 .settings-mini-btn {
     color: #333333 !important; /* 黑色文字 */
     background-color: #f2f2f7 !important;
@@ -10732,7 +10736,7 @@ input[type=range] {
     margin-left: 8px;
 }
 
-/* 大列表按�?(导出、导入、清�? */
+/* 大列表按�?(导出、导入、清�? */
 .settings-full-btn {
     color: #333333 !important; /* 黑色文字 */
     text-align: left !important;
@@ -10740,19 +10744,19 @@ input[type=range] {
     padding-left: 16px !important;
 }
 
-/* 暗黑模式下改为白�?*/
+/* 暗黑模式下改为白�?*/
 #phone-screen.dark-mode .settings-mini-btn,
 #phone-screen.dark-mode .settings-full-btn {
     color: #ffffff !important;
 }
 
-/* --- 修正 2: 强制清洗 JS 生成的冗余文�?--- */
-/* 隐藏 JS 生成�?"本地图片(头像/表情...):" 这串长字 */
+/* --- 修正 2: 强制清洗 JS 生成的冗余文�?--- */
+/* 隐藏 JS 生成�?"本地图片(头像/表情...):" 这串长字 */
 #total-image-size-display #image-size-label {
     display: none !important;
 }
 
-/* 只显示大小数值，并调整样�?*/
+/* 只显示大小数值，并调整样�?*/
 #total-image-size-display #image-size-value {
     font-size: 13px;
     color: #8a8a8a; /* 次要信息灰色 */
@@ -10761,7 +10765,7 @@ input[type=range] {
     text-align: left;
 }
 
-/* 移除外层容器的干扰样�?*/
+/* 移除外层容器的干扰样�?*/
 #total-image-size-display {
     background: transparent !important;
     border: none !important;
@@ -10772,22 +10776,22 @@ input[type=range] {
     align-items: flex-start !important;
 }
 
-/* --- 修正 3: 下拉框对齐调�?--- */
+/* --- 修正 3: 下拉框对齐调�?--- */
 /* 让下拉框文字紧贴左侧 */
 .settings-select {
     text-align: left !important;
     padding-left: 0 !important;
 }
-/* --- 修复 1: 暴力清除下拉框的所有间�?--- */
+/* --- 修复 1: 暴力清除下拉框的所有间�?--- */
 .settings-select {
     appearance: none !important;        /* 清除系统默认外观 */
     -webkit-appearance: none !important;
     background: transparent !important; /* 去除背景 */
     border: none !important;            /* 去除边框 */
-    padding: 0 !important;              /* 清除内边�?*/
-    margin: 0 !important;               /* 清除外边�?*/
+    padding: 0 !important;              /* 清除内边�?*/
+    margin: 0 !important;               /* 清除外边�?*/
     text-indent: 0 !important;          /* 清除首行缩进 */
-    text-align: left !important;        /* 强制左对�?*/
+    text-align: left !important;        /* 强制左对�?*/
     font-size: 17px !important;
     line-height: normal !important;
     color: #000 !important;
@@ -10799,26 +10803,26 @@ input[type=range] {
     color: #fff !important;
 }
 
-/* --- 修复 2: 数据管理行布局 (实现：标�?-----数�?[按钮]) --- */
-/* 让右侧容器里的内容紧凑排�?*/
+/* --- 修复 2: 数据管理行布局 (实现：标�?-----数�?[按钮]) --- */
+/* 让右侧容器里的内容紧凑排�?*/
 .data-row-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px; /* 数值和按钮之间的间�?*/
+    gap: 10px; /* 数值和按钮之间的间�?*/
     flex-grow: 1;
 }
 
-/* 纯净显示数值，去掉JS生成的标签文�?*/
+/* 纯净显示数值，去掉JS生成的标签文�?*/
 #total-image-size-display {
     font-size: 15px !important;
-    color: #8a8a8a !important; /* 次要信息用灰�?*/
+    color: #8a8a8a !important; /* 次要信息用灰�?*/
     background: none !important;
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
 }
-/* 隐藏�?JS 自动生成�?"本地图片(xxx):" 这种长文本，只留数字 */
+/* 隐藏�?JS 自动生成�?"本地图片(xxx):" 这种长文本，只留数字 */
 #total-image-size-display #image-size-label {
     display: none !important;
 }
@@ -10827,14 +10831,14 @@ input[type=range] {
     color: #8a8a8a !important;
 }
 #api-preset-select.settings-select {
-    text-align: left !important;       /* 强制左对�?*/
-    text-align-last: left !important;  /* 针对选中值的强制左对�?(关键) */
-    padding-left: 0 !important;        /* 去除左侧内边�?*/
+    text-align: left !important;       /* 强制左对�?*/
+    text-align-last: left !important;  /* 针对选中值的强制左对�?(关键) */
+    padding-left: 0 !important;        /* 去除左侧内边�?*/
     direction: ltr !important;         /* 从左到右排列 */
     width: 100% !important;            /* 占满容器 */
     display: block !important;
 }
-/* --- 修复: 还原灰色的说�?教程�?--- */
+/* --- 修复: 还原灰色的说�?教程�?--- */
 /* 这是一个列表项容器，确保它在白色卡片内占位 */
 .settings-tip-wrapper {
     padding: 10px 16px;
@@ -10849,7 +10853,7 @@ input[type=range] {
     font-size: 13px;
     padding: 10px;
     border-radius: 8px;        /* 圆角 */
-    line-height: 1.5;          /* 行高，易�?*/
+    line-height: 1.5;          /* 行高，易�?*/
 }
 /* 强调文字 (红色警告) */
 .settings-tip-content strong {
@@ -10872,19 +10876,19 @@ input[type=range] {
     color: #aeaeb2;
 }
 /* ============================================================
-   【独立修复】聊天详情页下拉�?(不影�?API 设置�?
+   【独立修复】聊天详情页下拉�?(不影�?API 设置�?
    ============================================================ */
 
-/* 1. 将选择器限定在 #chat-settings-screen �?*/
+/* 1. 将选择器限定在 #chat-settings-screen �?*/
 #chat-settings-screen .settings-select {
-    /* 恢复灰色背景�?*/
+    /* 恢复灰色背景�?*/
     background-color: #f2f2f7 !important;
     
-    /* 加回边框和圆角，让它看起来像个按�?*/
+    /* 加回边框和圆角，让它看起来像个按�?*/
     border: 1px solid #e5e5ea !important;
     border-radius: 6px !important;
     
-    /* 调整内边距：上下 6px 保证高度与旁边的“更换”按钮一�?*/
+    /* 调整内边距：上下 6px 保证高度与旁边的“更换”按钮一�?*/
     padding: 6px 25px 6px 12px !important; 
     
     /* 恢复黑色文字 */
@@ -10894,7 +10898,7 @@ input[type=range] {
     text-align: left !important;
     text-align-last: left !important;
     
-    /* 添加一个小箭头图标，让它看起来更像下拉�?*/
+    /* 添加一个小箭头图标，让它看起来更像下拉�?*/
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a8a8a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
     background-position: right 8px center !important;
@@ -10921,7 +10925,7 @@ input[type=range] {
     border-color: #48484a !important;
     color: #fff !important;
     
-    /* 暗黑模式下箭头变白一�?*/
+    /* 暗黑模式下箭头变白一�?*/
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
 }
 #ai-avatar-group,
@@ -10941,7 +10945,7 @@ input[type=range] {
     padding-bottom: 12px !important;
 }
 
-/* 修正下方内容区域的边�?*/
+/* 修正下方内容区域的边�?*/
 #ai-avatar-group .settings-right,
 #group-avatar-group .settings-right,
 #my-avatar-group .settings-right {
@@ -10952,7 +10956,7 @@ input[type=range] {
     width: 100% !important;
 }
 
-/* 确保头像操作区两端对�?(头像在左，按钮在�? */
+/* 确保头像操作区两端对�?(头像在左，按钮在�? */
 #ai-avatar-group .avatar-action-wrapper,
 #group-avatar-group .avatar-action-wrapper,
 #my-avatar-group .avatar-action-wrapper {
@@ -10975,7 +10979,7 @@ input[type=range] {
     background-color: rgba(0,0,0,0.1);
 }
 
-/* 2. 当窗口全屏时，切换按钮内的图�?*/
+/* 2. 当窗口全屏时，切换按钮内的图�?*/
 #reading-window.fullscreen #toggle-reading-fullscreen-btn .icon-maximize {
     display: none;
 }
@@ -11001,20 +11005,20 @@ input[type=range] {
     align-items: stretch;
     justify-content: stretch;
 }
-/* --- “一起读书”全屏功能样�?优化�?--- */
+/* --- “一起读书”全屏功能样�?优化�?--- */
 
-/* 1. 修复头部布局，防止标题过长把按钮挤下�?*/
+/* 1. 修复头部布局，防止标题过长把按钮挤下�?*/
 .reading-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px; /* 标题和按钮组之间的间�?*/
-    flex-wrap: nowrap; /* 强制不换�?*/
+    gap: 10px; /* 标题和按钮组之间的间�?*/
+    flex-wrap: nowrap; /* 强制不换�?*/
 }
 
 #reading-title {
     flex: 1; /* 占据可用空间 */
-    min-width: 0; /* 允许被压�?*/
+    min-width: 0; /* 允许被压�?*/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; /* 标题过长时显示省略号 */
@@ -11043,7 +11047,7 @@ input[type=range] {
     background-color: rgba(0,0,0,0.1);
 }
 
-/* 3. 当窗口全屏时，切换按钮内的图标显�?*/
+/* 3. 当窗口全屏时，切换按钮内的图标显�?*/
 #reading-window.fullscreen #toggle-reading-fullscreen-btn .icon-maximize {
     display: none;
 }
@@ -11051,7 +11055,7 @@ input[type=range] {
     display: block;
 }
 
-/* 4. 窗口全屏时的核心样式 (与上次相�? */
+/* 4. 窗口全屏时的核心样式 (与上次相�? */
 #reading-window.fullscreen {
     width: 100%;
     height: 100%;
@@ -11064,16 +11068,16 @@ input[type=range] {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 5. 遮罩层在全屏时的样式 (与上次相�? */
+/* 5. 遮罩层在全屏时的样式 (与上次相�? */
 #reading-overlay.fullscreen-active {
     align-items: stretch;
     justify-content: stretch;
 }/* =========================================== */
-/* ▼▼�?阅读模式全屏/头部修复补丁 ▼▼�?*/
+/* ▼▼�?阅读模式全屏/头部修复补丁 ▼▼�?*/
 /* =========================================== */
 
 /* 1. 修复全屏状态下的图标切换逻辑 */
-/* 默认状态：显示最大化图标，隐藏还原图�?*/
+/* 默认状态：显示最大化图标，隐藏还原图�?*/
 #toggle-reading-fullscreen-btn .icon-maximize {
     display: block !important;
 }
@@ -11081,7 +11085,7 @@ input[type=range] {
     display: none !important;
 }
 
-/* 全屏状态：隐藏最大化图标，显示还原图�?*/
+/* 全屏状态：隐藏最大化图标，显示还原图�?*/
 #reading-window.fullscreen #toggle-reading-fullscreen-btn .icon-maximize {
     display: none !important;
 }
@@ -11089,9 +11093,9 @@ input[type=range] {
     display: block !important;
 }
 
-/* 2. 修复全屏时的头部布局与间�?(解决重叠问题) */
+/* 2. 修复全屏时的头部布局与间�?(解决重叠问题) */
 #reading-window.fullscreen .reading-header {
-    /* 【核心修复】增加顶部内边距�?       45px 是避让状态栏的基础高度�?       env(safe-area-inset-top) 是适配刘海�?灵动�?    */
+    /* 【核心修复】增加顶部内边距�?       45px 是避让状态栏的基础高度�?       env(safe-area-inset-top) 是适配刘海�?灵动�?    */
     padding-top: calc(45px + env(safe-area-inset-top)) !important;
     padding-bottom: 15px !important;
     padding-left: 20px !important;
@@ -11101,9 +11105,9 @@ input[type=range] {
     height: auto !important;
     min-height: 80px !important; /* 保证有足够的高度 */
 
-    /* 修复背景色：全屏时必须有不透明背景，否则内容会透出�?*/
+    /* 修复背景色：全屏时必须有不透明背景，否则内容会透出�?*/
     background-color: #fff !important; 
-    /* 加上底部边框�?*/
+    /* 加上底部边框�?*/
     border-bottom: 1px solid var(--border-color) !important;
     
     /* 确保头部在最上层 */
@@ -11119,18 +11123,18 @@ input[type=range] {
 
 /* 3. 暗黑模式适配 */
 #phone-screen.dark-mode #reading-window.fullscreen .reading-header {
-    background-color: #1c1c1e !important; /* 暗黑模式背景�?*/
+    background-color: #1c1c1e !important; /* 暗黑模式背景�?*/
     border-bottom-color: #38383a !important;
 }
 
-/* 4. 修复全屏时的内容区域，防止被加高的头部遮�?*/
+/* 4. 修复全屏时的内容区域，防止被加高的头部遮�?*/
 #reading-window.fullscreen #reading-content {
-    /* 给内容顶部增加更多的内边距，因为头部变高�?*/
+    /* 给内容顶部增加更多的内边距，因为头部变高�?*/
     padding-top: calc(100px + env(safe-area-inset-top)) !important;
 }
-/* --- iOS 风格通用化适配 (适配外观设置�? --- */
+/* --- iOS 风格通用化适配 (适配外观设置�? --- */
 
-/* 让两个页面都使用 iOS 背景�?*/
+/* 让两个页面都使用 iOS 背景�?*/
 #api-settings-screen.ios-settings-screen,
 #wallpaper-screen {
     background-color: #f2f2f7 !important;
@@ -11150,7 +11154,7 @@ input[type=range] {
     background-color: #000 !important;
 }
 
-/* 确保外观设置页使用滚动容器样�?*/
+/* 确保外观设置页使用滚动容器样�?*/
 #wallpaper-screen .settings-container {
     padding: 10px 16px;
     padding-bottom: calc(20px + env(safe-area-inset-bottom));
@@ -11158,7 +11162,7 @@ input[type=range] {
     overflow-y: auto;
 }
 
-/* 壁纸预览图样式优�?(小图模式) */
+/* 壁纸预览图样式优�?(小图模式) */
 .wallpaper-thumbnail {
     width: 40px;
     height: 70px; /* 9:16 比例 */
@@ -11182,13 +11186,13 @@ input[type=range] {
     border-color: #3a3a3c;
 }
 
-/* 按钮组微�?*/
+/* 按钮组微�?*/
 .action-btn-group {
     display: flex;
     gap: 6px;
 }
 
-/* 隐藏�?Input 保持隐藏 */
+/* 隐藏�?Input 保持隐藏 */
 .hidden-input {
     display: none !important;
 }
@@ -11216,7 +11220,7 @@ input[type=range] {
 
 /* 拖拽排序区域适配 */
 #button-order-editor {
-    background-color: transparent !important; /* 移除原有的灰色背�?*/
+    background-color: transparent !important; /* 移除原有的灰色背�?*/
     border: none !important;
     padding: 0 !important;
     display: flex;
@@ -11262,7 +11266,7 @@ input[type=range] {
     background-color: #2c2c2e;
     color: #fff;
 }
-/* --- 修复：壁纸预览图样式 (带强制覆�? --- */
+/* --- 修复：壁纸预览图样式 (带强制覆�? --- */
 .wallpaper-thumbnail {
     /* 使用 !important 强制覆盖旧的 #wallpaper-preview 样式 */
     width: 40px !important;
@@ -11286,7 +11290,7 @@ input[type=range] {
     overflow: hidden;
     text-align: center;
     line-height: 1.2;
-    flex-shrink: 0; /* 防止被挤�?*/
+    flex-shrink: 0; /* 防止被挤�?*/
 }
 
 /* 暗黑模式适配 */
@@ -11305,7 +11309,7 @@ input[type=range] {
 
 .weather-input {
     flex: 1; /* 让输入框平分宽度 */
-    background-color: #f2f2f7; /* 与原生输入框背景一�?*/
+    background-color: #f2f2f7; /* 与原生输入框背景一�?*/
     border: none;
     border-radius: 6px;
     padding: 8px 10px;
@@ -11319,7 +11323,7 @@ input[type=range] {
     font-size: 12px;
     color: #8a8a8a;
     margin-top: 6px;
-    text-align: left; /* 左对齐看起来更整�?*/
+    text-align: left; /* 左对齐看起来更整�?*/
     padding-left: 2px;
 }
 
@@ -11331,7 +11335,7 @@ input[type=range] {
 /* --- 主屏幕第二页布局调整 --- */
 #page-2-app-container {
     display: grid;
-    grid-template-columns: 155px 1fr; /* 保持原来的列宽比�?*/
+    grid-template-columns: 155px 1fr; /* 保持原来的列宽比�?*/
     gap: 15px;
     width: 100%;
     padding-top: 20px;
@@ -11341,7 +11345,7 @@ input[type=range] {
 .left-column-stack {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* 组件和下方App的间�?*/
+    gap: 15px; /* 组件和下方App的间�?*/
 }
 
 .left-app-grid {
@@ -11351,7 +11355,7 @@ input[type=range] {
     justify-items: center;
 }
 
-/* 支付宝图标专用样�?*/
+/* 支付宝图标专用样�?*/
 .alipay-icon-bg {
     background-color: #1677ff; /* 支付宝蓝 */
     display: flex;
@@ -11364,7 +11368,7 @@ input[type=range] {
     object-fit: contain;
 }
 
-/* --- 支付�?App 界面样式 --- */
+/* --- 支付�?App 界面样式 --- */
 #alipay-screen {
     background-color: #f5f5f5;
     display: flex;
@@ -11394,7 +11398,7 @@ input[type=range] {
 .alipay-header-area {
     background-color: var(--alipay-primary);
     color: var(--alipay-text);
-    padding-bottom: 60px; /* 为卡片留出空�?*/
+    padding-bottom: 60px; /* 为卡片留出空�?*/
     padding-top: calc(50px + env(safe-area-inset-top));
     transition: background-color 0.5s;
 }
@@ -11473,7 +11477,7 @@ input[type=range] {
     font-size: 16px;
 }
 
-/* 账单列表�?*/
+/* 账单列表�?*/
 .bill-item {
     display: flex;
     justify-content: space-between;
@@ -11500,7 +11504,7 @@ input[type=range] {
 #alipay-screen.theme-blackgold .bill-amount.expense { color: #e0e0e0; }
 #alipay-screen.theme-blackgold .bill-amount.income { color: #ff4d4f; }
 .kinship-invite-card {
-    width: 250px; /* 稍微加宽一�?*/
+    width: 250px; /* 稍微加宽一�?*/
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -11509,9 +11513,9 @@ input[type=range] {
     border: none; /* 去掉默认边框 */
 }
 
-/* 头部：渐变背�?+ 装饰 */
+/* 头部：渐变背�?+ 装饰 */
 .kinship-invite-header {
-    background: linear-gradient(135deg, #FF6B6B, #EE0979); /* 更加现代的红粉渐�?*/
+    background: linear-gradient(135deg, #FF6B6B, #EE0979); /* 更加现代的红粉渐�?*/
     padding: 20px 15px;
     color: white;
     text-align: center;
@@ -11519,7 +11523,7 @@ input[type=range] {
     overflow: hidden;
 }
 
-/* 头部背景装饰圆圈（纯CSS画的�?*/
+/* 头部背景装饰圆圈（纯CSS画的�?*/
 .kinship-invite-header::before {
     content: '';
     position: absolute;
@@ -11557,7 +11561,7 @@ input[type=range] {
     z-index: 2;
 }
 
-/* 主体内容：金额显�?*/
+/* 主体内容：金额显�?*/
 .kinship-invite-body {
     padding: 25px 15px;
     text-align: center;
@@ -11573,13 +11577,13 @@ input[type=range] {
 .kinship-limit-amount {
     font-size: 36px;
     font-weight: 700;
-    color: #333; /* 改为深色，更有金融质�?*/
-    font-family: "DIN Alternate", "Roboto", sans-serif; /* 如果系统支持，数字会更好�?*/
+    color: #333; /* 改为深色，更有金融质�?*/
+    font-family: "DIN Alternate", "Roboto", sans-serif; /* 如果系统支持，数字会更好�?*/
     line-height: 1;
 }
 
 .kinship-limit-amount::first-letter {
-    font-size: 20px; /* 货币符号稍微小一�?*/
+    font-size: 20px; /* 货币符号稍微小一�?*/
     margin-right: 2px;
     font-weight: 500;
 }
@@ -11588,7 +11592,7 @@ input[type=range] {
 .kinship-status {
     font-size: 12px;
     padding: 12px 15px;
-    background: #F9F9F9; /* 很浅的灰�?*/
+    background: #F9F9F9; /* 很浅的灰�?*/
     color: #999;
     text-align: left; /* 左对齐看起来更像系统单据 */
     border-top: 1px solid #eee;
@@ -11597,7 +11601,7 @@ input[type=range] {
     gap: 6px;
 }
 
-/* 状态点 (可�? */
+/* 状态点 (可�? */
 .kinship-status::before {
     content: '';
     display: inline-block;
@@ -11618,7 +11622,7 @@ input[type=range] {
     background: transparent !important;
     box-shadow: none;
 }
-/* --- 支付宝钱包页面的亲属卡列表样�?(补回) --- */
+/* --- 支付宝钱包页面的亲属卡列表样�?(补回) --- */
 .kinship-card-entry {
     background: linear-gradient(135deg, #ff5252, #ff1744);
     border-radius: 12px;
@@ -11694,7 +11698,7 @@ input[type=range] {
     padding: 2px 8px;
     border-radius: 12px;
     cursor: pointer;
-    z-index: 10; /* 保证点得�?*/
+    z-index: 10; /* 保证点得�?*/
     transition: background 0.2s;
 }
 
@@ -11703,7 +11707,7 @@ input[type=range] {
 }
 /* --- 支付宝黑金模式适配补丁 --- */
 
-/* 暂无亲属卡的空状态样�?*/
+/* 暂无亲属卡的空状态样�?*/
 .kinship-empty-state {
     text-align: center; 
     padding: 20px; 
@@ -11714,7 +11718,7 @@ input[type=range] {
     transition: all 0.3s;
 }
 
-/* 黑金模式下的空状�?*/
+/* 黑金模式下的空状�?*/
 .theme-blackgold .kinship-empty-state {
     background: rgba(255, 255, 255, 0.1) !important; /* 半透明深色 */
     color: #d4af37 !important; /* 金色文字 */
@@ -11730,7 +11734,7 @@ input[type=range] {
 .theme-blackgold #alipay-kinship-section span {
     color: #d4af37 !important; /* 标题变金 */
 }
-/* --- 支付收银台弹窗美�?--- */
+/* --- 支付收银台弹窗美�?--- */
 
 /* 1. 弹窗内的按钮容器 */
 #custom-modal .custom-modal-footer {
@@ -11763,7 +11767,7 @@ input[type=range] {
     background-color: #f9f9f9 !important;
 }
 
-/* 最后一项去掉边�?*/
+/* 最后一项去掉边�?*/
 .payment-option-item:last-child {
     border-bottom: none !important;
 }
@@ -11801,7 +11805,7 @@ input[type=range] {
     color: #999;
 }
 
-/* 余额不足时的样式 (可�? */
+/* 余额不足时的样式 (可�? */
 .payment-option-item.disabled {
     opacity: 0.6;
     pointer-events: none;
@@ -11829,7 +11833,7 @@ input[type=range] {
     width: 100%; 
     box-sizing: border-box;
     
-    /* 隐藏滚动�?*/
+    /* 隐藏滚动�?*/
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; 
 }
@@ -11839,7 +11843,7 @@ input[type=range] {
 
 /* 2. 单卡样式优化 */
 .kinship-card-entry {
-    /* 核心修改：使�?flex-shrink: 0 防止被挤�?*/
+    /* 核心修改：使�?flex-shrink: 0 防止被挤�?*/
     flex-shrink: 0;
     
     /* 核心修改：宽度逻辑 */
@@ -11856,7 +11860,7 @@ input[type=range] {
 }
 
 
-/* 1. 修复亲属卡宽度问�?*/
+/* 1. 修复亲属卡宽度问�?*/
 /* 逻辑：如果列表里只有一张卡，强制占满容器宽度，和余额卡对齐 */
 #alipay-kinship-section:has(.kinship-card-entry:only-child) .kinship-card-entry {
     width: 100% !important;
@@ -11867,14 +11871,14 @@ input[type=range] {
 
 /* 确保容器本身的内边距不会导致对齐偏差 */
 #alipay-kinship-section {
-    padding-left: 0 !important; /* 移除左边距，依靠父容器对�?*/
+    padding-left: 0 !important; /* 移除左边距，依靠父容器对�?*/
     padding-right: 0 !important;
 }
 
-/* 2. 修复支付宝图标不铺满的问�?*/
+/* 2. 修复支付宝图标不铺满的问�?*/
 /* 去掉原本给支付宝特意留的边距，让图片强制撑满 */
 .alipay-icon-bg {
-    padding: 0 !important; /* 去掉内边�?*/
+    padding: 0 !important; /* 去掉内边�?*/
     display: block !important; /* 确保是块级布局 */
 }
 
@@ -11882,11 +11886,11 @@ input[type=range] {
     width: 100% !important;  /* 宽度撑满 */
     height: 100% !important; /* 高度撑满 */
     object-fit: cover !important; /* 裁剪以铺满，不留白边 */
-    border-radius: inherit !important; /* 继承父级的圆�?*/
+    border-radius: inherit !important; /* 继承父级的圆�?*/
     margin: 0 !important;
 }
 
-/* 4. 空状态优�?*/
+/* 4. 空状态优�?*/
 .kinship-empty-state {
     width: 100%;
     flex-shrink: 0;
@@ -11898,29 +11902,29 @@ input[type=range] {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 #alipay-kinship-section:has(.kinship-card-entry:only-child) {
-    display: block !important;        /* 关键：取�?Flex */
-    overflow: visible !important;     /* 关键：不需要滚�?*/
+    display: block !important;        /* 关键：取�?Flex */
+    overflow: visible !important;     /* 关键：不需要滚�?*/
     white-space: normal !important;
     padding-right: 5px !important;    /* 保持一点右边距美观 */
 }
 
 /* 2. 针对只有一张卡的情况：卡片样式重置 */
 #alipay-kinship-section:has(.kinship-card-entry:only-child) .kinship-card-entry {
-    width: auto !important;           /* 关键：自动宽�?(Block布局下等于占�? */
+    width: auto !important;           /* 关键：自动宽�?(Block布局下等于占�? */
     max-width: 100% !important;       /* 双重保险：绝不超过父容器 */
-    min-width: 0 !important;          /* 清除之前设置�?260px 最小宽�?*/
+    min-width: 0 !important;          /* 清除之前设置�?260px 最小宽�?*/
     margin: 0 !important;             /* 清除边距 */
-    flex: none !important;            /* 禁用 flex 属�?*/
-    transform: none !important;       /* 防止变换导致的位置偏�?*/
+    flex: none !important;            /* 禁用 flex 属�?*/
+    transform: none !important;       /* 防止变换导致的位置偏�?*/
 }
 
-/* 3. 确保多张卡片时（Flex布局）依然正�?*/
+/* 3. 确保多张卡片时（Flex布局）依然正�?*/
 #alipay-kinship-section {
     /* 这里保持之前的设置，确保多张卡时横向滚动 */
     box-sizing: border-box; 
 }
 
-/* 4. 再次确保图标铺满 (以防被覆�? */
+/* 4. 再次确保图标铺满 (以防被覆�? */
 .alipay-icon-bg {
     padding: 0 !important;
     display: block !important;
@@ -11953,7 +11957,7 @@ input[type=range] {
     z-index: 10;
 }
 
-/* 日期选择器美�?*/
+/* 日期选择器美�?*/
 .bill-date-picker-wrapper {
     position: relative;
     display: flex;
@@ -11992,7 +11996,7 @@ input[type=range] {
     color: #1677ff; /* 支付宝蓝 */
     font-weight: 600;
 }
-/* 黑金模式下的选中�?*/
+/* 黑金模式下的选中�?*/
 .theme-blackgold .bill-type-tab.active {
     color: #d4af37;
 }
@@ -12017,7 +12021,7 @@ input[type=range] {
     background-color: #fff;
 }
 
-/* 列表月份分割�?*/
+/* 列表月份分割�?*/
 .bill-month-separator {
     padding: 15px 0 5px 0;
     font-size: 13px;
@@ -12038,7 +12042,7 @@ input[type=range] {
 .bill-loading-more.hidden {
     display: none;
 }
-/* 1. 容器与背景变�?*/
+/* 1. 容器与背景变�?*/
 #alipay-screen.theme-blackgold .alipay-bill-container,
 #alipay-screen.theme-blackgold .bill-filter-header,
 #alipay-screen.theme-blackgold #bill-scroll-list {
@@ -12051,7 +12055,7 @@ input[type=range] {
     border-bottom: 1px solid #2c2c2e;
 }
 
-/* 3. 日期选择器美�?*/
+/* 3. 日期选择器美�?*/
 #alipay-screen.theme-blackgold .bill-date-picker-wrapper {
     background-color: #2c2c2e !important; /* 比背景稍亮的灰色 */
     border: 1px solid #444;
@@ -12073,7 +12077,7 @@ input[type=range] {
 
 /* 5. 列表内容适配 */
 #alipay-screen.theme-blackgold .bill-month-separator {
-    background-color: #121212 !important; /* 与背景同�?*/
+    background-color: #121212 !important; /* 与背景同�?*/
     color: #d4af37 !important; /* 月份标题变金 */
 }
 
@@ -12096,7 +12100,7 @@ input[type=range] {
     color: #ffffff !important;
 }
 
-/* 收入金额 (原本是红色，现在变金或者淡红，这里选金色呼应主�? */
+/* 收入金额 (原本是红色，现在变金或者淡红，这里选金色呼应主�? */
 #alipay-screen.theme-blackgold .bill-amount.income {
     color: #d4af37 !important; 
 }
@@ -12106,7 +12110,7 @@ input[type=range] {
     color: #666 !important;
 }
 
-/* 如果列表为空的提示文�?*/
+/* 如果列表为空的提示文�?*/
 #alipay-screen.theme-blackgold .bill-empty-msg {
     color: #666 !important;
 }
@@ -12114,10 +12118,10 @@ input[type=range] {
     border-radius: 5px 5px 0 0 !important;
 }
 
-/* 2. 让筛选栏头部也拥有圆角，与容器贴�?*/
+/* 2. 让筛选栏头部也拥有圆角，与容器贴�?*/
 .bill-filter-header {
     border-radius: 5px 5px 0 0;
-    /* 稍微增加一点左侧内边距，让文字离边缘远一�?*/
+    /* 稍微增加一点左侧内边距，让文字离边缘远一�?*/
     padding-left: 20px !important; 
 }
 
@@ -12193,17 +12197,17 @@ input[type=range] {
 #alipay-screen.theme-blackgold #fund-market-trend-preview {
     color: #d4af37 !important;
 }
-/* --- 支付宝布局修复：确保账单不被挤�?--- */
+/* --- 支付宝布局修复：确保账单不被挤�?--- */
 #alipay-screen {
     display: flex;
     flex-direction: column;
     height: 100%; /* 强制占满屏幕 */
-    overflow: hidden; /* 禁止整个屏幕滚动，只让内部区域滚�?*/
+    overflow: hidden; /* 禁止整个屏幕滚动，只让内部区域滚�?*/
 }
 
-/* 头部区域 (包含蓝色背景、余额、亲属卡、基金入�? */
+/* 头部区域 (包含蓝色背景、余额、亲属卡、基金入�? */
 .alipay-header-area {
-    flex-shrink: 0; /* 禁止头部被压�?*/
+    flex-shrink: 0; /* 禁止头部被压�?*/
     background-color: var(--alipay-primary);
     /* 注意：这里去掉了 padding-bottom，由内容撑开 */
     padding-bottom: 20px; 
@@ -12216,16 +12220,16 @@ input[type=range] {
     padding: 0 15px;
 }
 
-/* --- 基金入口样式优化 (更紧�? --- */
+/* --- 基金入口样式优化 (更紧�? --- */
 .alipay-grid-menu {
     padding: 0 15px;
-    margin-top: 10px;     /* 与上方卡片保持距�?*/
-    margin-bottom: 10px;  /* 与下方账单保持距�?*/
+    margin-top: 10px;     /* 与上方卡片保持距�?*/
+    margin-bottom: 10px;  /* 与下方账单保持距�?*/
 }
 
 .alipay-menu-item {
     background: white;
-    padding: 12px 15px;   /* 减小内边距，更扁�?*/
+    padding: 12px 15px;   /* 减小内边距，更扁�?*/
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -12233,7 +12237,7 @@ input[type=range] {
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
     cursor: pointer;
     transition: all 0.3s;
-    border: 1px solid transparent; /* 预留边框�?*/
+    border: 1px solid transparent; /* 预留边框�?*/
 }
 
 .alipay-menu-item:active {
@@ -12273,9 +12277,9 @@ input[type=range] {
     font-weight: 300;
 }
 
-/* --- 账单容器自适应 (关键�? --- */
+/* --- 账单容器自适应 (关键�? --- */
 .alipay-bill-container {
-    flex-grow: 1;  /* 占据剩余所有空�?*/
+    flex-grow: 1;  /* 占据剩余所有空�?*/
     min-height: 0; /* 允许 Flex 子元素收缩，防止溢出 */
     margin-top: 0; /* 紧贴上方 */
     background-color: var(--alipay-bill-bg);
@@ -12296,17 +12300,17 @@ input[type=range] {
 }
 
 
-/* --- 支付宝布局修复：确保账单不被挤�?--- */
+/* --- 支付宝布局修复：确保账单不被挤�?--- */
 #alipay-screen {
     display: flex;
     flex-direction: column;
     height: 100%; /* 强制占满屏幕 */
-    overflow: hidden; /* 禁止整个屏幕滚动，只让内部区域滚�?*/
+    overflow: hidden; /* 禁止整个屏幕滚动，只让内部区域滚�?*/
 }
 
-/* 头部区域 (包含蓝色背景、余额、亲属卡、基金入�? */
+/* 头部区域 (包含蓝色背景、余额、亲属卡、基金入�? */
 .alipay-header-area {
-    flex-shrink: 0; /* 禁止头部被压�?*/
+    flex-shrink: 0; /* 禁止头部被压�?*/
     background-color: var(--alipay-primary);
     /* 注意：这里去掉了 padding-bottom，由内容撑开 */
     padding-bottom: 20px; 
@@ -12319,16 +12323,16 @@ input[type=range] {
     padding: 0 15px;
 }
 
-/* --- 基金入口样式优化 (更紧�? --- */
+/* --- 基金入口样式优化 (更紧�? --- */
 .alipay-grid-menu {
     padding: 0 15px;
-    margin-top: 10px;     /* 与上方卡片保持距�?*/
-    margin-bottom: 10px;  /* 与下方账单保持距�?*/
+    margin-top: 10px;     /* 与上方卡片保持距�?*/
+    margin-bottom: 10px;  /* 与下方账单保持距�?*/
 }
 
 .alipay-menu-item {
     background: white;
-    padding: 12px 15px;   /* 减小内边距，更扁�?*/
+    padding: 12px 15px;   /* 减小内边距，更扁�?*/
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -12336,7 +12340,7 @@ input[type=range] {
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
     cursor: pointer;
     transition: all 0.3s;
-    border: 1px solid transparent; /* 预留边框�?*/
+    border: 1px solid transparent; /* 预留边框�?*/
 }
 
 .alipay-menu-item:active {
@@ -12376,9 +12380,9 @@ input[type=range] {
     font-weight: 300;
 }
 
-/* --- 账单容器自适应 (关键�? --- */
+/* --- 账单容器自适应 (关键�? --- */
 .alipay-bill-container {
-    flex-grow: 1;  /* 占据剩余所有空�?*/
+    flex-grow: 1;  /* 占据剩余所有空�?*/
     min-height: 0; /* 允许 Flex 子元素收缩，防止溢出 */
     margin-top: 0; /* 紧贴上方 */
     background-color: var(--alipay-bill-bg);
@@ -12400,7 +12404,7 @@ input[type=range] {
 
 
 
-/* 1. 基金入口黑金�?*/
+/* 1. 基金入口黑金�?*/
 #alipay-screen.theme-blackgold .alipay-menu-item {
     background-color: #1c1c1e; /* 深色背景 */
     border: 1px solid #333;    /* 微弱边框 */
@@ -12413,7 +12417,7 @@ input[type=range] {
 }
 
 #alipay-screen.theme-blackgold .menu-title {
-    color: #e0e0e0; /* 标题变白/�?*/
+    color: #e0e0e0; /* 标题变白/�?*/
 }
 
 #alipay-screen.theme-blackgold .menu-trend {
@@ -12424,7 +12428,7 @@ input[type=range] {
     color: #666;
 }
 
-/* 2. 账单区域黑金化完�?*/
+/* 2. 账单区域黑金化完�?*/
 #alipay-screen.theme-blackgold .alipay-bill-container {
     background-color: #000000; /* 账单背景全黑 */
     border-top: 1px solid #222;
@@ -12446,18 +12450,18 @@ input[type=range] {
 .fund-asset-card {
     background-color: #1677ff;
     color: white;
-    padding: 10px 20px 40px 20px; /* 增加底部内边�?*/
-    margin-bottom: -20px; /* 让下方列表上浮覆�?*/
+    padding: 10px 20px 40px 20px; /* 增加底部内边�?*/
+    margin-bottom: -20px; /* 让下方列表上浮覆�?*/
     transition: background-color 0.5s;
 }
 
-/* 2. 黑金模式适配 (�?fund-screen 拥有 .theme-blackgold 类时) */
+/* 2. 黑金模式适配 (�?fund-screen 拥有 .theme-blackgold 类时) */
 #fund-screen.theme-blackgold {
     background-color: #121212 !important;
 }
 
 #fund-screen.theme-blackgold .fund-header-area {
-    background-color: #1a1a1a; /* 头部变深�?*/
+    background-color: #1a1a1a; /* 头部变深�?*/
     color: #d4af37; /* 金色文字 */
 }
 
@@ -12504,14 +12508,14 @@ input[type=range] {
     color: #d4af37 !important;
 }
 
-/* 黑金模式下，添加按钮也变�?*/
+/* 黑金模式下，添加按钮也变�?*/
 #alipay-screen.theme-blackgold #add-kinship-btn {
     color: #d4af37 !important;
 }
 
 
 /* ============================================================ */
-/* ▼▼�?终极修复：消息长按菜�?(还原九宫�?+ 自动填满) ▼▼�?*/
+/* ▼▼�?终极修复：消息长按菜�?(还原九宫�?+ 自动填满) ▼▼�?*/
 /* ============================================================ */
 
 /* 1. 容器布局：横向排列，允许换行，按钮之间有间隙 */
@@ -12529,9 +12533,9 @@ input[type=range] {
 
 /* 2. 功能按钮：灰色方块，自动填满 */
 #message-actions-modal .custom-modal-footer button:not(#cancel-message-action-btn) {
-    /* 基础宽度：约一半减去间�?*/
+    /* 基础宽度：约一半减去间�?*/
     width: 48% !important;
-    /* 【关键修复】：允许按钮自动拉伸！这样如果是奇数个，最后一个会自动占满一�?*/
+    /* 【关键修复】：允许按钮自动拉伸！这样如果是奇数个，最后一个会自动占满一�?*/
     flex-grow: 1 !important; 
     
     /* 【关键修复】：移除 display: ... !important，让 JS 的隐藏逻辑生效 */
@@ -12554,7 +12558,7 @@ input[type=range] {
     border-bottom: none !important;
 }
 
-/* 3. 强制隐藏�?JS 设置为隐藏的按钮 (解决单聊显示群聊按钮的问�? */
+/* 3. 强制隐藏�?JS 设置为隐藏的按钮 (解决单聊显示群聊按钮的问�? */
 #message-actions-modal .custom-modal-footer button[style*="display: none"] {
     display: none !important;
 }
@@ -12582,11 +12586,11 @@ input[type=range] {
 /* 5. 黑金/夜间模式适配 */
 #phone-screen.dark-mode #message-actions-modal .custom-modal-footer button:not(#cancel-message-action-btn),
 #phone-screen.dark-mode #message-actions-modal #cancel-message-action-btn {
-    background-color: #2c2c2e !important; /* 统一深灰�?*/
+    background-color: #2c2c2e !important; /* 统一深灰�?*/
     color: #0a84ff !important;
 }
 /* ========================================= */
-/* ▼▼�?支付�?UI 美化�?(Modern Fintech) ▼▼�?*/
+/* ▼▼�?支付�?UI 美化�?(Modern Fintech) ▼▼�?*/
 /* ========================================= */
 
 /* 1. 屏幕整体容器 */
@@ -12606,19 +12610,19 @@ input[type=range] {
     overflow: hidden;
 }
 
-/* 2. 头部区域 (包含导航栏和蓝色背景�? */
+/* 2. 头部区域 (包含导航栏和蓝色背景�? */
 .alipay-header-area {
     background: var(--alipay-header-bg);
     color: white;
     padding-top: calc(10px + env(safe-area-inset-top));
-    padding-bottom: 60px; /* 留出空间给卡片上�?*/
-    border-radius: 0 0 20px 20px; /* 底部微圆�?*/
+    padding-bottom: 60px; /* 留出空间给卡片上�?*/
+    border-radius: 0 0 20px 20px; /* 底部微圆�?*/
     flex-shrink: 0;
     position: relative;
     z-index: 1;
 }
 
-/* 导航�?*/
+/* 导航�?*/
 .alipay-nav {
     display: flex;
     justify-content: space-between;
@@ -12656,15 +12660,15 @@ input[type=range] {
     flex-grow: 1;
     overflow-y: auto; /* 让卡片和下方内容整体滚动 */
     padding: 0 12px;
-    margin-top: -50px; /* 核心：卡片上浮覆盖蓝色背�?*/
+    margin-top: -50px; /* 核心：卡片上浮覆盖蓝色背�?*/
     position: relative;
     z-index: 2;
-    /* 隐藏滚动�?*/
+    /* 隐藏滚动�?*/
     -webkit-overflow-scrolling: touch;
 }
 .alipay-card-container::-webkit-scrollbar { display: none; }
 
-/* 4. 总资产卡�?(深色质感卡片) */
+/* 4. 总资产卡�?(深色质感卡片) */
 .alipay-balance-card {
     background: linear-gradient(180deg, #1677ff 0%, #0a5ad3 100%);
     color: #fff;
@@ -12742,7 +12746,7 @@ input[type=range] {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background: #eff4ff; /* 浅蓝�?*/
+    background: #eff4ff; /* 浅蓝�?*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12772,7 +12776,7 @@ input[type=range] {
     font-size: 16px;
 }
 
-/* 6. 亲属卡区�?*/
+/* 6. 亲属卡区�?*/
 #alipay-kinship-section-wrapper {
     margin-bottom: 15px;
 }
@@ -12783,7 +12787,7 @@ input[type=range] {
     margin-left: 5px;
 }
 
-/* 亲属卡容�?*/
+/* 亲属卡容�?*/
 #alipay-kinship-section {
     display: flex;
     overflow-x: auto;
@@ -12794,10 +12798,10 @@ input[type=range] {
 }
 #alipay-kinship-section::-webkit-scrollbar { display: none; }
 
-/* 亲属卡单�?*/
+/* 亲属卡单�?*/
 .kinship-card-entry {
     flex-shrink: 0;
-    width: 85%; /* 稍微露出下一�?*/
+    width: 85%; /* 稍微露出下一�?*/
     max-width: 300px;
     background: linear-gradient(135deg, #ff5252, #e00f38);
     border-radius: 12px;
@@ -12962,7 +12966,7 @@ input[type=range] {
     color: #d4af37 !important;
 }
 /* ========================================= */
-/* ▼▼�?赛博黑市拍卖�?2.0 (UI 重构) ▼▼�?*/
+/* ▼▼�?赛博黑市拍卖�?2.0 (UI 重构) ▼▼�?*/
 /* ========================================= */
 
 /* 1. 全屏背景：深邃的网格背景 */
@@ -12973,10 +12977,10 @@ input[type=range] {
         linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 30px 30px;
     color: #e0e0e0;
-    font-family: 'Courier New', Courier, monospace; /* 终端字体�?*/
+    font-family: 'Courier New', Courier, monospace; /* 终端字体�?*/
 }
 
-/* 2. 头部：霓虹边�?*/
+/* 2. 头部：霓虹边�?*/
 #auction-screen .header {
     background-color: rgba(20, 20, 20, 0.9) !important;
     border-bottom: 1px solid #333;
@@ -12989,7 +12993,7 @@ input[type=range] {
     letter-spacing: 1px;
 }
 
-/* 3. 拍品展示区：全息投影�?*/
+/* 3. 拍品展示区：全息投影�?*/
 #auction-main-display {
     height: auto !important;
     flex-grow: 1;
@@ -13005,7 +13009,7 @@ input[type=range] {
     border-radius: 4px !important; /* 硬朗的角 */
     position: relative;
 }
-/* 扫描线动�?*/
+/* 扫描线动�?*/
 #auction-item-image-container::after {
     content: '';
     position: absolute;
@@ -13022,7 +13026,7 @@ input[type=range] {
     font-weight: 900;
     font-size: 24px !important;
     color: #fff !important;
-    text-shadow: 2px 2px 0px #ff0055; /* 故障风阴�?*/
+    text-shadow: 2px 2px 0px #ff0055; /* 故障风阴�?*/
     margin-top: 15px !important;
 }
 
@@ -13037,7 +13041,7 @@ input[type=range] {
 }
 
 /* 4. 竞价面板：控制台风格 */
-#auction-screen > div:last-child { /* 指向底部的白色面�?*/
+#auction-screen > div:last-child { /* 指向底部的白色面�?*/
     background-color: #111 !important;
     border-top: 2px solid #ff0055; /* 撞色边框 */
     border-radius: 0 !important; /* 方正 */
@@ -13051,9 +13055,9 @@ input[type=range] {
     font-family: 'DIN Alternate', sans-serif; /* 数字字体 */
 }
 
-/* 倒计�?*/
+/* 倒计�?*/
 #auction-timer {
-    color: #f0ad4e !important; /* 警告�?*/
+    color: #f0ad4e !important; /* 警告�?*/
     font-family: monospace;
 }
 
@@ -13070,11 +13074,11 @@ input[type=range] {
     padding: 2px 5px !important;
     font-size: 12px;
 }
-#auction-log .bid-me { color: #00ff00 !important; text-shadow: 0 0 5px #00ff00; } /* 我出价绿色高�?*/
+#auction-log .bid-me { color: #00ff00 !important; text-shadow: 0 0 5px #00ff00; } /* 我出价绿色高�?*/
 #auction-log .bid-friend { color: #00f3ff !important; }
 #auction-log .bid-npc { color: #666 !important; }
 
-/* 6. 按钮组：机械�?*/
+/* 6. 按钮组：机械�?*/
 #auction-controls {
     gap: 8px !important;
 }
@@ -13099,7 +13103,7 @@ input[type=range] {
 
 /* 核心出价按钮 */
 #auction-controls .form-button {
-    background: #ff0055 !important; /* 霓虹�?*/
+    background: #ff0055 !important; /* 霓虹�?*/
     color: #fff !important;
     box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
     border: none !important;
@@ -13109,7 +13113,7 @@ input[type=range] {
     box-shadow: 0 0 5px rgba(255, 0, 85, 0.8);
 }
 #auction-log .bid-friend { 
-    color: #ff00ff !important; /* 亮粉�?*/
+    color: #ff00ff !important; /* 亮粉�?*/
     font-weight: 900 !important;
     font-size: 14px !important;
     border-left: 3px solid #ff00ff; /* 左侧加个粉条 */
@@ -13119,17 +13123,17 @@ input[type=range] {
 }
 /* 1. 头部：不再根据手机刘海自动变高，强制固定 */
 .alipay-header-area {
-    /* 核心：直接写死数字，不使�?env() 变量 */
+    /* 核心：直接写死数字，不使�?env() 变量 */
     padding-top: 25px !important; 
     
-    /* 保持下方留白给卡片上�?*/
+    /* 保持下方留白给卡片上�?*/
     padding-bottom: 50px !important; 
     
-    /* 清除所有负边距干扰，回归标准位�?*/
+    /* 清除所有负边距干扰，回归标准位�?*/
     margin-top: 0 !important; 
 }
 
-/* 2. 导航栏：微调位置，确保文字垂直居�?*/
+/* 2. 导航栏：微调位置，确保文字垂直居�?*/
 .alipay-nav {
     /* 不需要负边距了，因为头部 padding 已经固定 */
     transform: none !important; 
@@ -13138,15 +13142,15 @@ input[type=range] {
 
 /* 3. 卡片容器：标准的上浮距离 */
 .alipay-card-container {
-    /* 让卡片往上盖住蓝色背�?40px */
+    /* 让卡片往上盖住蓝色背�?40px */
     margin-top: -40px !important; 
     position: relative;
     z-index: 5;
 }
 
-/* 4. 账单列表：根据你的喜好，紧贴亲属�?*/
+/* 4. 账单列表：根据你的喜好，紧贴亲属�?*/
 .alipay-bill-container {
-    /* 这里保留你之前喜欢的紧凑�?*/
+    /* 这里保留你之前喜欢的紧凑�?*/
     margin-top: -50px !important; 
     
     /* 核心：去掉手机底部的安全区留白，强制统一 */
@@ -13155,26 +13159,26 @@ input[type=range] {
     border-radius: 16px 16px 0 0 !important;
 }
 
-/* 5. 修正亲属卡的高度防止被压�?*/
+/* 5. 修正亲属卡的高度防止被压�?*/
 #alipay-kinship-section {
     margin-bottom: 0 !important;
     padding-bottom: 10px !important;
     min-height: auto !important;
 }
-/* 1. 强制背景透明，去掉阴�?*/
+/* 1. 强制背景透明，去掉阴�?*/
 .icon-bg-desktop.transparent-mode {
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
 }
 
-/* 2. 让内部图片撑满，并不强制圆角（保持PNG原形�?*/
+/* 2. 让内部图片撑满，并不强制圆角（保持PNG原形�?*/
 .icon-bg-desktop.transparent-mode img {
     width: 100% !important;
     height: 100% !important;
-    border-radius: 0 !important; /* 不切圆角，保持图片原�?*/
+    border-radius: 0 !important; /* 不切圆角，保持图片原�?*/
     object-fit: contain !important; /* 保持比例，不拉伸 */
-    transform: scale(1.1); /*稍微放大一点点视觉补偿，因为没有背景框�?*/
+    transform: scale(1.1); /*稍微放大一点点视觉补偿，因为没有背景框�?*/
 }
 /* --- 页面布局调整 --- */
 
@@ -13182,15 +13186,15 @@ input[type=range] {
 .right-column-stack {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* 上下组件的间�?*/
-    min-width: 0; /* 防止被挤�?*/
+    gap: 15px; /* 上下组件的间�?*/
+    min-width: 0; /* 防止被挤�?*/
 }
 
-/* --- 黑胶唱片机组件样�?--- */
+/* --- 黑胶唱片机组件样�?--- */
 
 /* 2. 组件卡片外框 */
 .vinyl-widget-card {
-    width: 155px !important;  /* 强制固定宽度，和左侧大组件一�?*/
+    width: 155px !important;  /* 强制固定宽度，和左侧大组件一�?*/
     height: 155px !important; /* 强制固定高度，保持正方形 */
     background-color: white;
     border-radius: 20px;
@@ -13200,10 +13204,10 @@ input[type=range] {
     flex-direction: column;
     position: relative;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    flex-shrink: 0; /* 防止被挤�?*/
+    flex-shrink: 0; /* 防止被挤�?*/
 }
 
-/* 3. 顶部开关装�?*/
+/* 3. 顶部开关装�?*/
 .vinyl-header {
     height: 20px;
     display: flex;
@@ -13293,7 +13297,7 @@ input[type=range] {
     z-index: 2;
     pointer-events: none;
     filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.1));
-    transform: rotate(0deg); /* 可调整角�?*/
+    transform: rotate(0deg); /* 可调整角�?*/
 }
 
 /* 8. 底部文字 */
@@ -13321,9 +13325,9 @@ input[type=range] {
 }
 
 
-/* --- 透明黑胶唱片机样�?--- */
+/* --- 透明黑胶唱片机样�?--- */
 
-/* 1. 透明容器：去掉白色背景和阴影，只做定�?*/
+/* 1. 透明容器：去掉白色背景和阴影，只做定�?*/
 .vinyl-transparent-widget {
     width: 155px !important; /* 保持和其他组件一样大 */
     height: 155px !important;
@@ -13340,7 +13344,7 @@ input[type=range] {
 
 /* 2. 黑胶唱片纹理 */
 .vinyl-disc-bg {
-    width: 135px; /* 稍微调大一�?*/
+    width: 135px; /* 稍微调大一�?*/
     height: 135px;
     border-radius: 50%;
     background: repeating-radial-gradient(
@@ -13373,7 +13377,7 @@ input[type=range] {
     opacity: 0.7;
 }
 
-/* 4. 唱针装饰 (调整位置以适应无边�? */
+/* 4. 唱针装饰 (调整位置以适应无边�? */
 .vinyl-arm-wrapper {
     position: absolute;
     right: 0px; 
@@ -13394,7 +13398,7 @@ input[type=range] {
 .left-column-stack {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* <--- 把这里的 15px 改大，比�?30px */
+    gap: 30px; /* <--- 把这里的 15px 改大，比�?30px */
 }
 
 /* --- 1. 右侧列容器布局 --- */
@@ -13405,7 +13409,7 @@ input[type=range] {
     min-width: 0;
     
     /* 【关键】让内部元素靠右对齐 (贴近屏幕右侧) */
-    /* 如果您喜欢靠左贴着中间缝隙，改�?flex-start */
+    /* 如果您喜欢靠左贴着中间缝隙，改�?flex-start */
     align-items: flex-end; 
 }
 
@@ -13415,14 +13419,14 @@ input[type=range] {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px; /* 图标间距 */
     
-    /* 【关键】强制固定宽度，与左侧大组件/唱片机一�?*/
+    /* 【关键】强制固定宽度，与左侧大组件/唱片机一�?*/
     width: 155px !important; 
     
-    /* 让图标在格子里居�?*/
+    /* 让图标在格子里居�?*/
     justify-items: center;
 }
 
-/* --- 3. 再次确保透明唱片机也是固定大�?--- */
+/* --- 3. 再次确保透明唱片机也是固定大�?--- */
 .vinyl-transparent-widget {
     width: 155px !important;
     height: 155px !important;
@@ -13521,9 +13525,9 @@ input[type=range] {
 #auction-screen .header .action-btn {
     width: auto !important;      /* 取消固定30px */
     min-width: 30px;
-    padding: 4px 12px !important; /* 增加内边�?*/
+    padding: 4px 12px !important; /* 增加内边�?*/
     font-size: 14px !important;
-    white-space: nowrap;         /* 强制不换�?*/
+    white-space: nowrap;         /* 强制不换�?*/
 }
 
 /* 2. 确保右上角按钮组横向排列 */
@@ -13535,7 +13539,7 @@ input[type=range] {
     z-index: 20; /* 确保在最上层，可点击 */
 }
 
-/* 3. 仓库弹窗的样�?*/
+/* 3. 仓库弹窗的样�?*/
 .inventory-item {
     display: flex;
     gap: 12px;
@@ -13602,7 +13606,7 @@ input[type=range] {
 }
 /* --- To-Do List 样式 --- */
 
-/* 日期导航�?*/
+/* 日期导航�?*/
 .todo-date-navigator {
     display: flex;
     justify-content: space-between;
@@ -13664,7 +13668,7 @@ input[type=range] {
     border-color: var(--accent-color);
 }
 .todo-item.completed .todo-checkbox::after {
-    content: 'OK';
+    content: '�?;
     color: white;
     font-size: 14px;
 }
@@ -13722,14 +13726,14 @@ input[type=range] {
     margin-left: 5px;
 }
 
-/* 空状�?*/
+/* 空状�?*/
 .todo-empty-state {
     text-align: center;
     color: var(--text-secondary);
     margin-top: 50px;
 }
 
-/* --- 类型选择器样�?--- */
+/* --- 类型选择器样�?--- */
 .todo-type-selector {
     display: flex;
     flex-wrap: wrap;
@@ -13772,48 +13776,48 @@ input[type=range] {
 }
 /* --- 待办事项：左右分栏布局 (Chat Style) --- */
 
-/* 1. AI 创建�?(默认靠左) - 保持原样，微调间�?*/
+/* 1. AI 创建�?(默认靠左) - 保持原样，微调间�?*/
 .todo-item.is-char {
     flex-direction: row; /* 默认方向：多选框 -> 内容 -> 删除 */
 }
 
-/* 2. 用户创建�?(靠右) - 使用 row-reverse 翻转布局 */
+/* 2. 用户创建�?(靠右) - 使用 row-reverse 翻转布局 */
 .todo-item.is-user {
-    flex-direction: row-reverse; /* 翻转方向：删�?-> 内容 -> 多选框 */
+    flex-direction: row-reverse; /* 翻转方向：删�?-> 内容 -> 多选框 */
     background-color: #e7f3ff;   /* 可选：给用户发的气泡加一点淡淡的蓝色背景，区分更明显 */
 }
 
-/* 3. 用户内容的文字对�?*/
+/* 3. 用户内容的文字对�?*/
 .todo-item.is-user .todo-info {
     text-align: right;       /* 文字靠右 */
-    align-items: flex-end;   /* 如果内部�?flex，则靠右对齐 */
+    align-items: flex-end;   /* 如果内部�?flex，则靠右对齐 */
 }
 
 /* 4. 标签和时间的对齐 */
 .todo-item.is-user .todo-meta {
-    justify-content: flex-end; /* 标签和时间靠右排�?*/
+    justify-content: flex-end; /* 标签和时间靠右排�?*/
 }
 
-/* 5. 间距修正 (因为翻转了，margin方向也要反过�? */
+/* 5. 间距修正 (因为翻转了，margin方向也要反过�? */
 .todo-item.is-user .todo-checkbox {
     margin-right: 0;
-    margin-left: 12px; /* Checkbox 在最右边，给左边留空�?*/
+    margin-left: 12px; /* Checkbox 在最右边，给左边留空�?*/
 }
 
 .todo-item.is-user .todo-delete-btn {
     margin-left: 0;
-    margin-right: 5px; /* 删除按钮在最左边，给右边留空�?*/
+    margin-right: 5px; /* 删除按钮在最左边，给右边留空�?*/
 }
 
 /* 暗黑模式适配 */
 #phone-screen.dark-mode .todo-item.is-user {
-    background-color: #1a2a3a; /* 暗黑模式下的深蓝色背�?*/
+    background-color: #1a2a3a; /* 暗黑模式下的深蓝色背�?*/
 }
 #todo-current-date-display {
-    cursor: pointer;       /* 鼠标悬停变小�?*/
+    cursor: pointer;       /* 鼠标悬停变小�?*/
     user-select: none;     /* 防止双击选中文字 */
     transition: opacity 0.2s;
-    padding: 5px 10px;     /* 增加一点点击区�?*/
+    padding: 5px 10px;     /* 增加一点点击区�?*/
     border-radius: 8px;
 }
 
@@ -13823,9 +13827,9 @@ input[type=range] {
 }
 /* --- Green River (绿江) 极简高端风格 --- */
 :root {
-    --gr-primary: #1B4F3E;       /* 深墨�?*/
-    --gr-accent: #2E7D32;        /* 强调�?*/
-    --gr-bg: #FAFAF9;            /* 暖白/象牙�?*/
+    --gr-primary: #1B4F3E;       /* 深墨�?*/
+    --gr-accent: #2E7D32;        /* 强调�?*/
+    --gr-bg: #FAFAF9;            /* 暖白/象牙�?*/
     --gr-surface: #FFFFFF;       /* 纯白卡片 */
     --gr-text-main: #1C1C1E;     /* 深黑 */
     --gr-text-sub: #8E8E93;      /* 中灰 */
@@ -13840,7 +13844,7 @@ input[type=range] {
     color: var(--gr-text-main);
 }
 
-/* 头部样式 - 极致简�?*/
+/* 头部样式 - 极致简�?*/
 .gr-header {
     display: flex;
     justify-content: space-between;
@@ -13853,7 +13857,7 @@ input[type=range] {
     position: sticky;
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid transparent; /* 默认无边�?*/
+    border-bottom: 1px solid transparent; /* 默认无边�?*/
 }
 
 .gr-title {
@@ -13889,7 +13893,7 @@ input[type=range] {
     flex-grow: 1;
 }
 
-/* 标题与分�?*/
+/* 标题与分�?*/
 .gr-section-header {
     margin-bottom: 20px;
     display: flex;
@@ -13972,7 +13976,7 @@ input[type=range] {
     text-overflow: ellipsis;
 }
 
-/* 阅读器正�?*/
+/* 阅读器正�?*/
 .gr-reader-content {
     flex-grow: 1;
     overflow-y: auto;
@@ -13991,7 +13995,7 @@ input[type=range] {
     margin-bottom: 15px;
 }
 
-/* 摘要折叠�?*/
+/* 摘要折叠�?*/
 .gr-summary-box {
     background-color: #F4F4F5;
     border-radius: 8px;
@@ -14010,7 +14014,7 @@ input[type=range] {
     gap: 6px;
 }
 .gr-summary-box summary::before {
-    content: '>'; 
+    content: '�?; 
     display: inline-block;
     transition: transform 0.2s;
 }
@@ -14026,7 +14030,7 @@ input[type=range] {
     line-height: 1.6;
 }
 
-/* 底部控制�?*/
+/* 底部控制�?*/
 .gr-control-panel {
     position: absolute;
     bottom: 0;
@@ -14085,7 +14089,7 @@ input[type=range] {
     cursor: not-allowed;
 }
 
-/* 弹窗内表单元�?*/
+/* 弹窗内表单元�?*/
 .gr-form-group {
     margin-bottom: 20px;
 }
@@ -14174,7 +14178,7 @@ input[type=range] {
 .gr-summary-input {
     width: 100%;
     background-color: transparent;
-    border: 1px dashed transparent; /* 默认无边�?*/
+    border: 1px dashed transparent; /* 默认无边�?*/
     font-family: inherit;
     font-size: 13px;
     color: #333;
@@ -14185,14 +14189,14 @@ input[type=range] {
     min-height: 60px;
 }
 
-/* 当它是可编辑状态（最后一章）�?*/
+/* 当它是可编辑状态（最后一章）�?*/
 .gr-summary-box.editable {
-    background-color: #fffbe6; /* 淡黄色背景，提示这是存档�?*/
+    background-color: #fffbe6; /* 淡黄色背景，提示这是存档�?*/
     border: 1px solid #e0e0e0;
 }
 
 .gr-summary-box.editable .gr-summary-input {
-    border-color: #ddd; /* 显示虚线�?*/
+    border-color: #ddd; /* 显示虚线�?*/
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -14213,7 +14217,7 @@ input[type=range] {
 }
 /* --- 绿江阅读器新样式 (Jinjiang Style) --- */
 
-/* 1. 侧边�?(Drawer) */
+/* 1. 侧边�?(Drawer) */
 #gr-sidebar-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -14233,7 +14237,7 @@ input[type=range] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75%; /* 侧边栏宽�?*/
+    width: 75%; /* 侧边栏宽�?*/
     height: 100%;
     background: var(--gr-bg);
     z-index: 100;
@@ -14283,12 +14287,12 @@ input[type=range] {
     margin-left: 10px;
 }
 
-/* 2. 底部控制栏调�?*/
+/* 2. 底部控制栏调�?*/
 .gr-control-panel {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* 确保固定在底�?*/
+    /* 确保固定在底�?*/
     position: absolute;
     bottom: 0;
 }
@@ -14333,19 +14337,19 @@ input[type=range] {
     background-color: rgba(255,255,255,0.1);
     color: #fff;
 }
-/* --- 绿江：高端摘要卡片重�?--- */
+/* --- 绿江：高端摘要卡片重�?--- */
 
 /* 1. 卡片容器：干净、悬浮感 */
 .gr-summary-card.editable {
     background-color: #FFFFFF; /* 纯净白底 */
     border: 1px solid rgba(0,0,0,0.05); /* 几乎不可见的极细边框 */
-    border-radius: 12px; /* 更大的圆角，现代�?*/
-    padding: 24px; /* 充足的内部留白，呼吸�?*/
-    box-shadow: 0 8px 30px rgba(0,0,0,0.04); /* 极轻柔的高级灰阴�?*/
-    margin-top: 40px; /* 与正文拉开更大距离，彰显重要�?*/
+    border-radius: 12px; /* 更大的圆角，现代�?*/
+    padding: 24px; /* 充足的内部留白，呼吸�?*/
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04); /* 极轻柔的高级灰阴�?*/
+    margin-top: 40px; /* 与正文拉开更大距离，彰显重要�?*/
     transition: all 0.3s ease;
 }
-/* 鼠标悬停时稍微强调一�?*/
+/* 鼠标悬停时稍微强调一�?*/
 .gr-summary-card.editable:hover {
     box-shadow: 0 10px 40px rgba(0,0,0,0.06);
     border-color: rgba(27, 79, 62, 0.1);
@@ -14359,16 +14363,16 @@ input[type=range] {
     margin-bottom: 16px;
 }
 
-/* 标题：使用优雅的衬线体，品牌�?*/
+/* 标题：使用优雅的衬线体，品牌�?*/
 .gr-summary-title {
-    font-family: "Georgia", "Songti SC", serif; /* 衬线�?*/
-    color: var(--gr-primary); /* 深墨�?*/
+    font-family: "Georgia", "Songti SC", serif; /* 衬线�?*/
+    color: var(--gr-primary); /* 深墨�?*/
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-/* 3. 输入框本体：极简、融入背�?*/
+/* 3. 输入框本体：极简、融入背�?*/
 .gr-summary-input {
     width: 100%;
     box-sizing: border-box; /* 关键：防止padding撑破宽度 */
@@ -14386,9 +14390,9 @@ input[type=range] {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 输入框聚焦状态：显现品牌�?*/
+/* 输入框聚焦状态：显现品牌�?*/
 .gr-summary-input:focus {
-    background-color: #FFFFFF; /* 聚焦变纯�?*/
+    background-color: #FFFFFF; /* 聚焦变纯�?*/
     border-color: var(--gr-primary); /* 边框变品牌绿 */
     box-shadow: 0 0 0 4px rgba(27, 79, 62, 0.05); /* 极微弱的绿色光晕 */
 }
@@ -14396,12 +14400,12 @@ input[type=range] {
     color: #CCC;
 }
 
-/* 4. 底部提示小字：弱化处�?*/
+/* 4. 底部提示小字：弱化处�?*/
 .gr-summary-footer {
     font-size: 12px;
-    color: #AAA; /* 更浅的灰�?*/
+    color: #AAA; /* 更浅的灰�?*/
     margin-top: 12px;
-    text-align: right; /* 右对齐，不干扰视�?*/
+    text-align: right; /* 右对齐，不干扰视�?*/
     font-weight: 400;
 }
 
@@ -14444,10 +14448,10 @@ input[type=range] {
 #phone-screen.dark-mode .gr-summary-footer {
     color: #666;
 }
-/* 作者列表项的操作按钮容�?*/
+/* 作者列表项的操作按钮容�?*/
 .gr-author-actions {
     display: flex;
-    gap: 10px; /* 按钮之间的间�?*/
+    gap: 10px; /* 按钮之间的间�?*/
     align-items: center;
 }
 
@@ -14467,7 +14471,7 @@ input[type=range] {
     border-color: #1B4F3E;
 }
 /* ========================================== */
-/* ▼▼�?绿江 (Green River) 风格终极修正 ▼▼�?*/
+/* ▼▼�?绿江 (Green River) 风格终极修正 ▼▼�?*/
 /* ========================================== */
 
 /* 1. 顶栏布局与宽度统一 (对齐QQ风格) */
@@ -14479,34 +14483,34 @@ input[type=range] {
     width: 100% !important;
     box-sizing: border-box !important;
     
-    /* 2. 高度核心修复：对�?QQ 头部高度 */
-    /* QQ 头部样式�? padding: 15px 20px; padding-top: 45px; */
+    /* 2. 高度核心修复：对�?QQ 头部高度 */
+    /* QQ 头部样式�? padding: 15px 20px; padding-top: 45px; */
     padding: 15px 20px !important; 
-    padding-top: 45px !important; /* 关键：强制预�?45px 状态栏高度 */
+    padding-top: 45px !important; /* 关键：强制预�?45px 状态栏高度 */
     
-    /* 3. 定位与外�?*/
+    /* 3. 定位与外�?*/
     position: sticky !important;
     top: 0 !important;
     z-index: 100 !important;
     background-color: rgba(250, 250, 249, 0.98) !important;
     border-bottom: 1px solid #E5E5E5 !important;
-    flex-shrink: 0 !important; /* 防止被内容挤�?*/
+    flex-shrink: 0 !important; /* 防止被内容挤�?*/
 }
 
-/* 确保标题字体�?QQ 头部大小相近，但保持绿江风格 */
+/* 确保标题字体�?QQ 头部大小相近，但保持绿江风格 */
 .gr-title {
     font-family: "Georgia", "Songti SC", serif !important;
-    font-size: 20px !important; /* 稍微大一点点，显得更有文学感，位置居�?*/
+    font-size: 20px !important; /* 稍微大一点点，显得更有文学感，位置居�?*/
     font-weight: 700 !important;
     color: #1B4F3E !important;
-    /* 绝对定位居中 (可选，如果想要绝对居中对齐请解开下面注释，否则保�?Flex 居中) */
+    /* 绝对定位居中 (可选，如果想要绝对居中对齐请解开下面注释，否则保�?Flex 居中) */
     /* position: absolute;
     left: 50%;
     transform: translateX(-50%);
     */
 }
 
-/* 修复右侧按钮容器，确保横向排�?*/
+/* 修复右侧按钮容器，确保横向排�?*/
 .gr-header-actions {
     display: flex !important;
     flex-direction: row !important;
@@ -14525,11 +14529,11 @@ input[type=range] {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    /* 去掉可能导致换行的属�?*/
+    /* 去掉可能导致换行的属�?*/
     flex: none !important; 
 }
 
-/* 3. 作者列表项内按钮强制横�?*/
+/* 3. 作者列表项内按钮强制横�?*/
 .gr-author-actions {
     display: flex !important;
     flex-direction: row !important;
@@ -14556,7 +14560,7 @@ input[type=range] {
 
 #gr-author-editor-modal .modal-header span {
     font-family: "Georgia", "Songti SC", serif !important;
-    color: #1B4F3E !important; /* 墨绿�?*/
+    color: #1B4F3E !important; /* 墨绿�?*/
     font-size: 22px !important;
     font-weight: 700 !important;
 }
@@ -14581,7 +14585,7 @@ input[type=range] {
     opacity: 0.8;
 }
 
-/* 输入框本�?*/
+/* 输入框本�?*/
 #gr-author-editor-modal input,
 #gr-author-editor-modal textarea {
     background-color: #FFFFFF !important;
@@ -14632,7 +14636,7 @@ input[type=range] {
     width: 70% !important;
     box-shadow: 0 4px 15px rgba(27, 79, 62, 0.2) !important;
 }
-/* === Mail App Theme (修复�? === */
+/* === Mail App Theme (修复�? === */
 :root {
     --mail-bg: #F2F2F7;
     --mail-surface: #FFFFFF;
@@ -14643,7 +14647,7 @@ input[type=range] {
     --mail-border-radius: 12px;
 }
 
-/* 主屏幕背�?*/
+/* 主屏幕背�?*/
 #email-screen {
     background-color: var(--mail-bg);
     color: var(--mail-text-primary);
@@ -14654,7 +14658,7 @@ input[type=range] {
 
 /* --- 1. 头部区域 (统一QQ风格) --- */
 .mail-header, .mail-detail-header {
-    /* 核心修复：高度和内边距与 QQ 保持一�?*/
+    /* 核心修复：高度和内边距与 QQ 保持一�?*/
     padding: 15px 20px !important;
     padding-top: 45px !important; /* 避开刘海 */
     background-color: rgba(242, 242, 247, 0.95); /* 略带透明背景 */
@@ -14671,14 +14675,14 @@ input[type=range] {
     min-height: 40px;
 }
 
-/* 详情页头部背景改为纯白，与详情页一�?*/
+/* 详情页头部背景改为纯白，与详情页一�?*/
 .mail-detail-header {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* 头部上方的容�?(用于容纳返回按钮和标�? */
+/* 头部上方的容�?(用于容纳返回按钮和标�? */
 .mail-header-top {
-    display: contents; /* 取消这层容器的布局影响，直接让子元素参�?Grid/Flex */
+    display: contents; /* 取消这层容器的布局影响，直接让子元素参�?Grid/Flex */
 }
 
 /* 2. 按钮样式统一 */
@@ -14717,7 +14721,7 @@ input[type=range] {
     color: #000;
 }
 
-/* 4. 搜索�?*/
+/* 4. 搜索�?*/
 .mail-search-bar {
     background-color: rgba(118, 118, 128, 0.12);
     border-radius: 10px;
@@ -14725,7 +14729,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: 0 16px 10px 16px; /* 增加外边�?*/
+    margin: 0 16px 10px 16px; /* 增加外边�?*/
 }
 .mail-search-bar input {
     background: transparent;
@@ -14747,7 +14751,7 @@ input[type=range] {
     padding-bottom: 20px;
 }
 
-/* 6. 详情页内容调�?*/
+/* 6. 详情页内容调�?*/
 .mail-detail-content {
     padding: 20px;
     overflow-y: auto;
@@ -14756,7 +14760,7 @@ input[type=range] {
     background-color: #fff;
 }
 
-/* 7. 隐藏底部工具�?*/
+/* 7. 隐藏底部工具�?*/
 .mail-toolbar {
     display: none !important;
 }
@@ -14774,22 +14778,22 @@ input[type=range] {
 
 
 /* ========================================= */
-/* ▼▼�?Swiss Minimalist Mail Theme ▼▼�?*/
+/* ▼▼�?Swiss Minimalist Mail Theme ▼▼�?*/
 /* ========================================= */
 
 :root {
-    /* 核心色板 - 极简、冷淡、高�?*/
-    --mail-bg: #F2F2F7;            /* iOS系统级浅灰背�?*/
-    --mail-surface: #FFFFFF;       /* 纯净�?*/
-    --mail-text-main: #1C1C1E;     /* 深炭黑，非纯�?*/
+    /* 核心色板 - 极简、冷淡、高�?*/
+    --mail-bg: #F2F2F7;            /* iOS系统级浅灰背�?*/
+    --mail-surface: #FFFFFF;       /* 纯净�?*/
+    --mail-text-main: #1C1C1E;     /* 深炭黑，非纯�?*/
     --mail-text-sub: #8E8E93;      /* 中性灰 */
-    --mail-accent: #007AFF;        /* 瑞士�?(Swiss Blue) */
+    --mail-accent: #007AFF;        /* 瑞士�?(Swiss Blue) */
     --mail-border: rgba(0, 0, 0, 0.04); /* 极细微的边界 */
-    --mail-divider: #C6C6C8;       /* 分割�?*/
-    --mail-radius-l: 16px;         /* 大圆�?*/
-    --mail-radius-m: 10px;         /* 中圆�?*/
-    --mail-radius-s: 6px;          /* 小圆�?*/
-    --mail-shadow: 0 4px 24px rgba(0, 0, 0, 0.03); /* 漂浮感阴�?*/
+    --mail-divider: #C6C6C8;       /* 分割�?*/
+    --mail-radius-l: 16px;         /* 大圆�?*/
+    --mail-radius-m: 10px;         /* 中圆�?*/
+    --mail-radius-s: 6px;          /* 小圆�?*/
+    --mail-shadow: 0 4px 24px rgba(0, 0, 0, 0.03); /* 漂浮感阴�?*/
 }
 
 /* 暗黑模式变量重写 */
@@ -14803,11 +14807,11 @@ input[type=range] {
     --mail-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* 邮箱主容�?*/
+/* 邮箱主容�?*/
 #email-screen, #email-detail-screen {
     background-color: var(--mail-bg) !important;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-    letter-spacing: -0.01em; /* 收紧字间距，更精�?*/
+    letter-spacing: -0.01em; /* 收紧字间距，更精�?*/
 }
 
 
@@ -14845,12 +14849,12 @@ input[type=range] {
 
 /* --- 3. 邮件列表 (List) --- */
 .mail-list-container {
-    background-color: var(--mail-bg) !important; /* 背景透明，显示层�?*/
+    background-color: var(--mail-bg) !important; /* 背景透明，显示层�?*/
     padding: 0 16px !important; /* 两侧留白 */
     border-radius: 0 !important;
     box-shadow: none !important;
     margin: 0 !important;
-    gap: 12px; /* 列表项间�?*/
+    gap: 12px; /* 列表项间�?*/
     display: flex;
     flex-direction: column;
 }
@@ -14859,9 +14863,9 @@ input[type=range] {
     background-color: var(--mail-surface);
     border-radius: var(--mail-radius-m);
     padding: 16px !important;
-    margin-bottom: 0 !important; /* �?gap 控制 */
+    margin-bottom: 0 !important; /* �?gap 控制 */
     border: 1px solid var(--mail-border);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02); /* 极轻的阴�?*/
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02); /* 极轻的阴�?*/
     position: relative;
     transition: transform 0.1s, background-color 0.2s;
 }
@@ -14884,7 +14888,7 @@ input[type=range] {
     box-shadow: 0 0 8px rgba(0, 122, 255, 0.4);
 }
 .mail-item.unread {
-    padding-left: 26px !important; /* 为蓝点留出空�?*/
+    padding-left: 26px !important; /* 为蓝点留出空�?*/
 }
 
 /* 列表排版优化 */
@@ -14924,7 +14928,7 @@ input[type=range] {
     overflow: hidden;
 }
 
-/* --- 4. 邮件详情�?(Detail) --- */
+/* --- 4. 邮件详情�?(Detail) --- */
 #email-detail-screen {
     background-color: var(--mail-surface) !important;
 }
@@ -15009,7 +15013,7 @@ input[type=range] {
     white-space: pre-wrap;
 }
 
-/* --- 5. 生成器弹�?(The "Ugly" Fix) --- */
+/* --- 5. 生成器弹�?(The "Ugly" Fix) --- */
 #email-generator-modal .modal-content {
     background-color: var(--mail-bg) !important;
     border-radius: var(--mail-radius-l) !important;
@@ -15107,7 +15111,7 @@ input[type=range] {
     border-color: var(--mail-accent);
 }
 .gr-checkbox-item input[type="checkbox"]:checked::after {
-    content: 'OK';
+    content: '�?;
     font-size: 12px;
     color: white;
     position: absolute;
@@ -15127,7 +15131,7 @@ input[type=range] {
     font-size: 16px !important;
     font-weight: 600 !important;
 }
-/* 底部操作栏样�?*/
+/* 底部操作栏样�?*/
 #mail-action-bar {
     position: absolute;
     bottom: 0;
@@ -15166,20 +15170,20 @@ input[type=range] {
     pointer-events: none;
 }
 
-/* 邮件列表项的选择状态样�?*/
+/* 邮件列表项的选择状态样�?*/
 .mail-item {
     transition: transform 0.2s ease, padding-left 0.2s ease;
     position: relative;
     overflow: visible !important; /* 允许选中圈显示在左侧 */
 }
 
-/* 编辑模式下，给左侧留出空�?*/
+/* 编辑模式下，给左侧留出空�?*/
 .mail-item.editing {
     transform: translateX(40px); /* 整体右移 */
     width: calc(100% - 40px); /* 宽度自适应 */
 }
 
-/* 选择�?(Checkbox) */
+/* 选择�?(Checkbox) */
 .mail-select-checkbox {
     position: absolute;
     left: -30px; /* 放在卡片左侧 */
@@ -15195,18 +15199,18 @@ input[type=range] {
     display: none; /* 默认隐藏 */
 }
 
-/* 编辑模式下显示选择�?*/
+/* 编辑模式下显示选择�?*/
 .mail-item.editing .mail-select-checkbox {
     display: block;
 }
 
-/* 选中状�?*/
+/* 选中状�?*/
 .mail-item.selected .mail-select-checkbox {
     background-color: var(--mail-accent);
     border-color: var(--mail-accent);
 }
 .mail-item.selected .mail-select-checkbox::after {
-    content: 'OK';
+    content: '�?;
     color: white;
     font-size: 14px;
     position: absolute;
@@ -15239,7 +15243,7 @@ input[type=range] {
     background-color: #f9f9f9;
 }
 
-/* 顶部：图�?+ 标题信息 */
+/* 顶部：图�?+ 标题信息 */
 .email-card-top {
     display: flex;
     gap: 10px;
@@ -15247,7 +15251,7 @@ input[type=range] {
     align-items: flex-start;
 }
 
-/* 蓝色图标�?*/
+/* 蓝色图标�?*/
 .email-icon-box {
     width: 36px;
     height: 36px;
@@ -15285,7 +15289,7 @@ input[type=range] {
     text-overflow: ellipsis;
 }
 
-/* 中间：摘要预�?*/
+/* 中间：摘要预�?*/
 .email-card-preview {
     font-size: 13px;
     color: #666;
@@ -15300,7 +15304,7 @@ input[type=range] {
     border-radius: 6px;
 }
 
-/* 底部：脚�?*/
+/* 底部：脚�?*/
 .email-card-footer {
     display: flex;
     justify-content: space-between;
@@ -15331,7 +15335,7 @@ input[type=range] {
 }
 /* --- 渲染规则绑定范围美化 --- */
 
-/* 1. 容器美化：类�?iOS 分组卡片 */
+/* 1. 容器美化：类�?iOS 分组卡片 */
 #rule-scope-checkboxes {
     max-height: 250px;
     overflow-y: auto;
@@ -15345,7 +15349,7 @@ input[type=range] {
     gap: 2px;
 }
 
-/* 2. 单行列表项美�?*/
+/* 2. 单行列表项美�?*/
 .rule-scope-item {
     display: flex;
     align-items: center;
@@ -15356,7 +15360,7 @@ input[type=range] {
     user-select: none; /* 防止双击选中文字 */
 }
 
-/* 悬停和点击效�?*/
+/* 悬停和点击效�?*/
 .rule-scope-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
@@ -15378,7 +15382,7 @@ input[type=range] {
     flex-shrink: 0;
 }
 
-/* 选中状�?*/
+/* 选中状�?*/
 .rule-scope-item input[type="checkbox"]:checked {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
@@ -15386,7 +15390,7 @@ input[type=range] {
 
 /* 选中时的对勾 */
 .rule-scope-item input[type="checkbox"]:checked::after {
-    content: 'OK';
+    content: '�?;
     font-size: 14px;
     color: white;
     position: absolute;
@@ -15407,7 +15411,7 @@ input[type=range] {
     flex-shrink: 0;
 }
 
-/* 公用图标的特殊样�?*/
+/* 公用图标的特殊样�?*/
 .rule-scope-icon-box {
     width: 36px;
     height: 36px;
@@ -15477,13 +15481,13 @@ input[type=range] {
     transition: all 0.2s;
 }
 
-/* 3. 选中状�?*/
+/* 3. 选中状�?*/
 .rule-select-checkbox:checked {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
 .rule-select-checkbox:checked::after {
-    content: 'OK';
+    content: '�?;
     color: white;
     font-size: 14px;
     position: absolute;
@@ -15502,7 +15506,7 @@ input[type=range] {
 }
 
 #rules-content-container.management-mode .rule-card {
-    border-right: 30px solid transparent; /* 稍微挤压一点内�?*/
+    border-right: 30px solid transparent; /* 稍微挤压一点内�?*/
 }
 
 #rules-content-container.management-mode .rule-card.selected {
@@ -15520,17 +15524,17 @@ input[type=range] {
 
 /* 1. 强制缩小聊天记录中的图片尺寸 */
 .message-bubble .chat-image {
-    max-width: 140px !important;  /* 缩略图最大宽�?*/
-    max-height: 180px !important; /* 缩略图最大高�?*/
+    max-width: 140px !important;  /* 缩略图最大宽�?*/
+    max-height: 180px !important; /* 缩略图最大高�?*/
     width: auto !important;
     height: auto !important;
     border-radius: 8px !important;
-    cursor: zoom-in !important;   /* 鼠标移上去显示放大图�?*/
+    cursor: zoom-in !important;   /* 鼠标移上去显示放大图�?*/
     object-fit: cover !important;
     display: block;
 }
 
-/* 2. 简单的全屏放大遮罩�?(不依赖相册组�? */
+/* 2. 简单的全屏放大遮罩�?(不依赖相册组�? */
 #simple-image-zoom-overlay {
     position: fixed;
     top: 0;
@@ -15797,14 +15801,14 @@ input[type=range] {
     background-color: var(--gr-primary);
     color: white;
 }
-/* 已加入状态：实心背景，显示为已完�?*/
+/* 已加入状态：实心背景，显示为已完�?*/
 .gr-add-shelf-btn.added {
     background-color: rgba(0,0,0,0.05);
     border-color: transparent;
     color: #888;
-    cursor: pointer; /* 保持可点�?*/
+    cursor: pointer; /* 保持可点�?*/
 }
-/* 已加入状态悬停：变成红色，提示移�?*/
+/* 已加入状态悬停：变成红色，提示移�?*/
 .gr-add-shelf-btn.added:hover {
     background-color: #ffebee;
     color: #ff3b30;
@@ -15821,19 +15825,19 @@ input[type=range] {
     border-color: #ff453a;
 }
 /* ========================================= */
-/* ▼▼�?瑞士极简主义通知系统 (Swiss Toast) ▼▼�?*/
+/* ▼▼�?瑞士极简主义通知系统 (Swiss Toast) ▼▼�?*/
 /* ========================================= */
 
 .toast-container {
     position: fixed;
-    top: 12px; /* 顶部留出状态栏呼吸�?*/
+    top: 12px; /* 顶部留出状态栏呼吸�?*/
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    pointer-events: none; /* 允许点击穿�?*/
+    pointer-events: none; /* 允许点击穿�?*/
 }
 
 .toast-item {
@@ -15844,15 +15848,15 @@ input[type=range] {
     background-color: rgba(255, 255, 255, 0.92); /* 极高纯度的白 */
     backdrop-filter: blur(20px); /* 磨砂玻璃质感 */
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 50px; /* 完全胶囊�?*/
+    border-radius: 50px; /* 完全胶囊�?*/
     box-shadow: 
         0 4px 24px rgba(0, 0, 0, 0.06), /* 弥散阴影 */
         0 1px 2px rgba(0, 0, 0, 0.04),  /* 锐利阴影 */
-        inset 0 0 0 0.5px rgba(0, 0, 0, 0.05); /* 内描边代替边�?*/
+        inset 0 0 0 0.5px rgba(0, 0, 0, 0.05); /* 内描边代替边�?*/
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #1d1d1f; /* 深炭灰，非纯�?*/
+    color: #1d1d1f; /* 深炭灰，非纯�?*/
     opacity: 0;
     transform: translateY(-20px) scale(0.95);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* iOS 物理动效曲线 */
@@ -15869,7 +15873,7 @@ input[type=range] {
     justify-content: center;
     width: 20px;
     height: 20px;
-    color: #0071e3; /* 苹果�?*/
+    color: #0071e3; /* 苹果�?*/
 }
 
 .toast-icon svg {
@@ -15878,7 +15882,7 @@ input[type=range] {
     stroke-width: 2;
 }
 
-/* 加载中动�?*/
+/* 加载中动�?*/
 .toast-icon.spinning svg {
     animation: toast-spin 1s linear infinite;
 }
@@ -15888,7 +15892,7 @@ input[type=range] {
     to { transform: rotate(360deg); }
 }
 
-/* 暗黑模式适配 - 深邃而通�?*/
+/* 暗黑模式适配 - 深邃而通�?*/
 #phone-screen.dark-mode .toast-item {
     background-color: rgba(28, 28, 30, 0.92);
     color: #f5f5f7;
@@ -15901,26 +15905,26 @@ input[type=range] {
 }
 
 /* ========================================= */
-/* ▼▼�?设置页面布局优化 (Spa Aesthetics) ▼▼�?*/
+/* ▼▼�?设置页面布局优化 (Spa Aesthetics) ▼▼�?*/
 /* ========================================= */
 
-/* 1. 增加呼吸�?*/
+/* 1. 增加呼吸�?*/
 .settings-container {
-    padding: 24px 20px !important; /* 增加整体内边�?*/
+    padding: 24px 20px !important; /* 增加整体内边�?*/
 }
 
-/* 2. 卡片间距与质�?*/
+/* 2. 卡片间距与质�?*/
 .settings-section {
     margin-bottom: 24px !important; /* 卡片间距增大 */
-    border-radius: 16px !important; /* 更圆润的�?*/
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02) !important; /* 极轻微的悬浮�?*/
-    border: 1px solid rgba(0,0,0,0.03); /* 极其微妙的边�?*/
+    border-radius: 16px !important; /* 更圆润的�?*/
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02) !important; /* 极轻微的悬浮�?*/
+    border: 1px solid rgba(0,0,0,0.03); /* 极其微妙的边�?*/
     overflow: hidden !important;
 }
 
-/* 3. 列表项高度与分割�?*/
+/* 3. 列表项高度与分割�?*/
 .settings-item, .settings-item-block {
-    padding: 18px 20px !important; /* 增加单行高度，不仅是点击区域，更是视觉留�?*/
+    padding: 18px 20px !important; /* 增加单行高度，不仅是点击区域，更是视觉留�?*/
     min-height: 56px !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; /* 线条更细更淡 */
 }
@@ -15928,7 +15932,7 @@ input[type=range] {
 /* 4. 字体优化 */
 .settings-item label {
     font-size: 16px !important;
-    font-weight: 500 !important; /* 略微加粗，提升层�?*/
+    font-weight: 500 !important; /* 略微加粗，提升层�?*/
     letter-spacing: -0.01em;
     color: #1d1d1f !important;
 }
@@ -15936,7 +15940,7 @@ input[type=range] {
 .settings-header {
     font-size: 13px !important;
     font-weight: 600 !important;
-    color: #86868b !important; /* 高级�?*/
+    color: #86868b !important; /* 高级�?*/
     margin: 30px 0 10px 20px !important; /* 标题与卡片的距离 */
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -15954,13 +15958,13 @@ input[type=range] {
     color: #f5f5f7 !important;
 }
 /* ========================================= */
-/* ▼▼�?CPhone Browser 高端重构 (Swiss Style) ▼▼�?*/
+/* ▼▼�?CPhone Browser 高端重构 (Swiss Style) ▼▼�?*/
 /* ========================================= */
 
-/* 1. 浏览器整体容器背�?*/
+/* 1. 浏览器整体容器背�?*/
 #char-browser-screen, 
 #char-browser-article-screen {
-    background-color: #F2F2F7 !important; /* iOS 高级灰底�?*/
+    background-color: #F2F2F7 !important; /* iOS 高级灰底�?*/
 }
 #phone-screen.dark-mode #char-browser-screen,
 #phone-screen.dark-mode #char-browser-article-screen {
@@ -15969,18 +15973,18 @@ input[type=range] {
 
 /* 2. 历史记录列表容器 */
 #char-browser-history {
-    padding: 20px !important; /* 增加外边距，让内容呼�?*/
+    padding: 20px !important; /* 增加外边距，让内容呼�?*/
     display: flex;
     flex-direction: column;
-    gap: 12px; /* 卡片之间的完美间�?*/
+    gap: 12px; /* 卡片之间的完美间�?*/
 }
 
 /* 3. 单个历史记录卡片 */
 .char-browser-item {
     background-color: #FFFFFF;
     padding: 16px 20px !important; /* 内部留白 */
-    border-radius: 12px; /* 现代感圆�?*/
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /* 极轻微的悬浮�?*/
+    border-radius: 12px; /* 现代感圆�?*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /* 极轻微的悬浮�?*/
     border: 1px solid rgba(0, 0, 0, 0.03); /* 几乎不可见的边界 */
     display: flex;
     align-items: center;
@@ -15992,7 +15996,7 @@ input[type=range] {
     background-color: #F9F9F9;
 }
 
-/* 4. 列表项左侧图标容�?(替代 Emoji) */
+/* 4. 列表项左侧图标容�?(替代 Emoji) */
 .char-browser-icon-box {
     width: 40px;
     height: 40px;
@@ -16001,7 +16005,7 @@ input[type=range] {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #007AFF; /* 瑞士�?Accent Color */
+    color: #007AFF; /* 瑞士�?Accent Color */
     flex-shrink: 0;
 }
 .char-browser-icon-box svg {
@@ -16010,13 +16014,13 @@ input[type=range] {
     stroke-width: 2;
 }
 
-/* 5. 列表项文字内�?*/
+/* 5. 列表项文字内�?*/
 .char-browser-info {
     flex-grow: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 4px; /* 标题与URL的间�?*/
+    gap: 4px; /* 标题与URL的间�?*/
 }
 
 .char-browser-item .title {
@@ -16034,28 +16038,28 @@ input[type=range] {
     font-size: 12px !important;
     color: #8E8E93 !important; /* 次要信息灰色 */
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Mono", monospace; /* 网址用等宽字体更有科技�?*/
+    font-family: -apple-system, BlinkMacSystemFont, "SF Mono", monospace; /* 网址用等宽字体更有科技�?*/
 }
 
-/* 6. 列表项右侧箭�?*/
+/* 6. 列表项右侧箭�?*/
 .char-browser-arrow {
     color: #C7C7CC;
     flex-shrink: 0;
 }
 
-/* 7. 文章详情页排�?(阅读体验优化) */
+/* 7. 文章详情页排�?(阅读体验优化) */
 #char-article-content {
-    padding: 30px 24px !important; /* 宽敞的阅读边�?*/
+    padding: 30px 24px !important; /* 宽敞的阅读边�?*/
     background-color: #FFFFFF !important; /* 纯白阅读背景 */
     
-    /* --- 修复开�?--- */
+    /* --- 修复开�?--- */
     /* 1. 删除或注释掉 min-height: 100%; */
     /* min-height: 100%; */ 
     
-    /* 2. 添加 height: 0; 配合 flex-grow 使用，强制它�?flex 容器内滚�?*/
+    /* 2. 添加 height: 0; 配合 flex-grow 使用，强制它�?flex 容器内滚�?*/
     height: 0 !important; 
     
-    /* 3. 确保 flex 属性和滚动开�?*/
+    /* 3. 确保 flex 属性和滚动开�?*/
     flex-grow: 1;
     overflow-y: auto !important;
     /* --- 修复结束 --- */
@@ -16063,11 +16067,11 @@ input[type=range] {
 
 /* 文章标题 */
 #char-article-title {
-    font-size: 17px !important; /* 导航栏标题大�?*/
+    font-size: 17px !important; /* 导航栏标题大�?*/
     font-weight: 600;
 }
 
-/* 文章正文容器内的大标�?(如果�? */
+/* 文章正文容器内的大标�?(如果�? */
 .article-large-title {
     font-size: 24px;
     font-weight: 700;
@@ -16079,7 +16083,7 @@ input[type=range] {
 
 /* 文章正文文字 */
 #char-article-content p {
-    font-size: 17px; /* 最佳阅读字�?*/
+    font-size: 17px; /* 最佳阅读字�?*/
     line-height: 1.6; /* 黄金比例行高 */
     color: #333333;
     margin-bottom: 20px; /* 段落间距 */
@@ -16125,12 +16129,12 @@ input[type=range] {
     color: #AAA;
 }
 /* ========================================= */
-/* ▼▼�?CPhone 备忘�?& 日记 高端重构 ▼▼�?*/
+/* ▼▼�?CPhone 备忘�?& 日记 高端重构 ▼▼�?*/
 /* ========================================= */
 
 /* 1. 列表容器背景 */
 #char-memo-list, #char-diary-list {
-    padding: 20px !important; /* 统一外边�?*/
+    padding: 20px !important; /* 统一外边�?*/
     display: flex;
     flex-direction: column;
     gap: 12px; /* 卡片间距 */
@@ -16141,11 +16145,11 @@ input[type=range] {
     background-color: #000000 !important;
 }
 
-/* 2. 列表项卡片样�?*/
+/* 2. 列表项卡片样�?*/
 .memo-item, .diary-item {
     background-color: #FFFFFF;
     padding: 16px 20px !important;
-    border-radius: 12px; /* 现代感圆�?*/
+    border-radius: 12px; /* 现代感圆�?*/
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
     border: 1px solid rgba(0, 0, 0, 0.03);
     display: flex;
@@ -16176,16 +16180,16 @@ input[type=range] {
     stroke-width: 2;
 }
 
-/* 备忘录专属配�?(暖黄) */
+/* 备忘录专属配�?(暖黄) */
 .memo-icon-style {
     background-color: #FFF8E1; /* 极淡黄底 */
     color: #FF9500; /* 活力橙黄 */
 }
 
-/* 日记专属配色 (清新�? */
+/* 日记专属配色 (清新�? */
 .diary-icon-style {
     background-color: #E8F5E9; /* 极淡绿底 */
-    color: #34C759; /* 苹果�?*/
+    color: #34C759; /* 苹果�?*/
 }
 
 /* 4. 中间文字区域 */
@@ -16217,13 +16221,13 @@ input[type=range] {
     line-height: 1.3;
 }
 
-/* 5. 右侧元素 (箭头或时�? */
+/* 5. 右侧元素 (箭头或时�? */
 .cphone-item-arrow {
     color: #C7C7CC;
     flex-shrink: 0;
 }
 
-/* --- 详情页重�?--- */
+/* --- 详情页重�?--- */
 
 /* 备忘录详情页 */
 #char-memo-detail-screen .form-container {
@@ -16247,7 +16251,7 @@ input[type=range] {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* 日记详情�?*/
+/* 日记详情�?*/
 #char-diary-detail-screen {
     background-color: #F2F2F7 !important;
 }
@@ -16259,14 +16263,14 @@ input[type=range] {
     /* 核心修复：强制高度自动，随文字撑开 */
     height: auto !important; 
     
-    /* 保持最小高度，内容少时也好�?*/
+    /* 保持最小高度，内容少时也好�?*/
     min-height: 80vh; 
     
     /* 确保背景色和圆角完整包裹内容 */
     background-color: #FFFFFF !important;
     border-radius: 12px;
     
-    /* 优化内边�?*/
+    /* 优化内边�?*/
     padding: 32px 28px 60px 28px !important; /* 底部增加内边距，防止文字贴底 */
     
     /* 视觉样式 */
@@ -16286,7 +16290,7 @@ input[type=range] {
 #char-diary-detail-content-wrapper {
     padding: 20px !important;
     background: transparent !important;
-    overflow-y: auto !important; /* 确保竖向滚动条在 wrapper �?*/
+    overflow-y: auto !important; /* 确保竖向滚动条在 wrapper �?*/
     display: block !important;    /* 防止 Flex 布局某些情况下压缩子元素高度 */
 }
 
@@ -16355,14 +16359,14 @@ input[type=range] {
     box-sizing: border-box;
 }
 
-/* 4. 标题/日期 (您觉得太大的那个�? - 重构为“眉批”风�?*/
+/* 4. 标题/日期 (您觉得太大的那个�? - 重构为“眉批”风�?*/
 #char-diary-detail-content > p:first-of-type {
-    /* 即使是标题，也不需要巨大。精�?> 巨大 */
+    /* 即使是标题，也不需要巨大。精�?> 巨大 */
     font-size: 15px !important; 
     font-weight: 600 !important;
     color: #86868B !important; /* 使用高级中灰色，降低视觉干扰 */
     text-transform: uppercase; /* 增加一点形式感 */
-    letter-spacing: 0.05em; /* 增加字间距，增加透气�?*/
+    letter-spacing: 0.05em; /* 增加字间距，增加透气�?*/
     
     margin-top: 0 !important;
     margin-bottom: 24px !important; /* 标题与正文的完美距离 */
@@ -16375,9 +16379,9 @@ input[type=range] {
      
     line-height: 1.6 !important; 
     
-    /* 核心修改：减小段落间�?*/
-    margin-bottom: 1px !important; /* �?16px 减小�?8px，更加紧�?*/
-    margin-top: 0 !important;      /* 强制去除顶部间距，防止叠�?*/
+    /* 核心修改：减小段落间�?*/
+    margin-bottom: 1px !important; /* �?16px 减小�?8px，更加紧�?*/
+    margin-top: 0 !important;      /* 强制去除顶部间距，防止叠�?*/
     
     text-align: justify; 
     letter-spacing: -0.01em; 
@@ -16389,11 +16393,11 @@ input[type=range] {
     color: #000;
 }
 
-/* 重点高亮：改为荧光笔风格，而非简单的背景�?*/
+/* 重点高亮：改为荧光笔风格，而非简单的背景�?*/
 #char-diary-detail-content .diary-highlight {
     background: linear-gradient(120deg, rgba(255, 214, 10, 0.3) 0%, rgba(255, 214, 10, 0.3) 100%);
     background-position: 0 88%;
-    background-size: 100% 0.4em; /* 只高亮下半部�?*/
+    background-size: 100% 0.4em; /* 只高亮下半部�?*/
     background-repeat: no-repeat;
     padding: 0;
     border-radius: 0;
@@ -16417,7 +16421,7 @@ input[type=range] {
     border-radius: 4px;
 }
 /* =================================================== */
-/* ▼▼�?CPhone 终极固定布局 (�?iOS 高级质感) ▼▼�?*/
+/* ▼▼�?CPhone 终极固定布局 (�?iOS 高级质感) ▼▼�?*/
 /* =================================================== */
 
 /* CPhone 翻页容器 */
@@ -16436,14 +16440,14 @@ input[type=range] {
 }
 
 .cphone-page {
-    width: 50%; /* 每页�?0% */
+    width: 50%; /* 每页�?0% */
     height: 100%;
     flex-shrink: 0;
 }
 
-/* CPhone 页面指示�?*/
+/* CPhone 页面指示�?*/
 .cphone-pagination {
-    display: none; /* 隐藏页面指示�?*/
+    display: none; /* 隐藏页面指示�?*/
     justify-content: center;
     gap: 8px;
     padding: 10px 0;
@@ -16478,7 +16482,7 @@ input[type=range] {
     align-items: center; /* 整体居中 */
 }
 
-/* --- 通用行布局：左右排�?--- */
+/* --- 通用行布局：左右排�?--- */
 .cphone-fixed-row {
     display: flex;
     justify-content: space-between;
@@ -16496,7 +16500,7 @@ input[type=range] {
 }
 
 .cphone-bubble-pill {
-    width: 85%; /* 不占满，留出空隙显示错落�?*/
+    width: 85%; /* 不占满，留出空隙显示错落�?*/
     height: 55px;
     border-radius: 28px;
     padding: 5px 15px;
@@ -16505,7 +16509,7 @@ input[type=range] {
     gap: 10px;
     box-sizing: border-box;
     
-    /* 玻璃拟�?*/
+    /* 玻璃拟�?*/
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -16524,7 +16528,7 @@ input[type=range] {
 /* 右侧气泡靠右 */
 .cphone-bubble-pill.right {
     align-self: flex-end;
-    flex-direction: row-reverse; /* 头像在右�?*/
+    flex-direction: row-reverse; /* 头像在右�?*/
     border-top-right-radius: 4px;
 }
 
@@ -16549,14 +16553,14 @@ input[type=range] {
     font-weight: 500;
 }
 
-/* --- 2. 固定大小�?App 网格 (2x2) --- */
+/* --- 2. 固定大小�?App 网格 (2x2) --- */
 .cphone-fixed-app-grid {
-    width: 155px;  /* 强制固定宽度�?*/
-    height: 155px; /* 强制固定高度�?*/
+    width: 155px;  /* 强制固定宽度�?*/
+    height: 155px; /* 强制固定高度�?*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px 15px; /* 行间�?0，列间距15 */
+    gap: 10px 15px; /* 行间�?0，列间距15 */
     justify-items: center;
     align-items: center;
 }
@@ -16570,7 +16574,7 @@ input[type=range] {
     height: 56px;
     border-radius: 14px;
     margin-bottom: 4px;
-    /* 确保图标不会被拉�?*/
+    /* 确保图标不会被拉�?*/
     min-width: 56px; 
 }
 .cphone-fixed-app-grid .app-icon.small .label {
@@ -16578,11 +16582,11 @@ input[type=range] {
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
-/* --- 3. 堆叠拍立得组�?--- */
+/* --- 3. 堆叠拍立得组�?--- */
 .cphone-stack-polaroid-widget {
     width: 155px; /* 固定大小 */
     height: 155px;
-    position: relative; /* 用于绝对定位子元�?*/
+    position: relative; /* 用于绝对定位子元�?*/
 }
 
 .polaroid-stack-layer {
@@ -16600,14 +16604,14 @@ input[type=range] {
     transition: transform 0.3s ease;
 }
 
-/* 底层照片：旋�?*/
+/* 底层照片：旋�?*/
 .polaroid-stack-layer.back {
     transform: translateX(-50%) rotate(-6deg);
     z-index: 1;
-    background-color: #f0f0f0; /* 稍微暗一�?*/
+    background-color: #f0f0f0; /* 稍微暗一�?*/
 }
 
-/* 顶层照片：稍微反向旋�?*/
+/* 顶层照片：稍微反向旋�?*/
 .polaroid-stack-layer.front {
     transform: translateX(-50%) rotate(3deg) translateY(-5px);
     z-index: 2;
@@ -16642,7 +16646,7 @@ input[type=range] {
     align-items: center;
     justify-content: center;
     
-    /* 背景�?*/
+    /* 背景�?*/
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 24px;
@@ -16680,7 +16684,7 @@ input[type=range] {
     border-radius: 2px;
 }
 
-/* --- Dock 栏优�?--- */
+/* --- Dock 栏优�?--- */
 .cphone-dock-container {
     padding: 0 15px;
     margin-bottom: calc(25px + env(safe-area-inset-bottom));
@@ -16699,7 +16703,7 @@ input[type=range] {
     border-radius: 32px;
     padding: 18px 20px;
     width: 100%;
-    max-width: 340px; /* 限制Dock最大宽�?*/
+    max-width: 340px; /* 限制Dock最大宽�?*/
     display: flex;
     justify-content: space-between;
 }
@@ -16720,10 +16724,10 @@ input[type=range] {
     border-color: rgba(255, 255, 255, 0.1);
 }
 #phone-screen.dark-mode .polaroid-stack-layer {
-    background-color: #333; /* 拍立得白边变�?*/
+    background-color: #333; /* 拍立得白边变�?*/
 }
 /* =================================================== */
-/* ▼▼�?CPhone 高级固定布局 V3 (完美复刻�? ▼▼�?*/
+/* ▼▼�?CPhone 高级固定布局 V3 (完美复刻�? ▼▼�?*/
 /* =================================================== */
 
 #cphone-layout-container {
@@ -16734,12 +16738,12 @@ input[type=range] {
     width: 100%;
 }
 
-/* --- 1. 错落气泡�?--- */
+/* --- 1. 错落气泡�?--- */
 .cphone-staggered-group {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* 两个气泡之间的间�?*/
-    width: 330px; /* 锁定总宽�?*/
+    gap: 8px; /* 两个气泡之间的间�?*/
+    width: 330px; /* 锁定总宽�?*/
 }
 
 .cphone-bubble-pill {
@@ -16761,18 +16765,18 @@ input[type=range] {
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
-/* 上方气泡：靠�?*/
+/* 上方气泡：靠�?*/
 .cphone-bubble-pill.top {
     align-self: flex-start; 
 }
 
-/* 下方气泡：靠�?*/
+/* 下方气泡：靠�?*/
 .cphone-bubble-pill.bottom {
     align-self: flex-end;
     justify-content: flex-end; /* 内容靠右 */
 }
 
-/* 头像容器 (带白�? */
+/* 头像容器 (带白�? */
 .bubble-avatar-container {
     width: 46px;
     height: 46px;
@@ -16823,7 +16827,7 @@ input[type=range] {
     opacity: 0.9;
 }
 
-/* --- 通用固定�?(锁死宽度) --- */
+/* --- 通用固定�?(锁死宽度) --- */
 .cphone-fixed-row {
     display: flex;
     justify-content: space-between;
@@ -16852,7 +16856,7 @@ input[type=range] {
     font-size: 11px;
 }
 
-/* --- 3. 堆叠拍立�?(复刻) --- */
+/* --- 3. 堆叠拍立�?(复刻) --- */
 .cphone-stack-polaroid {
     width: 150px;
     height: 150px;
@@ -16955,7 +16959,7 @@ input[type=range] {
     border-radius: 2px;
     position: relative;
 }
-/* 加两个小点在装饰线两�?*/
+/* 加两个小点在装饰线两�?*/
 .line-deco::before, .line-deco::after {
     content: '';
     position: absolute;
@@ -16968,7 +16972,7 @@ input[type=range] {
 .line-deco::before { left: -2px; }
 .line-deco::after { right: -2px; }
 
-/* --- Dock �?(保持不变但确保宽�? --- */
+/* --- Dock �?(保持不变但确保宽�? --- */
 .cphone-dock-container {
     padding: 0;
     margin-top: auto;
@@ -16992,13 +16996,13 @@ input[type=range] {
 #phone-screen.dark-mode .polaroid-main-layer {
     background-color: #2c2c2e;
 }
-/* --- 1. 错落气泡�?(带倾斜) --- */
+/* --- 1. 错落气泡�?(带倾斜) --- */
 .cphone-staggered-group {
     display: flex;
     flex-direction: column;
-    /* gap: 8px;  <-- 移除这个 gap，改�?margin 控制 */
+    /* gap: 8px;  <-- 移除这个 gap，改�?margin 控制 */
     width: 330px;
-    padding: 10px 0; /* 增加上下内边距，给倾斜留空�?*/
+    padding: 10px 0; /* 增加上下内边距，给倾斜留空�?*/
 }
 
 .cphone-bubble-pill {
@@ -17024,19 +17028,19 @@ input[type=range] {
     backface-visibility: hidden; 
 }
 
-/* 上方气泡：靠�?+ 向上倾斜 */
+/* 上方气泡：靠�?+ 向上倾斜 */
 .cphone-bubble-pill.top {
     align-self: flex-start;
-    transform: rotate(-3deg); /* 关键：旋转角�?*/
+    transform: rotate(-3deg); /* 关键：旋转角�?*/
     margin-bottom: -8px; /* 向上拉近距离 */
-    z-index: 2; /* 稍微叠在上面一�?*/
+    z-index: 2; /* 稍微叠在上面一�?*/
 }
 
-/* 下方气泡：靠�?+ 向下倾斜 */
+/* 下方气泡：靠�?+ 向下倾斜 */
 .cphone-bubble-pill.bottom {
     align-self: flex-end;
     justify-content: flex-end;
-    transform: rotate(2deg); /* 关键：旋转角�?*/
+    transform: rotate(2deg); /* 关键：旋转角�?*/
     margin-top: -5px;
     z-index: 1;
 }
@@ -17068,10 +17072,10 @@ input[type=range] {
     padding: 0 10px;
     gap: 5px;
     overflow: hidden;
-    cursor: text; /* 鼠标放上去显示可输入状�?*/
+    cursor: text; /* 鼠标放上去显示可输入状�?*/
 }
 
-/* 编辑时的输入框样�?*/
+/* 编辑时的输入框样�?*/
 .bubble-edit-input {
     background: rgba(255,255,255,0.2);
     border: none;
@@ -17083,7 +17087,7 @@ input[type=range] {
     text-shadow: none;
 }
 /* =================================================== */
-/* ▼▼�?CPhone 布局修正 V4 (倾斜+外框+编辑修复) ▼▼�?*/
+/* ▼▼�?CPhone 布局修正 V4 (倾斜+外框+编辑修复) ▼▼�?*/
 /* =================================================== */
 
 #cphone-layout-container {
@@ -17099,7 +17103,7 @@ input[type=range] {
     display: flex;
     flex-direction: column;
     width: 330px;
-    /* 给旋转留出上下空间，防止被切�?*/
+    /* 给旋转留出上下空间，防止被切�?*/
     padding: 15px 0; 
     position: relative;
 }
@@ -17107,7 +17111,7 @@ input[type=range] {
 .cphone-bubble-pill {
     width: 290px;
     height: 60px;
-    border-radius: 35px; /* 更圆�?*/
+    border-radius: 35px; /* 更圆�?*/
     display: flex;
     align-items: center;
     padding: 5px 8px;
@@ -17122,12 +17126,12 @@ input[type=range] {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
     
-    /* 核心：旋转基�?*/
+    /* 核心：旋转基�?*/
     transform-origin: center;
     transition: transform 0.3s ease;
 }
 
-/* 上方气泡：向左上倾斜 (-3�? */
+/* 上方气泡：向左上倾斜 (-3�? */
 .cphone-bubble-pill.top {
     align-self: flex-start;
     transform: rotate(-3deg); 
@@ -17136,7 +17140,7 @@ input[type=range] {
     margin-left: 5px;
 }
 
-/* 下方气泡：向右下倾斜 (2�? */
+/* 下方气泡：向右下倾斜 (2�? */
 .cphone-bubble-pill.bottom {
     align-self: flex-end;
     justify-content: flex-end; /* 内容靠右 */
@@ -17146,7 +17150,7 @@ input[type=range] {
     margin-right: 5px;
 }
 
-/* 编辑时的输入框样�?(修复文字无法修改的问�? */
+/* 编辑时的输入框样�?(修复文字无法修改的问�? */
 .bubble-edit-input {
     background: rgba(0, 0, 0, 0.1);
     border: none;
@@ -17187,7 +17191,7 @@ input[type=range] {
     padding: 0 12px;
     gap: 6px;
     overflow: hidden;
-    cursor: text; /* 提示可编�?*/
+    cursor: text; /* 提示可编�?*/
 }
 .bubble-content.left-align { justify-content: flex-start; }
 .bubble-content.right-align { justify-content: flex-end; text-align: right; }
@@ -17229,7 +17233,7 @@ input[type=range] {
 }
 .app-icon.small .label { font-size: 11px; }
 
-/* --- 3. 拍立�?(保持堆叠) --- */
+/* --- 3. 拍立�?(保持堆叠) --- */
 .cphone-stack-polaroid {
     width: 150px;
     height: 150px;
@@ -17354,16 +17358,16 @@ input[type=range] {
     border-color: rgba(255, 255, 255, 0.1);
 }
 #phone-screen.dark-mode .cphone-circle-bg {
-    border-color: rgba(255, 255, 255, 0.8); /* 暗黑模式下稍微暗一点的�?*/
+    border-color: rgba(255, 255, 255, 0.8); /* 暗黑模式下稍微暗一点的�?*/
 }
 /* ================================================== */
-/* ▼▼�?CPhone 界面统一化修复补�?(去除外框 + 放大图标) ▼▼�?*/
+/* ▼▼�?CPhone 界面统一化修复补�?(去除外框 + 放大图标) ▼▼�?*/
 /* ================================================== */
 
-/* 1. 【左侧组件】去除圆形组件的"�?外框 */
+/* 1. 【左侧组件】去除圆形组件的"�?外框 */
 .cphone-circle-widget-wrapper {
-    background: transparent !important;       /* 去掉背景�?*/
-    border: none !important;                  /* 去掉边框�?*/
+    background: transparent !important;       /* 去掉背景�?*/
+    border: none !important;                  /* 去掉边框�?*/
     backdrop-filter: none !important;         /* 去掉磨砂玻璃 */
     -webkit-backdrop-filter: none !important;
     box-shadow: none !important;              /* 去掉阴影 */
@@ -17374,15 +17378,15 @@ input[type=range] {
     text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;
     font-weight: 500 !important;
 }
-/* 去除装饰�?(既然不要框了，装饰线悬空会很�? */
+/* 去除装饰�?(既然不要框了，装饰线悬空会很�? */
 .line-deco {
     display: none !important; 
 }
 
-/* 2. 【图标大小】放�?CPhone 图标 (对齐 EPhone) */
-/* 调整网格间距，给大图标腾出空�?*/
+/* 2. 【图标大小】放�?CPhone 图标 (对齐 EPhone) */
+/* 调整网格间距，给大图标腾出空�?*/
 .cphone-fixed-app-grid {
-    gap: 2px 15px !important; /* 减小行间�?*/
+    gap: 2px 15px !important; /* 减小行间�?*/
 }
 
 /* 强制放大图标背景 */
@@ -17390,13 +17394,13 @@ input[type=range] {
     width: 62px !important;      /* 原为 54px -> 改为 62px */
     height: 62px !important;
     min-width: 62px !important;
-    border-radius: 16px !important; /* 稍微圆润一�?*/
+    border-radius: 16px !important; /* 稍微圆润一�?*/
     margin-bottom: 5px !important;
 }
 
-/* 3. 【字体统一】修�?CPhone 字体颜色和大�?*/
+/* 3. 【字体统一】修�?CPhone 字体颜色和大�?*/
 .app-icon.small .label {
-    font-size: 13px !important;  /* 原为 11px -> 改为 EPhone 标准�?13px */
+    font-size: 13px !important;  /* 原为 11px -> 改为 EPhone 标准�?13px */
     color: #ffffff !important;   /* 纯白文字 */
     font-weight: 500 !important;
     /* 统一使用 EPhone 的强阴影，保证在亮色壁纸上也清晰 */
@@ -17404,18 +17408,18 @@ input[type=range] {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* 4. 【Dock栏】改�?EPhone 风格 (浅色透明) */
+/* 4. 【Dock栏】改�?EPhone 风格 (浅色透明) */
 .cphone-dock.glass {
-    /* 原为深灰�?rgba(40, 40, 40, 0.4) -> 改为浅白透明 */
+    /* 原为深灰�?rgba(40, 40, 40, 0.4) -> 改为浅白透明 */
     background: rgba(255, 255, 255, 0.2) !important; 
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    /* 稍微调整圆角，使其不那么圆，更像 EPhone �?Dock */
+    /* 稍微调整圆角，使其不那么圆，更像 EPhone �?Dock */
     border-radius: 24px !important; 
 }
 
-/* 5. 【Dock图标】确�?Dock 里的图标也够�?*/
+/* 5. 【Dock图标】确�?Dock 里的图标也够�?*/
 .cphone-dock .app-icon .icon-bg {
     width: 60px !important;
     height: 60px !important;
@@ -17423,18 +17427,18 @@ input[type=range] {
 
 /* --- 暗黑模式下的适配修正 --- */
 #phone-screen.dark-mode .cphone-dock.glass {
-    /* 暗黑模式下稍微深一点，但保持通�?*/
+    /* 暗黑模式下稍微深一点，但保持通�?*/
     background: rgba(50, 50, 50, 0.4) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
 /* ================================================== */
-/* ▼▼�?CPhone 界面统一化修复补�?(去除外框 + 放大图标) ▼▼�?*/
+/* ▼▼�?CPhone 界面统一化修复补�?(去除外框 + 放大图标) ▼▼�?*/
 /* ================================================== */
 
-/* 1. 【左侧组件】去除圆形组件的"�?外框 */
+/* 1. 【左侧组件】去除圆形组件的"�?外框 */
 .cphone-circle-widget-wrapper {
-    background: transparent !important;       /* 去掉背景�?*/
-    border: none !important;                  /* 去掉边框�?*/
+    background: transparent !important;       /* 去掉背景�?*/
+    border: none !important;                  /* 去掉边框�?*/
     backdrop-filter: none !important;         /* 去掉磨砂玻璃 */
     -webkit-backdrop-filter: none !important;
     box-shadow: none !important;              /* 去掉阴影 */
@@ -17445,15 +17449,15 @@ input[type=range] {
     text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;
     font-weight: 500 !important;
 }
-/* 去除装饰�?(既然不要框了，装饰线悬空会很�? */
+/* 去除装饰�?(既然不要框了，装饰线悬空会很�? */
 .line-deco {
     display: none !important; 
 }
 
-/* 2. 【图标大小】放�?CPhone 图标 (对齐 EPhone) */
-/* 调整网格间距，给大图标腾出空�?*/
+/* 2. 【图标大小】放�?CPhone 图标 (对齐 EPhone) */
+/* 调整网格间距，给大图标腾出空�?*/
 .cphone-fixed-app-grid {
-    gap: 2px 15px !important; /* 减小行间�?*/
+    gap: 2px 15px !important; /* 减小行间�?*/
 }
 
 /* 强制放大图标背景 */
@@ -17461,13 +17465,13 @@ input[type=range] {
     width: 62px !important;      /* 原为 54px -> 改为 62px */
     height: 62px !important;
     min-width: 62px !important;
-    border-radius: 16px !important; /* 稍微圆润一�?*/
+    border-radius: 16px !important; /* 稍微圆润一�?*/
     margin-bottom: 5px !important;
 }
 
-/* 3. 【字体统一】修�?CPhone 字体颜色和大�?*/
+/* 3. 【字体统一】修�?CPhone 字体颜色和大�?*/
 .app-icon.small .label {
-    font-size: 13px !important;  /* 原为 11px -> 改为 EPhone 标准�?13px */
+    font-size: 13px !important;  /* 原为 11px -> 改为 EPhone 标准�?13px */
     color: #ffffff !important;   /* 纯白文字 */
     font-weight: 500 !important;
     /* 统一使用 EPhone 的强阴影，保证在亮色壁纸上也清晰 */
@@ -17475,18 +17479,18 @@ input[type=range] {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* 4. 【Dock栏】改�?EPhone 风格 (浅色透明) */
+/* 4. 【Dock栏】改�?EPhone 风格 (浅色透明) */
 .cphone-dock.glass {
-    /* 原为深灰�?rgba(40, 40, 40, 0.4) -> 改为浅白透明 */
+    /* 原为深灰�?rgba(40, 40, 40, 0.4) -> 改为浅白透明 */
     background: rgba(255, 255, 255, 0.2) !important; 
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    /* 稍微调整圆角，使其不那么圆，更像 EPhone �?Dock */
+    /* 稍微调整圆角，使其不那么圆，更像 EPhone �?Dock */
     border-radius: 24px !important; 
 }
 
-/* 5. 【Dock图标】确�?Dock 里的图标也够�?*/
+/* 5. 【Dock图标】确�?Dock 里的图标也够�?*/
 .cphone-dock .app-icon .icon-bg {
     width: 60px !important;
     height: 60px !important;
@@ -17494,20 +17498,20 @@ input[type=range] {
 
 /* --- 暗黑模式下的适配修正 --- */
 #phone-screen.dark-mode .cphone-dock.glass {
-    /* 暗黑模式下稍微深一点，但保持通�?*/
+    /* 暗黑模式下稍微深一点，但保持通�?*/
     background: rgba(50, 50, 50, 0.4) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
 /* ========================================================= */
-/* ▼▼�?CPhone 布局微调补丁 V2 (气泡对齐 + 圆形下移) ▼▼�?*/
+/* ▼▼�?CPhone 布局微调补丁 V2 (气泡对齐 + 圆形下移) ▼▼�?*/
 /* ========================================================= */
 
-/* 1. 【圆形组件】位置下移修�?*/
+/* 1. 【圆形组件】位置下移修�?*/
 .cphone-circle-widget-wrapper {
-    /* 原来是靠顶对齐，现在往下推 30px，视觉上更平�?*/
+    /* 原来是靠顶对齐，现在往下推 30px，视觉上更平�?*/
     margin-top: 30px !important; 
     
-    /* 既然去掉了外框，确保它是透明�?*/
+    /* 既然去掉了外框，确保它是透明�?*/
     background: transparent !important;
     border: none !important;
     backdrop-filter: none !important;
@@ -17515,7 +17519,7 @@ input[type=range] {
     box-shadow: none !important;
 }
 
-/* 2. 【第一行气泡】容器调�?*/
+/* 2. 【第一行气泡】容器调�?*/
 .cphone-staggered-group {
     width: 100% !important; /* 占满整行 */
     max-width: 360px !important; /* 限制最大宽 */
@@ -17537,15 +17541,15 @@ input[type=range] {
     margin-right: auto !important; /* 强制把右边空出来 */
     margin-left: 5px !important;   /* 离左边缘一点点距离 */
     
-    /* 倾斜与重叠控�?*/
+    /* 倾斜与重叠控�?*/
     transform: rotate(-3deg) !important;
-    margin-bottom: -10px !important; /* 只是轻微重叠，不再是大面积重�?*/
+    margin-bottom: -10px !important; /* 只是轻微重叠，不再是大面积重�?*/
     z-index: 2 !important; /* 压在下面那个上面 */
 }
 
 /* 4. 【下方气泡】严格右对齐 + 向右下倾斜 */
 .cphone-bubble-pill.bottom {
-    /* 宽度保持一�?*/
+    /* 宽度保持一�?*/
     width: 275px !important;
     
     /* 核心对齐代码 */
@@ -17553,20 +17557,20 @@ input[type=range] {
     margin-left: auto !important;  /* 强制把左边空出来 */
     margin-right: 5px !important;  /* 离右边缘一点点距离 */
     
-    /* 倾斜与重叠控�?*/
+    /* 倾斜与重叠控�?*/
     transform: rotate(2deg) !important;
     margin-top: 0 !important;
     z-index: 1 !important;
 }
 
-/* 5. 确保气泡内的文字能完整显�?*/
+/* 5. 确保气泡内的文字能完整显�?*/
 .bubble-content {
     /* 修复可能被压缩的问题 */
     flex-shrink: 1 !important;
     min-width: 0 !important;
 }
 /* ================================================================= */
-/* ▼▼�?Swiss Style 终极版式修正 (Steve Jobs Approved) ▼▼�?*/
+/* ▼▼�?Swiss Style 终极版式修正 (Steve Jobs Approved) ▼▼�?*/
 /* ================================================================= */
 
 /* --- 1. 全局布局容器：增加呼吸感 --- */
@@ -17575,9 +17579,9 @@ input[type=range] {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* 增加垂直间距，这就是“数千美元”的高级感来�?*/
+    /* 增加垂直间距，这就是“数千美元”的高级感来�?*/
     gap: 35px !important; 
-    padding-top: 10px; /* 稍微往下压一点，不顶�?*/
+    padding-top: 10px; /* 稍微往下压一点，不顶�?*/
 }
 
 /* 统一所有行的宽度，确保视觉边缘垂直对齐 */
@@ -17588,22 +17592,22 @@ input[type=range] {
     max-width: 100% !important;
 }
 
-/* --- 2. 错落气泡：精准对齐算�?--- */
+/* --- 2. 错落气泡：精准对齐算�?--- */
 .cphone-staggered-group {
     padding: 5px 0 !important;
-    gap: 0 !important; /* 重叠�?margin 控制 */
+    gap: 0 !important; /* 重叠�?margin 控制 */
     position: relative;
-    /* 确保容器本身不裁剪阴�?*/
+    /* 确保容器本身不裁剪阴�?*/
     overflow: visible !important; 
 }
 
 .cphone-bubble-pill {
-    /* 稍微缩短宽度，为旋转留出余量，防止视觉溢�?*/
+    /* 稍微缩短宽度，为旋转留出余量，防止视觉溢�?*/
     width: 285px !important; 
     height: 58px !important;
     border-radius: 29px !important;
     
-    /* 玻璃质感增强：更通�?*/
+    /* 玻璃质感增强：更通�?*/
     background: rgba(255, 255, 255, 0.2) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
@@ -17611,7 +17615,7 @@ input[type=range] {
     box-shadow: 0 8px 20px rgba(0,0,0,0.05) !important;
 }
 
-/* 上方气泡：左对齐 + 绕左侧旋�?*/
+/* 上方气泡：左对齐 + 绕左侧旋�?*/
 .cphone-bubble-pill.top {
     align-self: flex-start !important; /* 物理靠左 */
     margin-right: auto !important;
@@ -17625,7 +17629,7 @@ input[type=range] {
     z-index: 2;
 }
 
-/* 下方气泡：右对齐 + 绕右侧旋�?*/
+/* 下方气泡：右对齐 + 绕右侧旋�?*/
 .cphone-bubble-pill.bottom {
     align-self: flex-end !important; /* 物理靠右 */
     margin-left: auto !important;
@@ -17639,7 +17643,7 @@ input[type=range] {
     z-index: 1;
 }
 
-/* --- 3. 圆形组件文字优化：增加间�?--- */
+/* --- 3. 圆形组件文字优化：增加间�?--- */
 .cphone-circle-widget-wrapper {
     /* 移除背景和边框，保持透明 */
     background: transparent !important;
@@ -17657,11 +17661,11 @@ input[type=range] {
 
 .cphone-circle-bg {
     /* 图片容器 */
-    margin-bottom: 0 !important; /* 移除旧边距，�?text-area �?margin-top 控制 */
+    margin-bottom: 0 !important; /* 移除旧边距，�?text-area �?margin-top 控制 */
 }
 
 .circle-text-area {
-    /* 开�?Flex 布局来控制两行字的间�?*/
+    /* 开�?Flex 布局来控制两行字的间�?*/
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -17677,7 +17681,7 @@ input[type=range] {
 #cphone-circle-text {
     font-size: 15px !important;
     font-weight: 600 !important;
-    letter-spacing: 0.5px !important; /* 字间距微�?*/
+    letter-spacing: 0.5px !important; /* 字间距微�?*/
     color: #ffffff !important;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
     line-height: 1 !important;
@@ -17697,7 +17701,7 @@ input[type=range] {
     margin: 0 !important;
 }
 
-/* --- 4. 再次确保图标大小统一 (防止被覆�? --- */
+/* --- 4. 再次确保图标大小统一 (防止被覆�? --- */
 .cphone-fixed-app-grid {
     gap: 8px 15px !important; /* 微调网格间距 */
 }
@@ -17716,7 +17720,7 @@ input[type=range] {
     text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
 }
 
-/* --- 5. 拍立得堆叠优�?(右侧组件) --- */
+/* --- 5. 拍立得堆叠优�?(右侧组件) --- */
 /* 让拍立得也稍微倾斜一点点，增加随意感 */
 .cphone-stack-polaroid {
     transform: rotate(2deg);
@@ -17729,28 +17733,28 @@ input[type=range] {
 .cphone-staggered-group {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important; /* 核心：垂直居中对�?*/
-    width: 330px !important;        /* 核心：固定宽�?*/
+    align-items: center !important; /* 核心：垂直居中对�?*/
+    width: 330px !important;        /* 核心：固定宽�?*/
     margin: 0 auto !important;
     padding: 10px 0 !important;
     gap: 0 !important;              /* 去掉间隙，用 margin 控制堆叠 */
 }
 
-/* 2. 气泡通用：填满容器，保持一�?*/
+/* 2. 气泡通用：填满容器，保持一�?*/
 .cphone-bubble-pill {
     width: 100% !important;         /* 强制占满 330px，保证上下一样宽 */
     height: 60px !important;
-    border-radius: 35px !important; /* 更圆润一�?*/
+    border-radius: 35px !important; /* 更圆润一�?*/
     box-sizing: border-box !important;
     transition: transform 0.3s ease !important;
     
-    /* 核心：全部绕中心旋转，保证不会歪到没�?*/
+    /* 核心：全部绕中心旋转，保证不会歪到没�?*/
     transform-origin: center center !important; 
 }
 
-/* 3. 上方气泡：左低右�?(-3deg) */
+/* 3. 上方气泡：左低右�?(-3deg) */
 .cphone-bubble-pill.top {
-    align-self: center !important;  /* 强制居中，不要靠�?*/
+    align-self: center !important;  /* 强制居中，不要靠�?*/
     transform: rotate(-3deg) !important;
     
     margin-bottom: -12px !important; /* 向下挤压，产生堆叠感 */
@@ -17761,10 +17765,10 @@ input[type=range] {
     margin-right: 0 !important;
 }
 
-/* 4. 下方气泡：同样左低右�?(-3deg)，保持平�?*/
+/* 4. 下方气泡：同样左低右�?(-3deg)，保持平�?*/
 /* 根据原图，它们是平行的，这样视觉上最整齐 */
 .cphone-bubble-pill.bottom {
-    align-self: center !important;  /* 强制居中，不要靠�?*/
+    align-self: center !important;  /* 强制居中，不要靠�?*/
     transform: rotate(-3deg) !important; 
     
     margin-top: 0 !important;
@@ -17775,7 +17779,7 @@ input[type=range] {
     margin-right: 0 !important;
 }
 
-/* 5. 修复 Dock 栏文字显�?*/
+/* 5. 修复 Dock 栏文字显�?*/
 .cphone-dock .app-icon .label {
     display: block !important;
     margin-top: 4px !important;
@@ -17785,9 +17789,9 @@ input[type=range] {
     text-shadow: 0 1px 2px rgba(0,0,0,0.6) !important;
     text-align: center !important;
 }
-/* --- CPhone 气泡：居中对�?+ 反向倾斜 + 增加间距�?--- */
+/* --- CPhone 气泡：居中对�?+ 反向倾斜 + 增加间距�?--- */
 
-/* 1. 容器：控制整体间�?*/
+/* 1. 容器：控制整体间�?*/
 .cphone-staggered-group {
     display: flex !important;
     flex-direction: column !important;
@@ -17796,7 +17800,7 @@ input[type=range] {
     margin: 0 auto !important;
     padding: 10px 0 !important;
     
-    /* 【关键修�?1】增加气泡之间的物理间距 */
+    /* 【关键修�?1】增加气泡之间的物理间距 */
     gap: 5px !important; 
 }
 
@@ -17810,12 +17814,12 @@ input[type=range] {
     transform-origin: center center !important;
 }
 
-/* 3. 上方气泡：左低右�?(-3deg) */
+/* 3. 上方气泡：左低右�?(-3deg) */
 .cphone-bubble-pill.top {
     align-self: center !important;
     transform: rotate(-3deg) !important;
     
-    /* 【关键修�?2】移除负边距，不再挤�?*/
+    /* 【关键修�?2】移除负边距，不再挤�?*/
     margin-bottom: 0 !important; 
     
     z-index: 2 !important;
@@ -17823,7 +17827,7 @@ input[type=range] {
     margin-right: 0 !important;
 }
 
-/* 4. 下方气泡：左高右�?(3deg) */
+/* 4. 下方气泡：左高右�?(3deg) */
 .cphone-bubble-pill.bottom {
     align-self: center !important;
     transform: rotate(3deg) !important; 
@@ -17846,11 +17850,11 @@ input[type=range] {
     align-items: center;
     width: 100%;
     
-    /* 【关键修改】减小行与行之间的间�?*/
-    /* 原来�?35px，现在改�?10px，立刻变紧凑 */
+    /* 【关键修改】减小行与行之间的间�?*/
+    /* 原来�?35px，现在改�?10px，立刻变紧凑 */
     gap: 35px !important; 
     
-    /* 顶部稍微留一点点呼吸空间，防止气泡顶到刘�?*/
+    /* 顶部稍微留一点点呼吸空间，防止气泡顶到刘�?*/
     padding-top: 15px !important;
 }
 
@@ -17861,8 +17865,8 @@ input[type=range] {
 }
 
 .cphone-dock-container {
-    /* 核心修改：移�?env() 计算，直接使用固定数�?*/
-    /* 20px 是比较标准的距离，如果您想让它更靠下，可以改�?10px */
+    /* 核心修改：移�?env() 计算，直接使用固定数�?*/
+    /* 20px 是比较标准的距离，如果您想让它更靠下，可以改�?10px */
     margin-bottom: 20px !important;
     
     /* 确保没有额外的底部内边距干扰 */
@@ -17892,7 +17896,7 @@ body.frame-mode-active .cphone-dock-container {
     border-color: var(--accent-color);
 }
 .nai-binding-checkbox:checked::after {
-    content: 'OK';
+    content: '�?;
     color: white;
     font-size: 12px;
     position: absolute;
@@ -17925,7 +17929,7 @@ body.frame-mode-active .cphone-dock-container {
 }
 
 .quick-reply-checkbox:checked::after {
-    content: 'OK';
+    content: '�?;
     color: white;
     font-size: 12px;
     position: absolute;
@@ -17939,10 +17943,10 @@ body.frame-mode-active .cphone-dock-container {
 }
 
 #quick-reply-list.management-mode .quick-reply-actions {
-    display: none; /* 管理模式下隐藏单行操作按�?*/
+    display: none; /* 管理模式下隐藏单行操作按�?*/
 }
 
-/* 选中状态高�?*/
+/* 选中状态高�?*/
 .quick-reply-item.selected {
     background-color: rgba(0, 123, 255, 0.05);
 }
@@ -17952,14 +17956,14 @@ body.frame-mode-active .cphone-dock-container {
     background-color: rgba(28, 28, 30, 0.95);
     border-top-color: #38383a;
     color: #fff;
-}/* --- 隐藏层消息显形样�?(完美伪装成系统提�? --- */
+}/* --- 隐藏层消息显形样�?(完美伪装成系统提�? --- */
 
-/* 1. 布局重置：强制居�?*/
+/* 1. 布局重置：强制居�?*/
 .message-wrapper.hidden-revealed {
     justify-content: center !important;
     align-self: center !important;
     width: 100%;
-    margin: 5px 0; /* 保持系统消息的间�?*/
+    margin: 5px 0; /* 保持系统消息的间�?*/
     padding: 0;
     border: none !important;
     background: transparent !important;
@@ -17978,7 +17982,7 @@ body.frame-mode-active .cphone-dock-container {
 
 /* 3. 外层气泡：变成灰色小胶囊 */
 .message-wrapper.hidden-revealed .message-bubble {
-    /* 核心外观：模仿系统消�?*/
+    /* 核心外观：模仿系统消�?*/
     background-color: rgba(0, 0, 0, 0.1) !important; 
     color: #8a8a8a !important; /* 灰色文字 */
     font-size: 12px !important;
@@ -17989,7 +17993,7 @@ body.frame-mode-active .cphone-dock-container {
     flex: initial !important; /* 不要自动伸缩 */
     min-width: auto !important;
     max-width: 85% !important;
-    width: fit-content !important; /* 宽度随内�?*/
+    width: fit-content !important; /* 宽度随内�?*/
     display: inline-block !important;
     margin: 0 auto !important; /* 自身居中 */
     border: none !important;
@@ -17997,31 +18001,31 @@ body.frame-mode-active .cphone-dock-container {
     text-align: center;
 }
 
-/* 4. 【关键修复】彻底剥离内�?.content 的样�?*/
+/* 4. 【关键修复】彻底剥离内�?.content 的样�?*/
 /* 这就是导致“胶囊里有气泡”的元凶，我们把它变透明 */
 .message-wrapper.hidden-revealed .message-bubble .content {
     background-color: transparent !important; /* 去掉白色背景 */
     box-shadow: none !important;              /* 去掉阴影 */
     border: none !important;
-    padding: 0 !important;                    /* 去掉内边�?*/
+    padding: 0 !important;                    /* 去掉内边�?*/
     margin: 0 !important;
     
     /* 字体重置 */
-    color: inherit !important;                /* 继承外层的灰�?*/
-    font-size: inherit !important;            /* 继承小字�?*/
+    color: inherit !important;                /* 继承外层的灰�?*/
+    font-size: inherit !important;            /* 继承小字�?*/
     line-height: 1.4 !important;
     font-weight: normal !important;
     
     /* 布局 */
-    display: inline !important;               /* 变成行内元素，紧贴文�?*/
+    display: inline !important;               /* 变成行内元素，紧贴文�?*/
     width: auto !important;
     min-width: 0 !important;
 }
 
 /* 5. 暗黑模式适配 */
 #phone-screen.dark-mode .message-wrapper.hidden-revealed .message-bubble {
-    background-color: rgba(255, 255, 255, 0.15) !important; /* 深色下的半透明�?*/
-    color: #8d8d92 !important; /* 浅灰�?*/
+    background-color: rgba(255, 255, 255, 0.15) !important; /* 深色下的半透明�?*/
+    color: #8d8d92 !important; /* 浅灰�?*/
 }
 
 /* ========== 一起看电影功能样式 ========== */
@@ -18139,9 +18143,9 @@ body.frame-mode-active .cphone-dock-container {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* ========== 修复：观影界面弹窗层级全面优�?========== */
+/* ========== 修复：观影界面弹窗层级全面优�?========== */
 
-/* 消息长按菜单及所有功能弹窗的层级要高于观影界�?*/
+/* 消息长按菜单及所有功能弹窗的层级要高于观影界�?*/
 #message-actions-modal {
     z-index: 10100 !important;
 }
@@ -18448,13 +18452,13 @@ body.frame-mode-active .cphone-dock-container {
     }
 }
 
-/* 真心话modal最小化时隐�?*/
+/* 真心话modal最小化时隐�?*/
 #truth-game-modal.minimized {
     display: none !important;
 }
 
 /* ========== 真心话游戏移动端适配 ========== */
-/* 桌面端优�?*/
+/* 桌面端优�?*/
 @media (min-width: 769px) {
     #truth-game-buttons {
         flex: 0 1 auto !important;
@@ -18479,7 +18483,7 @@ body.frame-mode-active .cphone-dock-container {
         padding: 10px 12px !important;
     }
     
-    /* 输入�?*/
+    /* 输入�?*/
     #truth-input {
         font-size: 15px !important;
         padding: 10px !important;
@@ -18487,7 +18491,7 @@ body.frame-mode-active .cphone-dock-container {
         margin-bottom: 8px !important;
     }
     
-    /* 按钮�?*/
+    /* 按钮�?*/
     #truth-game-buttons {
         gap: 8px !important;
     }
@@ -18512,12 +18516,12 @@ body.frame-mode-active .cphone-dock-container {
         border-radius: 0 !important;
     }
     
-    /* 输入区域更紧�?*/
+    /* 输入区域更紧�?*/
     #truth-game-input-area {
         padding: 8px 10px !important;
     }
     
-    /* 输入�?*/
+    /* 输入�?*/
     #truth-input {
         font-size: 14px !important;
         padding: 8px 10px !important;
@@ -18525,12 +18529,12 @@ body.frame-mode-active .cphone-dock-container {
         margin-bottom: 8px !important;
     }
     
-    /* 按钮�?*/
+    /* 按钮�?*/
     #truth-game-buttons {
         gap: 6px !important;
     }
     
-    /* 三个按钮均分宽度并优化间�?*/
+    /* 三个按钮均分宽度并优化间�?*/
     #truth-start-game-btn,
     #truth-call-api-btn,
     #truth-send-btn {
@@ -18548,14 +18552,14 @@ body.frame-mode-active .cphone-dock-container {
         padding: 6px 8px !important;
     }
     
-    /* 输入�?*/
+    /* 输入�?*/
     #truth-input {
         font-size: 13px !important;
         padding: 7px 8px !important;
         min-height: 36px !important;
     }
     
-    /* 按钮�?*/
+    /* 按钮�?*/
     #truth-game-buttons {
         gap: 5px !important;
     }
@@ -18571,7 +18575,7 @@ body.frame-mode-active .cphone-dock-container {
 }
 
 /* ========================================= */
-/* ▼▼�?你画我猜App样式 ▼▼�?*/
+/* ▼▼�?你画我猜App样式 ▼▼�?*/
 /* ========================================= */
 
 #draw-guess-screen {
@@ -18885,18 +18889,6 @@ body.frame-mode-active .cphone-dock-container {
     color: var(--text-primary);
 }
 
-/* ▲▲�?你画我猜样式结束 ▲▲�?*/
-
-
-
-
-
-
-
-
-
-
-
-
+/* ▲▲�?你画我猜样式结束 ▲▲�?*/
 
 

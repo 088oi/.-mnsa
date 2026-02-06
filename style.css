@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
            @font-face { font-family: 'bulangni'; src: local('bulangni'); font-weight: normal; font-style: normal; font-display: swap; }
         :root { --screen-width: 350px; --screen-height: 650px; --secondary-bg: #ffffff; --border-color: #e0e0e0; --text-primary: #1f1f1f; --text-secondary: #8a8a8a; --accent-color: #007bff; }
         html {
@@ -18885,6 +18886,7 @@ body.frame-mode-active .cphone-dock-container {
 }
 
 /* ▲▲�?你画我猜样式结束 ▲▲�?*/
+
 
 
 
